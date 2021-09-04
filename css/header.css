@@ -1,0 +1,76 @@
+*{
+    overflow-x: hidden;
+}
+
+
+body{
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y:scroll
+}
+.navbar-header{
+    height: 10vh;
+    width: 100%;
+    background-color: rgba(0,0,0,.02);
+    position: fixed;
+    z-index: 2;
+    backdrop-filter: blur(10px);
+    overflow: auto;
+}
+
+.nav-header{
+    height: 100%;
+    width: 100%;
+}
+
+.nav-ul{
+    height: 100%;
+    width: 30%;
+}
+
+.logo-header{
+    height: auto;
+    width: 28%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.navbar-header-items{
+    height: 100%;
+    width: 30%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.abt-header{
+    font-size: 1.2rem;
+    color: black;
+}
+
+.spk-header{
+    font-size: 1.2rem;
+    color: black;
+}
+
+.agnd-header{
+    font-size: 1.2rem;
+    color: black;
+}
+
+.cont-header{
+    font-size: 1.2rem;
+    color: black;
+}
+.nav-item-headerlogo{
+    height: 100%;
+    width: 100%;
+    overflow: hidden!important;
+}
+
+.nav-link-logo{
+    height: 100%;
+    width: 100%;
+    overflow: hidden!important;
+}

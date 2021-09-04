@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAGGLABS</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/one.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/bottom.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/mediaquery(481-768).css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="./css/slickslider.css">
+    <link rel="stylesheet" href="./css/landscape(481-768).css">
+    <link rel="stylesheet" href="./css/popupbox.css">
+    <link rel="stylesheet" href="./css/portrait(481-768).css">
+    
+</head>
+
+<body>
+    <section class="navbar-header">
+        <nav class="navbar navbar-expand nav-header">
+            <ul class="navbar-nav nav-ul">
+                <li class="nav-item nav-item-headerlogo">
+                    <a class="nav-link nav-link-logo" href="#">
+                        <img class="logo-header"
+                            src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/logo.png">
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto navbar-header-items">
+                <li class="nav-item" id="about-1">
+                    <a class="nav-link abt-header" id="about" href="#about-column">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link spk-header" id="speaker" href="#speaker-column">Speaker</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link agnd-header" id="agenda" href="#agenda-column">Agenda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link cont-header" id="contact-us" href="#contact-column">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="main">
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content">
+              <div class="close-btn" onclick="togglePopup()">×</div>
+              <p class="registr-txt">Enter your Registered Email Id</p>
+             <br>
+             <div class="input-box">
+                <input type="email" class="input-txt" placeholder=""><button class="btn-submit-popup">SUBMIT</button>
+             </div>
+             
+            </div>
+          </div>
+
+        <div class="screen-column">
+            <div class="screen-text">
+                <p class="scrn-txt">
+                    Screen is the new Stage
+                </p>
+                <br>
+                <br>
+
+                <p class="time-txt">
+                    Date: Wednesday, 12th May 2021
+                    <br>
+                    Time: 9:00 am - 10:00 am (GMT)
+                </p>
+            </div>
+
+            <div class="navbar-icons">
+
+                <nav class="navbar nav-icons">
+                    <ul class="navbar-nav navbar-nav-icons">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img class="fb-img"
+                                    src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/fb.png">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img class="twt-img"
+                                    src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/twitter.png">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img class="inst-img"
+                                    src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/instagram.png">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img class="in-img"
+                                    src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/linkedin.png">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="button-reg">
+                <button class="btn-reg" onclick="reg()">REGISTER</button>
+            </div>
+
+            <div class="button-join">
+                <button class="btn-join" onclick="togglePopup()">JOIN THE EVENT
+                    <span>
+                        <img class="img-join"
+                            src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/next.png">
+                    </span>
+                </button>
+            </div>
+            <nav class="navbar navbar-expand navbar-time">
+                <ul class="navbar-nav time-navbar">
+                    <li class="day">
+                        <span class="zero">0</span><br>
+                        <p class="day-txt">DAYS</p>
+                    </li>
+
+                    <li class="hrs">
+                        <span class="zero">0</span><br>
+                        <p class="hrs-txt">HOURS</p>
+                    </li>
+
+                    <li class="mts">
+                        <span class="zero">0</span><br>
+                        <p class="mts-txt">MINUTES</p>
+                    </li>
+
+                    <li class="secs">
+                        <span class="zero">0</span><br>
+                        <p class="sec-txt">SECONDS</p>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+        <div class="break2">
+
+        </div>
+        <div class="responsive-column">
+            <div class="about-text-toggle">
+                <p class="about-text" onclick="fun1()">
+                    ABOUT THE EVENT
+                </p>
+            </div>
+
+
+            <div class="lorems-toggle lorem-dropdown">
+                <p class="lorem4">
+                    is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it
+                    to make a type specimen book. It has survived not only five centuries, but also the leap into
+                    electronic
+                    typesetting, remaining essentially unchanged.
+                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                </p>
+                <p class="lorem5">
+                    t has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                    Richard
+                    McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more
+                    obscure
+                    Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in
+                    classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
+                    1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil)
+                    by Cicero, written in 45 BC. This book is a treatise on the theory of ethics,
+                </p>
+                <p class="lorem6">
+                    t has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                    Richard
+                    McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more
+                    obscure
+                    Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in
+                    classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
+                    1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil)
+                    by Cicero, written in 45 BC. This book is a treatise on the theory of ethics,
+                </p>
+            </div>
+
+
+            <div class="speaker-text-toggle">
+                <p class="speaker-text" onclick="fun2()">
+                    OUR SPEAKERS
+                </p>
+            </div>
+
+            <div class="speakers-toggle speaker-dropdown ">
+                
+                <div class="slick-slider-carousel">
+                    <div class="slick-slider-toggle">
+                        <div class="slick_slider responsive">
+                            <div class="items">
+                                <div class="container1">
+                                    <div class="img-box">
+                                        <img class=" hari-img-slider"
+                                            src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/hari.png">
+                                    </div>
+                                    <div class="name-box">
+                                        <p class="hari-name-slider">Hariom Seth</p>
+                                        <p class="hari-designation-slider">Chief Executive Officer
+                                            <br>
+                                            Tagglabs
+                                        </p>
+                                       
+                                    </div>
+                                    <div class="arr-box">
+                                        <img class="arr-slider" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/bio.png">
+                                        <p class="hari-bio-slider">Full Bio</p>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="items">
+                                <div class="container2">
+                                   <div class="img-box">
+                                    <img class="lakshay-img-slider" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/lk.jpeg">
+                                   </div>
+                                        
+                                       <div class="name-box">
+                                        <p class="lakshay-name-slider">Lakshay Kalra</p>
+                                        <p class="lakshay-designation-slider">Manager - Chief Relationship
+                                            <br>
+                                            Tagglabs
+                                        </p>
+                                       </div>    
+                                        <div class="arr-box">
+                                            <img class="arr-slider" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/bio.png">
+                                            <p class="lakshay-bio-slider">Full Bio</p>
+                                        </div>                                
+                                </div>
+                            </div>
+                            <div class="items">
+                                <div class="container3">
+                                   <div class="img-box">
+                                    <img class="pankaj-img-slider" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/pankaj.png">
+                                   </div>
+                                        
+                                     <div class="name-box">
+                                        <p class="pankaj-name-slider">Pankaj Singh</p>
+                                        <p class="pankaj-designation-slider">Associate Director - Business Development
+                                            <br>
+                                            Tagglabs
+                                        </p>
+                                     </div>      
+                                      <div class="arr-box">
+                                        <img class="arr-slider" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/bio.png">
+                                        <p class="pankaj-bio-slider">Full Bio</p>
+                                   
+                                      </div>        
+                                                 
+                                </div>
+                            </div>        
+                
+                        </div>
+                
+                    </div>
+                </div>
+                
+             
+
+               
+            </div>
+
+
+            <div class="agenda-text-toggle">
+                <p class="agenda-text" onclick="fun3()">
+                    AGENDA
+                </p>
+            </div>
+
+            <div class="agendas-toggle agenda-dropdown">
+                <div class="agenda-11">
+                    <p class="p11">
+                        09:00PM-09:05PM(GMT)
+                        <br>
+                        13:00PM-13:05PM(GMT)
+                    </p>
+
+                    <p class="p12">
+                        Facilitator Introduction: Agenda Outline and Event Objectives
+                        <br>
+                        Event Objectives<br>
+                        Laylla Derizz
+                    </p>
+                    <p class="p13">
+                        Project Director, International Relations
+                        <br>
+                        Dubai Chamber of Commerce & Industry
+                    </p>
+                </div>
+
+                <div class="agenda-12">
+                    <p class="p14">
+                        09:00PM-09:05PM(GMT)
+                        <br>
+                        13:00PM-13:05PM(GMT)
+                    </p>
+                    <p class="p15">
+                        Facilitator Introduction: Agenda Outline and Event Objectives
+                        <br>
+                        Event Objectives<br>
+                        Laylla Derizz
+                    </p>
+                    <p class="p16">
+                        Project Director, International Relations
+                    </p>
+                </div>
+
+                <div class="agenda-13">
+                    <p class="p11">
+                        09:00PM-09:05PM(GMT)
+                        <br>
+                        13:00PM-13:05PM(GMT)
+                    </p>
+
+                    <p class="p12">
+                        Facilitator Introduction: Agenda Outline and Event Objectives
+                        <br>
+                        Event Objectives<br>
+                        Laylla Derizz
+                    </p>
+                    <p class="p13">
+                        Project Director, International Relations
+                        <br>
+
+                    </p>
+                </div>
+
+                <div class="agenda-14">
+                    <p class="p14">
+                        09:00PM-09:05PM(GMT)
+                        <br>
+                        13:00PM-13:05PM(GMT)
+                    </p>
+                    <p class="p15">
+                        Facilitator Introduction: Agenda Outline and Event Objectives
+
+                    </p>
+                    <p class="p16">
+                        Project Director
+
+                    </p>
+                </div>
+
+                <div class="agenda-15">
+                    <p class="p11">
+                        09:00PM-09:05PM(GMT)
+                        <br>
+                        13:00PM-13:05PM(GMT)
+                    </p>
+                    <p class="p12">
+                        Facilitator Introduction: Agenda Outline and Event Objectives
+                    </p>
+                </div>
+
+            </div>
+            <div class="contact-text-toggle">
+                <p class="contact-text" onclick="fun4()">
+                    CONTACT US
+                </p>
+            </div>
+            <div class="contacts-toggle contact-dropdown">
+
+                <div class="add1-toggle">
+                    <p class="name-text">
+                        PANKAJ SINGH
+                    </p>
+                    <p class="email-text">
+                        pankajsingh@gmail.com
+                        <br>
+                        12345667888
+                    </p>
+                </div>
+                <div class="add2-toggle">
+                    <p class="name-text">
+                        HARSHIT BANSAL
+                    </p>
+                    <p class="email-text">
+                        harshitbansal@gmail.com
+                        <br>
+                        123465677888
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="about-column" id="about-column">
+            <p class="abt-evnt-txt">
+                ABOUT THE EVENT
+            </p>
+            <p class="lorem1">
+                is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                typesetting, remaining essentially unchanged.
+                It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+            </p>
+            <p class="lorem2">
+                t has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard
+                McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure
+                Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in
+                classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
+                1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil)
+                by Cicero, written in 45 BC. This book is a treatise on the theory of ethics,
+            </p>
+            <p class="lorem3">
+                many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some
+                form, by injected humour, or randomised words which don't look even slightly believable. If you are
+                going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
+                the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
+                necessary,
+                making this the first true generator on the Internet. It uses a dictionary of over 200
+            </p>
+        </div>
+
+        <div class="speaker-column" id="speaker-column">
+            <p class="txt-speak">
+                OUR SPEAKERS
+            </p>
+            <div class="card-container1">
+                <div class="card hari-card">
+                    <img class="card-img-top hari-img"
+                        src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/hari.png" alt="Card image"
+                        style="width:100%">
+                    <div class="card-body hari-card-body">
+                        <p class="card-title hari-card-title">Hariom Seth</p>
+                        <p class="card-text hari-designatn">Chief Executive Officer
+                            <br>
+                            Tagglabs
+                        </p>
+                        <br>
+
+                        <img class="arr1" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/bio.png">
+                        <p class="bio-hari">Full Bio</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-container2">
+                <div class="card lakshay-card">
+                    <img class="card-img-top lakshay-img"
+                        src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/lk.jpeg" alt="Card image"
+                        style="width:100%">
+                    <div class="card-body lakshay-card-body">
+                        <p class="card-title lakshay-card-title">Lakshay Kalra</p>
+                        <p class="card-text lakshay-designatn">Manager - Chief Relationship
+                            <br>
+                            Tagglabs
+                        </p>
+
+                        <br>
+                        <img class="arr1" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/bio.png">
+                        <p class="bio-lakshay">Full Bio</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-container3">
+                <div class="card pankaj-card">
+                    <img class="card-img-top pankaj-img"
+                        src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/pankaj.png" alt="Card image"
+                        style="width:100%">
+                    <div class="card-body pankaj-card-body">
+                        <p class="card-title pankaj-card-title">Pankaj Singh</p>
+                        <p class="card-text pankaj-designatn">Associate Director - Business Development
+                            <br>
+                            Tagglabs
+                        </p>
+                        <br>
+
+                        <img class="arr2" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/bio.png">
+                        <p class="bio-pankaj">Full Bio</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="agenda-column" id="agenda-column">
+            <p class="agenda-txt">
+                AGENDA
+            </p>
+
+            <div class="color1"></div>
+            <div class="color2"></div>
+            <div class="color3"></div>
+            <div class="color4"></div>
+            <div class="color5"></div>
+
+            <div class="agenda-1">
+                <p class="p1">
+                    09:00PM-09:05PM(GMT)
+                    <br>
+                    13:00PM-13:05PM(GMT)
+                </p>
+            </div>
+            <div class="agenda-2">
+                <p class="p2">
+                    Facilitator Introduction: Agenda Outline and Event Objectives
+                    <br>
+                    Event Objectives<br>
+                    Laylla Derizz
+                </p>
+                <p class="p3">
+                    Project Director, International Relations
+                    <br>
+                    Dubai Chamber of Commerce & Industry
+                </p>
+            </div>
+
+            <div class="agenda-3">
+                <p class="p4">
+                    09:00PM-09:05PM(GMT)
+                    <br>
+                    13:00PM-13:05PM(GMT)
+                </p>
+            </div>
+            <div class="agenda-4">
+                <p class="p5">
+                    Facilitator Introduction: Agenda Outline and Event Objectives
+                    <br>
+                    Event Objectives<br>
+                    Laylla Derizz
+                </p>
+                <p class="p6">
+                    Project Director, International Relations
+
+
+                </p>
+            </div>
+
+            <div class="agenda-5">
+                <p class="p1">
+                    09:00PM-09:05PM(GMT)
+                    <br>
+                    13:00PM-13:05PM(GMT)
+                </p>
+            </div>
+            <div class="agenda-6">
+                <p class="p2">
+                    Facilitator Introduction: Agenda Outline and Event Objectives
+                    <br>
+                    Event Objectives<br>
+                    Laylla Derizz
+                </p>
+                <p class="p3">
+                    Project Director, International Relations
+                    <br>
+
+                </p>
+            </div>
+
+            <div class="agenda-7">
+                <p class="p4">
+                    09:00PM-09:05PM(GMT)
+                    <br>
+                    13:00PM-13:05PM(GMT)
+                </p>
+            </div>
+            <div class="agenda-8">
+                <p class="p5">
+                    Facilitator Introduction: Agenda Outline and Event Objectives
+
+                </p>
+                <p class="p6">
+                    Project Director
+
+                </p>
+            </div>
+
+            <div class="agenda-9">
+                <p class="p1">
+                    09:00PM-09:05PM(GMT)
+                    <br>
+                    13:00PM-13:05PM(GMT)
+                </p>
+            </div>
+            <div class="agenda-10">
+                <p class="p2">
+                    Facilitator Introduction: Agenda Outline and Event Objectives
+                </p>
+
+            </div>
+        </div>
+        <div class="break1">
+        </div>
+        <div class="contact-column" id="contact-column">
+            <p class="contact-txt">
+                CONTACT US:
+            </p>
+            <div class="add1">
+                <p class="p7">
+                    PANKAJ SINGH
+                </p>
+                <p class="p8">
+                    pankajsingh@gmail.com
+                    <br>
+                    12345667888
+                </p>
+            </div>
+            <div class="add2">
+                <p class="p7">
+                    HARSHIT BANSAL
+                </p>
+                <p class="p8">
+                    harshitbansal@gmail.com
+                    <br>
+                    123465677888
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="bottom">
+        <img class="bottom-logo" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Common/logo.png">
+        <p class="bottom-abt">
+            About
+        </p>
+        <p class="bottom-spk">
+            Speaker
+        </p>
+        <p class="bottom-agnd">
+            Agenda
+        </p>
+        <p class="bottom-cont">
+            Contact Us
+        </p>
+
+        <p class="regd-txt">
+            © 2021. Tagglabs All Rights Reserved.
+        </p>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/jquery-3.1.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./js/toggle.js"></script>
+    <script src="./js/slickslider.js"></script>
+    <script src="./js/popupbox.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
