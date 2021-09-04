@@ -1,0 +1,59 @@
+select{
+    /* position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 305px;
+    padding: 10px 20px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 6px solid white;
+    border-radius: 5px;
+    background-image: url("../images/arrow1.jpg");
+   
+    background-repeat: no-repeat;
+    background-size: 47px;
+    background-position: 247px 0.5px;
+    outline: none;
+    box-shadow: 0 0 20px rgba(20,20,30,0.25); */
+    width: 34vw;
+    padding: 10px 20px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    font-size: .8vw;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    background-image: url(../images/arrow1.jpg);
+    background-repeat: no-repeat;
+    background-size: 1vw;
+    background-position: 32vw 0.5px;
+    outline: none;
+    margin-left: -18px;
+}
+select::-ms-expand{
+    display: none;
+}
+select:hover{
+    border: 1px solid white;
+}
+select option{
+    background-color: white;
+    letter-spacing: 1.2px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.selected{
+    display: none;
+}

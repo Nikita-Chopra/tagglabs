@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/popupbox.css">
+</head>
+<body>
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup()">×</div>
+          <p class="registr-txt">Enter your Registered Email Id</p>
+         <br>
+         <div class="input-box">
+            <input type="email" class="input-txt" placeholder=""><button class="btn-submit-popup">SUBMIT</button>
+         </div>
+         
+        </div>
+      </div>
+       
+      <button onclick="togglePopup()">Show Popup</button>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/jquery-3.1.1.js"></script>
+<script src="./js/popupbox.js"></script>
+</body>
+</html>

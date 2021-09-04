@@ -1,0 +1,117 @@
+
+*{
+    overflow-x: hidden;
+}
+
+
+body{
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y:scroll
+}
+
+/* SECTION--1 */
+/* PART--1 */
+
+
+
+.header-img{
+    height: 35vh;
+    width: 100%;
+    background-image: url(https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/reg-banner.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* background-position: top; */
+    object-position: top;
+    object-fit: cover;
+}
+
+.text-column{
+    height: 8vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.text{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+    font-size: 1vw;
+    
+}
+
+.button-back{
+    height: 10vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-top: -0.5vw;
+}
+
+.btn-back{
+    outline: none;
+    height: 3.4vw;
+    width: 15vw;
+    border-radius: 50px;
+    color: white;
+    place-self: center;
+    grid-area: 1 / 1 / 2 / 2;
+    font-size: 1.1vw;
+    background-color: rgb(235, 51, 55);
+    border: 1px solid rgb(235, 51, 55);
+}
+
+.break{
+    height: 5vh;
+    width: 100%;
+}
+
+.bk-img{
+    height: auto;
+    width: 1.5vw;
+    margin-right: 10px;
+}
+
+.footer{
+    height: 18vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+
+
+.color1{
+    z-index: -1;
+    background-color: #eff0f1;
+    grid-column: 1/7;
+    grid-row: 1/2;
+}
+
+.note-text{
+    grid-column: 2/6;
+    grid-row: 1/2;
+    align-self: center;
+    padding-top: .7vw;
+    justify-self: center;
+    font-size: 1vw;
+    font-weight: 500;
+    overflow: hidden!important;
+}
+
+.logo-img{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    align-self: center;
+    /* justify-self: center; */
+    height: auto;
+    width: 10vw;
+    margin-left: 2vw;
+}

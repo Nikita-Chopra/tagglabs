@@ -1,0 +1,185 @@
+
+.slick-slider-carousel{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #eb3337;
+}
+
+.slick-slider-toggle{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.slick_slider{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+button.slick-prev.slick-arrow{
+    height: 5rem!important;
+    width: 5rem!important;
+}
+
+button.slick-next.slick-arrow{
+    height: 5rem!important;
+    width: 5rem!important;
+}
+
+.slick-next:before, .slick-prev:before {
+    font-size: 25px!important;
+}
+
+.slick-next:before, .slick-prev:before {
+    font-size: 25px!important;
+}
+
+
+
+
+
+.slick-slider-draggable{
+    height: 100%!important;
+    width: 100%!important;
+}
+
+.container1{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container2{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container3{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+
+.hari-img-slider{
+    border-radius: 50px 0 50px 0;
+    height: auto;
+    width: 14rem;
+}
+
+.lakshay-img-slider{
+    border-radius: 50px 0 50px 0;
+    height: auto;
+    width: 14rem;
+}
+
+.pankaj-img-slider{
+    border-radius: 50px 0 50px 0;
+    height: auto;
+    width: 14rem;
+}
+
+
+.hari-name-slider{
+    color: white;
+    font-size: 1rem;
+}
+
+.lakshay-name-slider{
+    color: white;
+    font-size: 1rem;
+}
+
+.pankaj-name-slider{
+    color: white;
+    font-size: 1rem;
+}
+
+.hari-designation-slider{
+    color: white;
+    font-size: 1rem;
+}
+
+.lakshay-designation-slider{
+    color: white;
+    font-size: 1rem;
+}
+
+.pankaj-designation-slider{
+    color: white;
+    font-size: 1rem;
+}
+
+.arr-slider{
+    height: auto;
+    width: .7rem;
+}
+
+.hari-bio-slider{
+    margin-top: -17px;
+    margin-left: 26px;
+    color: black;
+    font-size: 1rem;
+}
+
+.lakshay-bio-slider{
+    margin-top: -17px;
+    margin-left: 26px;
+    color: black;
+    font-size: 1rem;
+}
+
+.pankaj-bio-slider{
+    margin-top: -17px;
+    margin-left: 26px;
+    color: black;
+    font-size: 1rem;
+}
+
+
+.items{
+    height: 80vh;
+    width: 419px;
+}
+
+
+
+
+
+
+
+.slick-center{
+    transform: scale(1.2);
+      
+}
