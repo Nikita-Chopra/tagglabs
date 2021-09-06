@@ -1,9 +1,13 @@
 function reg(){
     console.log("hiiii");
-    location.href = "index2.html";
+    location.href = "./pages/registration1.html";
 }
 
 function about(){
     console.log("hiiiii")
     $('#about-column').show();
 }
+
+
+
+

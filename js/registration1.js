@@ -30,7 +30,7 @@
 
    {
      console.log("fill entries");
-     location.href = "index3.html";
+     location.href = "./registration2.html";
    } 
    else {
      document.getElementById('small-tag').innerHtml = "plz fill the entries";

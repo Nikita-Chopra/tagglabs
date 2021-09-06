@@ -45,9 +45,9 @@ select{
 select::-ms-expand{
     display: none;
 }
-select:hover{
+/* select:hover{
     border: 1px solid white;
-}
+} */
 select option{
     background-color: white;
     letter-spacing: 1.2px;

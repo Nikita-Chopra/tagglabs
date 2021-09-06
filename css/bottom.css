@@ -26,6 +26,8 @@
     /* height: 100%; */
     margin-top: 15px;
     font-size: .8vw;
+    color: black!important;
+    font-weight: 500;
 }
 
 .bottom-spk{
@@ -35,6 +37,8 @@
     align-self: center;
     margin-top: 15px;
     font-size: .8vw;
+    color: black!important;
+    font-weight: 500;
 }
 
 .bottom-agnd{
@@ -44,6 +48,8 @@
     align-self: center;
     margin-top: 15px;
     font-size: .8vw;
+    color: black!important;
+    font-weight: 500;
 }
 
 .bottom-cont{
@@ -53,6 +59,8 @@
     align-self: center;
     margin-top: 15px;
     font-size: .8vw;
+    color: black!important;
+    font-weight: 500;
 }
 
 .regd-txt{
@@ -62,4 +70,6 @@
     font-size: .8vw;
     color: black;
     height: 100%;
+    font-weight: 500;
+    margin-top: .7vw
 }

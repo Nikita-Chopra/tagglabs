@@ -187,39 +187,39 @@
 }
 
 .day-txt {
-    color: white;
-    font-size: .9vw;
     margin-left: 1.8vw;
-    margin-top: 54%;
+    margin-top: 80%;
+    color: white;
+    font-size: .8vw;
 }
 
 .hrs-txt {
     color: white;
-    font-size: .9vw;
+    font-size: .8vw;
     /* margin-left: 28px; */
     /* margin-top: 10px; */
-    margin-left: 1.4vw;
-    margin-top: 54%;
+    margin-left: 1.5vw;
+    margin-top: 80%;
 }
 
 
 .mts-txt {
     color: white;
-    font-size: .9vw;
+    font-size: .8vw;
     /* margin-left: 21px; */
     /* margin-top: 10px; */
-    margin-left: 1vw;
-    margin-top: 54%;
+    margin-left: 1.1vw;
+    margin-top: 55%;
 }
 
 
 .sec-txt {
     color: white;
-    font-size: .9vw;
+    font-size: .8vw;
     /* margin-left: 19px; */
     /* margin-top: 10px; */
-    margin-left: .8vw;
-    margin-top: 54%;
+    margin-left: .9vw;
+    margin-top: 55%;
 }
 
 
@@ -280,7 +280,7 @@
 
 
 .speaker-column{
-    height: 97vh;
+    height: 90vh;
     width: 100%;
     display: grid;
     background-color: #eb3337;
@@ -318,7 +318,7 @@
 
 .hari-img {
     width: 18vw !important;
-    height: 65% !important;
+    height: 60% !important;
 }
 
 .hari-card-body {
@@ -350,15 +350,17 @@
     height: auto;
     width: 1rem;
     margin-top: -25px;
+    cursor: pointer;
 }
 
 
 
 .bio-hari {
     margin-left: 20px;
-    margin-top: -34px;
+    margin-top: -10%;
     font-size: 1.2vw;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .card-container2 {
@@ -381,7 +383,7 @@
 
 .lakshay-img {
     width: 18vw !important;
-    height: 65% !important;
+    height: 60% !important;
 }
 
 .lakshay-card-body {
@@ -406,13 +408,15 @@
     margin-left: -15px;
     height: auto;
     width: 1rem;
+    cursor: pointer;
 }
 
 .bio-lakshay {
     margin-left: 20px;
-    margin-top: -34px;
+    margin-top: -10%;
     font-size: 1.2vw;
     font-weight: 600;
+    cursor: pointer;
 }
 
 
@@ -436,7 +440,7 @@
 
 .pankaj-img {
     width: 18vw !important;
-    height: 65% !important;
+    height: 60% !important;
 }
 
 .pankaj-card-body {
@@ -461,14 +465,23 @@
     margin-left: -15px;
     height: auto;
     width: 1vw;
+    cursor: pointer;
 }
 
 .bio-pankaj {
     margin-left: 20px;
-    margin-top: -34px;
+    margin-top: -10%;
     font-size: 1.2vw;
     font-weight: 600;
+    cursor: pointer;
 }
+
+
+
+
+
+
+
 
 
 /* PART--4 */

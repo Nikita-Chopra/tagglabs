@@ -16,9 +16,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="./css/slickslider.css">
-    <link rel="stylesheet" href="./css/landscape(481-768).css">
+  <link rel = "stylesheet" href="./css/index(responsive).css">
     <link rel="stylesheet" href="./css/popupbox.css">
-    <link rel="stylesheet" href="./css/portrait(481-768).css">
+    <link rel="stylesheet" href="./css/popup(responsive).css">
+    
+    
 
 </head>
 
@@ -85,25 +87,25 @@
                 <nav class="navbar nav-icons">
                     <ul class="navbar-nav navbar-nav-icons">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" target="_blank" href="https://www.facebook.com/Tagglabs/">
                                 <img class="fb-img"
                                     src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/fb.png">
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" target="_blank" href="https://twitter.com/tagglabs?lang=en">
                                 <img class="twt-img"
                                     src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/twitter.png">
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" target="_blank" href="https://www.instagram.com/tagglabs/?hl=en">
                                 <img class="inst-img"
                                     src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/instagram.png">
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" target="_blank" href="https://in.linkedin.com/company/tagglabs-technologies-pvt-ltd-">
                                 <img class="in-img"
                                     src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/linkedin.png">
                             </a>
@@ -126,23 +128,55 @@
             <nav class="navbar navbar-expand navbar-time">
                 <ul class="navbar-nav time-navbar">
                     <li class="day">
-                        <span class="zero">0</span><br>
-                        <p class="day-txt">DAYS</p>
+                        <div class="day1">
+                            <div class="a">
+                                <span class="zero">0</span>
+                            </div>
+                            <div class="b">
+                                <p class="day-txt">DAYS</p>
+                            </div>
+                          
+                        </div>
+                        
                     </li>
 
                     <li class="hrs">
-                        <span class="zero">0</span><br>
-                        <p class="hrs-txt">HOURS</p>
+                        <div class="day1">
+                            <div class="a">
+                                <span class="zero">0</span>
+                            </div>
+                           <div class="b">
+                            <p class="hrs-txt">HOURS</p>
+                           </div>
+                           
+                        </div>
+                       
                     </li>
 
                     <li class="mts">
-                        <span class="zero">0</span><br>
-                        <p class="mts-txt">MINUTES</p>
+                        <div class="day1">
+                            <div class="a">
+                                <span class="zero">0</span><br>
+                            </div>
+                         <div class="b">
+                            <p class="mts-txt">MINUTES</p>
+                         </div>
+                            
+                        </div>
+                        
                     </li>
 
                     <li class="secs">
-                        <span class="zero">0</span><br>
-                        <p class="sec-txt">SECONDS</p>
+                        <div class="day1">
+                            <div class="a">
+                                <span class="zero">0</span><br>
+                            </div>
+                            <div class="b">
+                                <p class="sec-txt">SECONDS</p>
+                            </div>
+                            
+                        </div>
+                        
                     </li>
                 </ul>
             </nav>
@@ -453,12 +487,48 @@
                         </p>
                         <br>
 
-                        <img class="arr1" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/bio.png">
-                        <p class="bio-hari">Full Bio</p>
+                        <img class="arr1" onclick="togglePopuphari()" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/bio.png" onclick="haribio()">
+                        <p class="bio-hari" onclick="togglePopuphari()">Full Bio</p>
                     </div>
                 </div>
             </div>
 
+            <div class=" popup" id="popup-2">
+                <div class="overlay"></div>
+                <div class="content2">
+                    <div class="close-btn" onclick="togglePopuphari()">×</div>
+                    <img class="hari-image" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/hari.png"></img>
+                    <p class="hari-name">Hariom Seth</p>
+                    <p class="hari-designation">Chief Executive Officer</p>
+                    <p class="hari-tagglabs">Tagglabs</p>
+                    
+    
+                </div>
+            </div>
+
+            <div class=" popup" id="popup-3">
+                <div class="overlay"></div>
+                <div class="content2">
+                    <div class="close-btn" onclick="togglePopuplakshay()">×</div>
+                    <img class="lakshay-image" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/lk.jpeg"></img>
+                    <p class="lakshay-name">Lakshay Kalra</p>
+                    <p class="lakshay-designation">Manager - Chief Relationships</p>
+                    <p class="lakshay-tagglabs">Tagglabs</p>              
+    
+                </div>
+            </div>
+
+            <div class=" popup" id="popup-4">
+                <div class="overlay"></div>
+                <div class="content2">
+                    <div class="close-btn" onclick="togglePopuppankaj()">×</div>
+                    <img class="pankaj-image" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/pankaj.png"></img>
+                    <p class="pankaj-name">Pankaj Singh</p>
+                    <p class="pankaj-designation">Associate Director - Business Director</p>
+                    <p class="pankaj-tagglabs">Tagglabs</p>              
+    
+                </div>
+            </div>
             <div class="card-container2">
                 <div class="card lakshay-card">
                     <img class="card-img-top lakshay-img"
@@ -472,8 +542,8 @@
                         </p>
 
                         <br>
-                        <img class="arr1" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/bio.png">
-                        <p class="bio-lakshay">Full Bio</p>
+                        <img class="arr1" onclick="togglePopuplakshay()" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/bio.png" onclick="lakshaybio()">
+                        <p class="bio-lakshay" onclick="togglePopuplakshay()">Full Bio</p>
                     </div>
                 </div>
             </div>
@@ -491,8 +561,8 @@
                         </p>
                         <br>
 
-                        <img class="arr2" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/bio.png">
-                        <p class="bio-pankaj">Full Bio</p>
+                        <img class="arr2" onclick="togglePopuppankaj()" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/bio.png" onclick="pankajbio()">
+                        <p class="bio-pankaj" onclick="togglePopuppankaj()">Full Bio</p>
                     </div>
                 </div>
             </div>
@@ -639,7 +709,7 @@
     <section class="bottom">
         <img class="bottom-logo" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Common/logo.png">
 
-        <p class="bottom-abt" onclick="about()">
+        <!-- <p class="bottom-abt" onclick="about()">
             About
         </p>
         <p class="bottom-spk">
@@ -650,7 +720,23 @@
         </p>
         <p class="bottom-cont">
             Contact Us
-        </p>
+        </p> -->
+
+       
+            <a class="bottom-abt" id="about" href="#about-column">About</a>
+      
+       
+            <a class="bottom-spk" id="speaker" href="#speaker-column">Speaker</a>
+       
+       
+            <a class="bottom-agnd" id="agenda" href="#agenda-column">Agenda</a>
+        
+            <a class="bottom-cont" id="contact-us" href="#contact-column">Contact Us</a>
+       
+
+
+
+
 
         <p class="regd-txt">
             © 2021. Tagglabs All Rights Reserved.
@@ -677,7 +763,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./js/jquery-3.1.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="./js/toggle.js"></script>
