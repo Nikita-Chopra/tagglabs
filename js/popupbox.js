@@ -1,6 +1,17 @@
+
+// SECTION---1
+
+
 function togglePopup(){
-    document.getElementById("popup-1").classList.toggle("active");
-  }
+  document.getElementById("popup-1").classList.toggle("active");
+}
+
+
+
+
+// SPEAKER SECTION POPUP
+
+
 
 
   function togglePopuphari(){

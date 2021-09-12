@@ -1,6 +1,16 @@
+/* 
+MEDIA QUERY 320-480 PORTRAIT */
+
+/* PORTRAIT MODE */
+
+
 @media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
 
-    /* REGISTRATION--2 */
+
+    *{
+        overflow-x: hidden;
+    }
+    
 
     .header {
         height: 20vh;
@@ -15,22 +25,22 @@
 
 
     .header-img {
-        height: 20vh;
+        height: 100%;
         width: 160%;
         background-image: url(https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/reg-banner.png);
         background-size: 100% 100%;
         background-repeat: no-repeat;
         /* background-position: top; */
         object-position: top;
-        object-fit: contain;
+        object-fit: cover;
     }
 
     .text-column {
-        height: 13vh;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: 1fr;
+        height: 15vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: 1fr;
     }
 
     .text {
@@ -45,602 +55,21 @@
     }
 
     .button-back {
-        height: 10vh;
+        height: 12vh;
         width: 100%;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        margin-top: -0.5vw;
     }
 
     .btn-back {
-        outline: none !important;
-        height: 2.5rem;
-        width: 12rem;
-        border-radius: 50px;
-        color: white;
-        place-self: center;
-        grid-area: 1 / 1 / 2 / 2;
-        font-size: .8rem;
-        background-color: rgb(235, 51, 55);
-        border: 1px solid rgb(235, 51, 55);
-    }
-
-    .break {
-        height: 10vh;
-        width: 100%;
-    }
-
-    .bk-img {
-        height: auto;
-        width: .9rem;
-        margin-right: 10px;
-    }
-
-    .footer {
-        height: 35vh;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 1fr 1fr;
-    }
-
-
-
-    .color1 {
-        z-index: -1;
-        background-color: #eff0f1;
-        grid-column: 1/7;
-        grid-row: 1/2;
-    }
-
-    .note-text {
-        grid-column: 2/6;
-        grid-row: 1/2;
-        align-self: center;
-        justify-self: center;
-        font-size: .6rem;
-        font-weight: 500;
-        overflow: hidden !important;
-    }
-
-    .logo-img {
-        grid-column: 1/4;
-        grid-row: 2/3;
-        align-self: center;
-        justify-self: center;
-        height: auto;
-        width: 7rem;
-        margin-left: 2vw;
-        margin-top: -25px;
-    }
-
-}
-
-@media (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
-
-    /* REGISTRATION--2 */
-
-    .header {
-        height: 20vh;
-        width: 100%;
-        background-image: url(https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/reg-banner.png);
-        /* background-size: 100% 100%; */
-        background-repeat: no-repeat;
-        /* background-position: top; */
-        object-position: center;
-        object-fit: contain;
-    }
-
-
-    .header-img {
-        height: 20vh;
-        width: 160%;
-        background-image: url(https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/reg-banner.png);
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        /* background-position: top; */
-        object-position: top;
-        object-fit: contain;
-    }
-
-    .text-column {
-        height: 13vh;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: 1fr;
-    }
-
-    .text {
-        grid-column: 2/10;
-        grid-row: 1/2;
-        justify-self: center;
-        align-self: center;
-        font-size: .9rem;
-        text-align: center;
-        font-weight: 600;
-
-    }
-
-    .button-back {
-        height: 10vh;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        margin-top: -0.5vw;
-    }
-
-    .btn-back {
-        outline: none !important;
-        height: 2.5rem;
-        width: 12rem;
-        border-radius: 50px;
-        color: white;
-        place-self: center;
-        grid-area: 1 / 1 / 2 / 2;
-        font-size: .8rem;
-        background-color: rgb(235, 51, 55);
-        border: 1px solid rgb(235, 51, 55);
-    }
-
-    .break {
-        height: 10vh;
-        width: 100%;
-    }
-
-    .bk-img {
-        height: auto;
-        width: .9rem;
-        margin-right: 10px;
-    }
-
-    .footer {
-        height: 35vh;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 1fr 1fr;
-    }
-
-
-
-    .color1 {
-        z-index: -1;
-        background-color: #eff0f1;
-        grid-column: 1/7;
-        grid-row: 1/2;
-    }
-
-    .note-text {
-        grid-column: 2/6;
-        grid-row: 1/2;
-        align-self: center;
-        justify-self: center;
-        font-size: .6rem;
-        font-weight: 500;
-        overflow: hidden !important;
-    }
-
-    .logo-img {
-        grid-column: 1/4;
-        grid-row: 2/3;
-        align-self: center;
-        justify-self: center;
-        height: auto;
-        width: 7rem;
-        margin-left: 2vw;
-        margin-top: -25px;
-    }
-
-}
-
-
-/* MEDIA QUERY 481-768 */
-
-@media (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
-
-    /* REGISTRATION--2 */
-    .header {
-        height: 30vh;
-        width: 100%;
-
-    }
-
-
-    .header-img {
-        height: 100%;
-        width: 100%;
-        background-image: url(https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/reg-banner.png);
-        /* background-size: 100% 100%; */
-        background-repeat: no-repeat;
-        /* background-position: top; */
-        object-position: top;
-        object-fit: contain;
-    }
-
-    .text-column {
-        height: 13vh;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: 1fr;
-    }
-
-    .text {
-        grid-column: 2/10;
-        grid-row: 1/2;
-        justify-self: center;
-        align-self: center;
-        font-size: 1.2rem;
-        text-align: center;
-        font-weight: 600;
-
-    }
-
-    .button-back {
-        height: 20vh;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        margin-top: -0.5vw;
-    }
-
-    .btn-back {
-        outline: none !important;
-        height: 3.3rem;
-        width: 15rem;
-        border-radius: 50px;
-        color: white;
-        place-self: center;
-        grid-area: 1 / 1 / 2 / 2;
-        font-size: 1rem;
-        background-color: rgb(235, 51, 55);
-        border: 1px solid rgb(235, 51, 55);
-    }
-
-    .break {
-        height: 10vh;
-        width: 100%;
-    }
-
-    .bk-img {
-        height: auto;
-        width: 1.1rem;
-        margin-right: 10px;
-    }
-
-    .footer {
-        height: 35vh;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 1fr 1fr;
-    }
-
-
-
-    .color1 {
-        z-index: -1;
-        background-color: #eff0f1;
-        grid-column: 1/7;
-        grid-row: 1/2;
-    }
-
-    .note-text {
-        grid-column: 2/6;
-        grid-row: 1/2;
-        align-self: center;
-        justify-self: center;
-        font-size: .9rem;
-        font-weight: 500;
-        overflow: hidden !important;
-    }
-
-    .logo-img {
-        grid-column: 1/2;
-        grid-row: 2/3;
-        align-self: center;
-        justify-self: center;
-        height: auto;
-        width: 10rem;
-        margin-left: 2vw;
-    }
-
-
-}
-
-@media (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
-
-    /* REGISTRATION--2 */
-
-    .header {
-        height: 30vh;
-        width: 100%;
-
-    }
-
-
-    .header-img {
-        height: 100%;
-        width: 100%;
-        background-image: url(https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/reg-banner.png);
-        /* background-size: 100% 100%; */
-        background-repeat: no-repeat;
-        /* background-position: top; */
-        object-position: top;
-        object-fit: contain;
-    }
-
-    .text-column {
-        height: 13vh;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: 1fr;
-    }
-
-    .text {
-        grid-column: 2/10;
-        grid-row: 1/2;
-        justify-self: center;
-        align-self: center;
-        font-size: .7rem;
-        text-align: center;
-        font-weight: 600;
-
-    }
-
-    .button-back {
-        height: 20vh;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        margin-top: -0.5vw;
-    }
-
-    .btn-back {
-        outline: none !important;
-        height: 2.2rem;
-        width: 11rem;
-        border-radius: 50px;
-        color: white;
-        place-self: center;
-        grid-area: 1 / 1 / 2 / 2;
-        font-size: .8rem;
-        background-color: rgb(235, 51, 55);
-        border: 1px solid rgb(235, 51, 55);
-    }
-
-    .break {
-        height: 10vh;
-        width: 100%;
-    }
-
-    .bk-img {
-        height: auto;
-        width: .9rem;
-        margin-right: 10px;
-    }
-
-    .footer {
-        height: 35vh;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 1fr 1fr;
-    }
-
-
-
-    .color1 {
-        z-index: -1;
-        background-color: #eff0f1;
-        grid-column: 1/7;
-        grid-row: 1/2;
-    }
-
-    .note-text {
-        grid-column: 2/6;
-        grid-row: 1/2;
-        align-self: center;
-        justify-self: center;
-        font-size: .5rem;
-        font-weight: 500;
-        overflow: hidden !important;
-    }
-
-    .logo-img {
-        grid-column: 1/2;
-        grid-row: 2/3;
-        align-self: center;
-        justify-self: center;
-        height: auto;
-        width: 6rem;
-        margin-left: 2vw;
-    }
-
-}
-
-
-/* MEDIA QUERY 769-1024 */
-
-
-@media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
-
-    /* REGISTRATION--2 */
-
-    .header {
-        height: 30vh;
-        width: 100%;
-
-    }
-
-
-    .header-img {
-        height: 100%;
-        width: 100%;
-        background-image: url(https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/reg-banner.png);
-        /* background-size: 100% 100%; */
-        background-repeat: no-repeat;
-        /* background-position: top; */
-        object-position: top;
-        object-fit: contain;
-    }
-
-    .text-column {
-        height: 13vh;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: 1fr;
-    }
-
-    .text {
-        grid-column: 2/10;
-        grid-row: 1/2;
-        justify-self: center;
-        align-self: center;
-        font-size: 1.2rem;
-        text-align: center;
-        font-weight: 600;
-
-    }
-
-    .button-back {
-        height: 20vh;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        margin-top: -0.5vw;
-    }
-
-    .btn-back {
-        outline: none !important;
-        height: 3.3rem;
-        width: 15rem;
-        border-radius: 50px;
-        color: white;
-        place-self: center;
-        grid-area: 1 / 1 / 2 / 2;
-        font-size: 1rem;
-        background-color: rgb(235, 51, 55);
-        border: 1px solid rgb(235, 51, 55);
-    }
-
-    .break {
-        height: 10vh;
-        width: 100%;
-    }
-
-    .bk-img {
-        height: auto;
-        width: 1.1rem;
-        margin-right: 10px;
-    }
-
-    .footer {
-        height: 35vh;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 1fr 1fr;
-    }
-
-
-
-    .color1 {
-        z-index: -1;
-        background-color: #eff0f1;
-        grid-column: 1/7;
-        grid-row: 1/2;
-    }
-
-    .note-text {
-        grid-column: 2/6;
-        grid-row: 1/2;
-        align-self: center;
-        justify-self: center;
-        font-size: .9rem;
-        font-weight: 500;
-        overflow: hidden !important;
-    }
-
-    .logo-img {
-        grid-column: 1/2;
-        grid-row: 2/3;
-        align-self: center;
-        justify-self: center;
-        height: auto;
-        width: 10rem;
-        margin-left: 2vw;
-    }
-
-}
-
-@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
-
-    /* REGISTRATION--2 */
-
-    .header {
-        height: 30vh;
-        width: 100%;
-
-    }
-
-
-    .header-img {
-        height: 100%;
-        width: 100%;
-        background-image: url(https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/reg-banner.png);
-        /* background-size: 100% 100%; */
-        background-repeat: no-repeat;
-        /* background-position: top; */
-        object-position: top;
-        object-fit: contain;
-    }
-
-    .text-column {
-        height: 13vh;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: 1fr;
-    }
-
-    .text {
-        grid-column: 2/10;
-        grid-row: 1/2;
-        justify-self: center;
-        align-self: center;
-        font-size: .9rem;
-        text-align: center;
-        font-weight: 600;
-
-    }
-
-    .button-back {
-        height: 20vh;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        margin-top: -0.5vw;
-    }
-
-    .btn-back {
-        outline: none !important;
-    height: 2.2rem;
+        height: 3rem;
     width: 12rem;
     border-radius: 50px;
     color: white;
     place-self: center;
     grid-area: 1 / 1 / 2 / 2;
-    font-size: .7rem;
+    font-size: .9rem;
     background-color: rgb(235, 51, 55);
     border: 1px solid rgb(235, 51, 55);
     }
@@ -652,45 +81,1162 @@
 
     .bk-img {
         height: auto;
-    width: 1rem;
-    margin-right: 12px;
+        width: 1rem;
+        margin-right: 10px;
     }
 
     .footer {
-        height: 35vh;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 1fr 1fr;
+        height: auto;
+    width: 100%;
+    
     }
 
+    .footer-note{
+        height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
+    }
 
 
     .color1 {
         z-index: -1;
         background-color: #eff0f1;
-        grid-column: 1/7;
+        grid-column: 1/9;
         grid-row: 1/2;
     }
 
     .note-text {
-        grid-column: 2/6;
+        grid-column: 2/8;
+    grid-row: 1/2;
+    align-self: center;
+    padding-top: .5rem;
+    justify-self: center;
+    font-size: .8rem;
+    font-weight: 500;
+    overflow: hidden!important;
+    }
+
+.footer-img{
+    height: 10vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: 1fr;
+}
+
+
+    .logo-img {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        align-self: center;
+        height: auto;
+        width: 7rem;
+        justify-self: center;
+
+    }
+
+}
+
+
+
+
+
+/* MEDIA QUERY 481-768 */
+
+@media (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+
+    *{
+        overflow-x: hidden;
+    }
+    
+
+    .header {
+        height: 20vh;
+        width: 100%;
+        background-image: url(https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/reg-banner.png);
+        /* background-size: 100% 100%; */
+        background-repeat: no-repeat;
+        /* background-position: top; */
+        object-position: center;
+        object-fit: contain;
+    }
+
+
+    .header-img {
+        height: 100%;
+        width: 160%;
+        background-image: url(https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/reg-banner.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        /* background-position: top; */
+        object-position: top;
+        object-fit: cover;
+    }
+
+    .text-column {
+        height: 15vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: 1fr;
+    }
+
+    .text {
+        grid-column: 2/10;
+        grid-row: 1/2;
+        justify-self: center;
+        align-self: center;
+        font-size: .9rem;
+        text-align: center;
+        font-weight: 600;
+
+    }
+
+    .button-back {
+        height: 12vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .btn-back {
+        height: 3rem;
+    width: 12rem;
+    border-radius: 50px;
+    color: white;
+    place-self: center;
+    grid-area: 1 / 1 / 2 / 2;
+    font-size: .9rem;
+    background-color: rgb(235, 51, 55);
+    border: 1px solid rgb(235, 51, 55);
+    }
+
+    .break {
+        height: 10vh;
+        width: 100%;
+    }
+
+    .bk-img {
+        height: auto;
+        width: 1rem;
+        margin-right: 10px;
+    }
+
+  
+    .footer {
+        height: auto;
+    width: 100%;
+    
+    }
+
+    .footer-note{
+        height: 20vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
+    }
+
+
+    .color1 {
+        z-index: -1;
+        background-color: #eff0f1;
+        grid-column: 1/9;
+        grid-row: 1/2;
+    }
+
+    .note-text {
+        grid-column: 2/8;
+    grid-row: 1/2;
+    align-self: center;
+    padding-top: .5rem;
+    justify-self: center;
+    font-size: .8rem;
+    font-weight: 500;
+    overflow: hidden!important;
+    }
+
+.footer-img{
+    height: 10vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: 1fr;
+}
+
+
+    .logo-img {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        align-self: center;
+        height: auto;
+        width: 7rem;
+        justify-self: center;
+
+    }
+
+}
+
+
+
+
+/* MEDIA QUERY 768 - 1024 */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+
+
+    *{
+        overflow-x: hidden;
+    }
+
+
+    .header {
+        height: 20vh;
+        width: 100%;
+        background-image: url(https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/reg-banner.png);
+        /* background-size: 100% 100%; */
+        background-repeat: no-repeat;
+        /* background-position: top; */
+        object-position: center;
+        object-fit: contain;
+    }
+
+
+    .header-img {
+        height: 20vh;
+        width: 160%;
+        background-image: url(https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/reg-banner.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        /* background-position: top; */
+        object-position: top;
+        object-fit: contain;
+    }
+
+    .text-column {
+        height: 13vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .text {
+        grid-column: 2/10;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+    font-size: 2.5vw;
+    text-align: center;
+    font-weight: 600;
+
+    }
+
+    .button-back {
+        height: 10vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+
+    }
+
+    .btn-back {
+        outline: none !important;
+        height: 4rem;
+        width: 16rem;
+        border-radius: 50px;
+        color: white;
+        place-self: center;
+        grid-area: 1 / 1 / 2 / 2;
+        font-size: 2.2vw;
+        background-color: rgb(235, 51, 55);
+        border: 1px solid rgb(235, 51, 55);
+    }
+
+    .break {
+        height: 10vh;
+        width: 100%;
+    }
+
+    .bk-img {
+        height: auto;
+    width: 1.5rem;
+    }
+
+  
+    .footer {
+        height: auto;
+        width: 100%;
+    
+    }
+
+    .footer-note{
+        height: 15vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+
+    .color1 {
+        z-index: -1;
+    background-color: #eff0f1;
+    grid-column: 1/9;
+    grid-row: 1/2;
+    }
+
+    .note-text {
+        grid-column: 2/8;
+    grid-row: 1/2;
+    align-self: center;
+    padding-top: .5rem;
+    justify-self: center;
+    font-size: 2vw;
+    font-weight: 500;
+    overflow: hidden!important;
+    }
+
+.footer-img{
+    height: 10vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: 1fr;
+}
+
+
+    .logo-img {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        align-self: center;
+        height: auto;
+        width: 10rem;
+        justify-self: center;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY 1080-1920 */
+
+
+
+@media (min-width: 1080px) and (max-width: 1920px) and (orientation: portrait) {
+
+
+    *{
+        overflow-x: hidden;
+    }
+
+
+    .header {
+        height: 20vh;
+        width: 100%;
+        background-image: url(https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/reg-banner.png);
+        /* background-size: 100% 100%; */
+        background-repeat: no-repeat;
+        /* background-position: top; */
+        object-position: center;
+        object-fit: contain;
+    }
+
+
+    .header-img {
+        height: 20vh;
+        width: 160%;
+        background-image: url(https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/reg-banner.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        /* background-position: top; */
+        object-position: top;
+        object-fit: contain;
+    }
+
+    .text-column {
+        height: 13vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .text {
+        grid-column: 2/10;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+    font-size: 3vw;
+    text-align: center;
+    font-weight: 600;
+
+    }
+
+    .button-back {
+        height: 10vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+
+    }
+
+    .btn-back {
+        outline: none !important;
+        height: 7rem;
+        width: 30rem;
+        border-radius: 50px;
+        color: white;
+        place-self: center;
+        grid-area: 1 / 1 / 2 / 2;
+        font-size: 2.2rem;
+        background-color: rgb(235, 51, 55);
+        border: 1px solid rgb(235, 51, 55);
+    }
+
+    .break {
+        height: 10vh;
+        width: 100%;
+    }
+
+    .bk-img {
+        height: auto;
+    width: 2.5rem;
+    margin-right: 20px;
+    }
+
+  
+    .footer {
+        height: auto;
+        width: 100%;
+    
+    }
+
+    .footer-note{
+        height: 15vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+
+    .color1 {
+        z-index: -1;
+    background-color: #eff0f1;
+    grid-column: 1/9;
+    grid-row: 1/2;
+    }
+
+    .note-text {
+        grid-column: 2/8;
+    grid-row: 1/2;
+    align-self: center;
+    padding-top: .5rem;
+    justify-self: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    overflow: hidden!important;
+    }
+
+.footer-img{
+    height: 10vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: 1fr;
+}
+
+
+    .logo-img {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        align-self: center;
+        height: auto;
+        width: 20rem;
+        justify-self: center;
+
+    }
+
+}
+
+
+/* LANDSCAPE MODE */
+/* MEDIA QUERY FULL HD */
+
+@media (min-width: 1080px) and (max-width: 1920px) and (orientation: LANDSCAPE) {
+
+
+    *{
+        overflow-x: hidden;
+    }
+
+    body{
+        height: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-y:scroll
+    }
+
+    .header-img{
+        height: 35vh;
+        width: 100%;
+        background-image: url(https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/reg-banner.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        /* background-position: top; */
+        object-position: top;
+        object-fit: cover;
+    }
+    
+    .text-column{
+        height: 8vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+    .text{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-self: center;
+        align-self: center;
+        font-size: 1vw;
+        
+    }
+    
+    .button-back{
+        height: 10vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin-top: -0.5vw;
+    }
+    
+    .btn-back{
+        outline: none;
+        height: 3.4vw;
+        width: 15vw;
+        border-radius: 50px;
+        color: white;
+        place-self: center;
+        grid-area: 1 / 1 / 2 / 2;
+        font-size: 1.1vw;
+        background-color: rgb(235, 51, 55);
+        border: 1px solid rgb(235, 51, 55);
+    }
+    
+    .break{
+        height: 5vh;
+        width: 100%;
+    }
+    
+    .bk-img{
+        height: auto;
+        width: 1.5vw;
+        margin-right: 10px;
+    }
+    
+    .footer{
+        height: auto;
+        width: 100%;
+    }
+    
+    .footer-note{
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: 1fr;
+        height: 12vh;
+    }
+    
+    .note-txt{
+        grid-column: 2/8;
+        grid-row: 1/2;
+        align-self: center;
+        padding-top: .7vw;
+        justify-self: center;
+        font-size: 1.vw;
+        font-weight: 500;
+        overflow: hidden!important;
+    }
+    
+    
+    
+    .color1{
+        z-index: -1;
+        background-color: #eff0f1;
+        grid-column: 1/9;
+        grid-row: 1/2;
+    }
+    
+    .note-text{
+        grid-column: 2/8;
+        grid-row: 1/2;
+        align-self: center;
+        padding-top: .7vw;
+        justify-self: center;
+        font-size: 1vw;
+        font-weight: 500;
+        overflow: hidden!important;
+    }
+    
+    .footer-img{
+        height: 13vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: 1fr;
+    }
+    
+    .logo-img{
+        grid-column: 1/2;
         grid-row: 1/2;
         align-self: center;
         justify-self: center;
-        font-size: .6rem;
-        font-weight: 500;
-        overflow: hidden !important;
+        height: auto;
+        width: 10vw;
+        margin-left: 2vw;
     }
 
-    .logo-img {
+}
+
+
+/* MEDIA QUERY 320-480 LANDSCAPE */
+
+
+@media (min-width: 320px) and (max-width: 480px) and (orientation: LANDSCAPE) {
+
+    .header-img{
+        height: 35vh;
+        width: 100%;
+        background-image: url(https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/reg-banner.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        /* background-position: top; */
+        object-position: top;
+        object-fit: cover;
+    }
+    
+    .text-column{
+        height: 8vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+    .text{
         grid-column: 1/2;
-        grid-row: 2/3;
+        grid-row: 1/2;
+        justify-self: center;
+        align-self: center;
+        font-size: 1vw;
+        
+    }
+    
+    .button-back{
+        height: 10vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin-top: -0.5vw;
+    }
+    
+    .btn-back{
+        outline: none;
+        height: 3.4vw;
+        width: 15vw;
+        border-radius: 50px;
+        color: white;
+        place-self: center;
+        grid-area: 1 / 1 / 2 / 2;
+        font-size: 1.1vw;
+        background-color: rgb(235, 51, 55);
+        border: 1px solid rgb(235, 51, 55);
+    }
+    
+    .break{
+        height: 5vh;
+        width: 100%;
+    }
+    
+    .bk-img{
+        height: auto;
+        width: 1.5vw;
+        margin-right: 10px;
+    }
+    
+    .footer{
+        height: auto;
+        width: 100%;
+    }
+    
+    .footer-note{
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: 1fr;
+        height: 12vh;
+    }
+    
+    .note-txt{
+        grid-column: 2/8;
+        grid-row: 1/2;
+        align-self: center;
+        padding-top: .7vw;
+        justify-self: center;
+        font-size: 1.vw;
+        font-weight: 500;
+        overflow: hidden!important;
+    }
+    
+    
+    
+    .color1{
+        z-index: -1;
+        background-color: #eff0f1;
+        grid-column: 1/9;
+        grid-row: 1/2;
+    }
+    
+    .note-text{
+        grid-column: 2/8;
+        grid-row: 1/2;
+        align-self: center;
+        padding-top: .7vw;
+        justify-self: center;
+        font-size: 1vw;
+        font-weight: 500;
+        overflow: hidden!important;
+    }
+    
+    .footer-img{
+        height: 13vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: 1fr;
+    }
+    
+    .logo-img{
+        grid-column: 1/2;
+        grid-row: 1/2;
         align-self: center;
         justify-self: center;
         height: auto;
-        width: 6rem;
+        width: 10vw;
         margin-left: 2vw;
     }
+
+
+}
+
+
+/* MEDIA QUERY 481-768 LANDSCAPE */
+
+
+
+
+
+@media (min-width: 481px) and (max-width: 768px) and (orientation: LANDSCAPE) {
+
+    .header-img{
+        height: 35vh;
+        width: 100%;
+        background-image: url(https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/reg-banner.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        /* background-position: top; */
+        object-position: top;
+        object-fit: cover;
+    }
+    
+    .text-column{
+        height: 10vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .text{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-self: center;
+        align-self: center;
+        font-size: 1.5vw;
+        margin-top: 1vw;
+        
+    }
+    
+    .button-back{
+        height: 15vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+    .btn-back{
+        outline: none;
+        height: 5vw;
+        width: 20vw;
+        border-radius: 50px;
+        color: white;
+        place-self: center;
+        grid-area: 1 / 1 / 2 / 2;
+        font-size: 1.5vw;
+        background-color: rgb(235, 51, 55);
+        border: 1px solid rgb(235, 51, 55);
+    }
+    
+    .break{
+        height: 5vh;
+        width: 100%;
+    }
+    
+    .bk-img{
+        height: auto;
+    width: 1.8vw;
+    margin-right: 10px;
+    }
+    
+    .footer{
+        height: auto;
+        width: 100%;
+    }
+    
+    .footer-note{
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: 1fr;
+        height: 12vh;
+    }
+    
+    .note-text{
+        grid-column: 2/8;
+    grid-row: 1/2;
+    align-self: center;
+    padding-top: .7vw;
+    justify-self: center;
+    font-size: 1vw;
+    font-weight: 500;
+    overflow: hidden!important;
+    }
+    
+    
+    
+    .color1{
+        z-index: -1;
+        background-color: #eff0f1;
+        grid-column: 1/9;
+        grid-row: 1/2;
+    }
+    
+ 
+    
+    .footer-img{
+        height: 13vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: 1fr;
+    }
+    
+    .logo-img{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: center;
+        justify-self: center;
+        height: auto;
+        width: 12vw;
+        margin-left: 2vw;
+    }
+
+
+}
+
+
+
+
+/* MEDIA QUERY 768-1024 LANDSCAPE */
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: LANDSCAPE) {
+
+    .header-img{
+        height: 35vh;
+        width: 100%;
+        background-image: url(https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/reg-banner.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        /* background-position: top; */
+        object-position: top;
+        object-fit: cover;
+    }
+    
+    .text-column{
+        height: 15vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+    .text{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-self: center;
+        align-self: center;
+        font-size: 1.3vw;
+        margin-top: 1vw;
+        
+    }
+    
+    .button-back{
+        height: 20vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    }
+    
+    .btn-back{
+        outline: none;
+    height: 4vw;
+    width: 18vw;
+    border-radius: 50px;
+    color: white;
+    place-self: center;
+    grid-area: 1 / 1 / 2 / 2;
+    font-size: 1.2vw;
+    background-color: rgb(235, 51, 55);
+    border: 1px solid rgb(235, 51, 55);
+    }
+    
+    .break{
+        height: 10vh;
+        width: 100%;
+    }
+    
+    .bk-img{
+        height: auto;
+    width: 1.5vw;
+    margin-right: 10px;
+    }
+    
+    .footer{
+        height: auto;
+        width: 100%;
+    }
+    
+    .footer-note{
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: 1fr;
+        height: 12vh;
+    }
+    
+    .note-txt{
+        grid-column: 2/8;
+        grid-row: 1/2;
+        align-self: center;
+        padding-top: .7vw;
+        justify-self: center;
+        font-size: 1.vw;
+        font-weight: 500;
+        overflow: hidden!important;
+    }
+    
+    
+    
+    .color1{
+        z-index: -1;
+        background-color: #eff0f1;
+        grid-column: 1/9;
+        grid-row: 1/2;
+    }
+    
+    .note-text{
+        grid-column: 2/8;
+        grid-row: 1/2;
+        align-self: center;
+        padding-top: .7vw;
+        justify-self: center;
+        font-size: 1vw;
+        font-weight: 500;
+        overflow: hidden!important;
+    }
+    
+    .footer-img{
+        height: 13vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: 1fr;
+    }
+    
+    .logo-img{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: center;
+        justify-self: center;
+        height: auto;
+        width: 10vw;
+        margin-left: 2vw;
+    }
+
+
+}
+
+
+/* MEDIA QUERY 1080-1920 LANDSCAPE */
+
+
+@media (min-width: 1080px) and (max-width: 1920px) and (orientation: LANDSCAPE) {
+
+    .header-img{
+        height: 35vh;
+        width: 100%;
+        background-image: url(https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/reg-banner.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        /* background-position: top; */
+        object-position: top;
+        object-fit: cover;
+    }
+    
+    .text-column{
+        height: 15vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+    .text{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-self: center;
+        align-self: center;
+        font-size: 1.5vw;
+        
+    }
+    
+    .button-back{
+        height: 15vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin-top: -0.5vw;
+    }
+    
+    .btn-back{
+        outline: none;
+        height: 4vw;
+        width: 18vw;
+        border-radius: 50px;
+        color: white;
+        place-self: center;
+        grid-area: 1 / 1 / 2 / 2;
+        font-size: 1.1vw;
+        background-color: rgb(235, 51, 55);
+        border: 1px solid rgb(235, 51, 55);
+    }
+    
+    .break{
+        height: 5vh;
+        width: 100%;
+    }
+    
+    .bk-img{
+        height: auto;
+        width: 1.5vw;
+        margin-right: 10px;
+    }
+    
+    .footer{
+        height: auto;
+        width: 100%;
+    }
+    
+    .footer-note{
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: 1fr;
+        height: 12vh;
+    }
+    
+    .note-txt{
+        grid-column: 2/8;
+        grid-row: 1/2;
+        align-self: center;
+        padding-top: .7vw;
+        justify-self: center;
+        font-size: 1.vw;
+        font-weight: 500;
+        overflow: hidden!important;
+    }
+    
+    
+    
+    .color1{
+        z-index: -1;
+        background-color: #eff0f1;
+        grid-column: 1/9;
+        grid-row: 1/2;
+    }
+    
+    .note-text{
+        grid-column: 2/8;
+        grid-row: 1/2;
+        align-self: center;
+        padding-top: .7vw;
+        justify-self: center;
+        font-size: 1vw;
+        font-weight: 500;
+        overflow: hidden!important;
+    }
+    
+    .footer-img{
+        height: 13vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: 1fr;
+    }
+    
+    .logo-img{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: center;
+        justify-self: center;
+        height: auto;
+        width: 10vw;
+        margin-left: 2vw;
+    }
+
 
 }

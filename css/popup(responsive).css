@@ -1,59 +1,74 @@
 
-@media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
 
-/* POP UP */
+/* 1ST POPUP */
 
-.popup .content{
+/* MEDIA QUERY 320-480 LANDSCAPE MODE */
+
+@media (min-width: 320px) and (max-width: 480px) and (orientation: LANDSCAPE) {
+.popup .overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+    z-index:1;
+    display:none;
+  }
+   
+  .popup .content {
     border-radius: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%) scale(0);
-    background: #fff;
-    width: 75%;
-    max-width: 500px;
-    height: 190px;
-    z-index: 2;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-    font-family: "Open Sans",sans-serif;
-}
-
-.popup .close-btn{
-    cursor: pointer;
-    position: absolute;
-    right: 20px;
-    top: 13px;
-    width: 20px;
-    height: 20px;
-    background: #222;
-    color: #fff;
-    /* color: black; */
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 21px;
-    text-align: center;
-    border-radius: 50%;
-}
-
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    background:#fff;
+    width:95%;
+    max-width:500px;
+    height:250px;
+    z-index:2;
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+    font-family:"Open Sans",sans-serif;
+  }
+   
+  .popup .close-btn {
+    cursor:pointer;
+    position:absolute;
+    right:20px;
+    top:20px;
+    width:30px;
+    height:30px;
+    background:#222; 
+     color:#fff;
+    
+    font-size:25px;
+    font-weight:600;
+    line-height:30px;
+    text-align:center;
+    border-radius:50%;
+  }
+   
+  .popup.active .overlay {
+    display:block;
+  }
+   
+  .popup.active .content {
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+  }
+   
 .registr-txt{
-    padding-top: 2rem;
+    padding-top: 2vw;
     color: black;
-    font-size: .8rem;
+    font-size: 1.3rem;
     font-weight: 500;
 }
 
-.input-txt{
-    height: 1.5rem;
-    width: 7rem;
-    border: 1px solid grey;
-    font-size: 1rem;
-}
-
 .btn-submit-popup{
-    height: 1.5rem;
-    width: 4rem;
+    height: 1.8vw;
+    width: 6.1vw;
     border: .8px solid grey;
     background-color: red;
     color: white;
@@ -61,131 +76,78 @@
     border-radius: 0;
 }
 
-
-}
-
-
-@media (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
-
-
-}
-
-/* MEDIA QUERY 481-768 */
-
-
-
-@media (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
-
-    .popup .content{
-        border-radius: 10px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%) scale(0);
-        background: #fff;
-        width: 75%;
-        max-width: 500px;
-        height: 300px;
-        z-index: 2;
-        text-align: center;
-        padding: 20px;
-        box-sizing: border-box;
-        font-family: "Open Sans",sans-serif;
-    }
-    
-    .popup .close-btn{
-        cursor: pointer;
-        position: absolute;
-        right: 20px;
-        top: 13px;
-        width: 20px;
-        height: 20px;
-        background: #222;
-        color: #fff;
-        /* color: black; */
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 21px;
-        text-align: center;
-        border-radius: 50%;
-    }
-    
-    .registr-txt{
-        padding-top: 2rem;
-        color: black;
-        font-size: 1rem;
-        font-weight: 500;
-    }
-    
-    .input-txt{
-        height: 2rem;
-        width: 10rem;
-        border: 1px solid grey;
-        font-size: 1rem;
-    }
-    
-    .btn-submit-popup{
-        height: 2rem;
-        width: 6rem;
-        border: .8px solid grey;
-        background-color: red;
-        color: white;
-        font-size: .9rem;
-        border-radius: 0;
-    }
-    
-
-}
-
-
-
-@media (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
-    .popup .content{
-        border-radius: 10px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%) scale(0);
-        background: #fff;
-        width: 75%;
-        max-width: 500px;
-        height: 300px;
-        z-index: 2;
-        text-align: center;
-        padding: 20px;
-        box-sizing: border-box;
-        font-family: "Open Sans",sans-serif;
-    }
-    
-    .popup .close-btn{
-        cursor: pointer;
-        position: absolute;
-        right: 20px;
-        top: 13px;
-        width: 20px;
-        height: 20px;
-        background: #222;
-        color: #fff;
-        /* color: black; */
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 21px;
-        text-align: center;
-        border-radius: 50%;
-    }
-    
-    .registr-txt{
-        padding-top: 2rem;
-        color: black;
-        font-size: 1rem;
-        font-weight: 500;
-    }
-    
-    .input-txt{
-        height: 2rem;
-    width: 10rem;
+.input-txt{
+    height: 1.8vw;
+    width: 10vw;
     border: 1px solid grey;
     font-size: 1rem;
+}
+
+}
+
+
+/* MEDIA QUERY 481-768 LANDSCAPE MODE */
+
+@media (min-width: 481px) and (max-width: 768px) and (orientation: LANDSCAPE) {
+    .popup .overlay {
+        position:fixed;
+        top:0px;
+        left:0px;
+        width:100vw;
+        height:100vh;
+        background:rgba(0,0,0,0.7);
+        z-index:1;
+        display:none;
+      }
+       
+      .popup .content {
+        border-radius: 10px;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%) scale(0);
+        background:#fff;
+        width:95%;
+        max-width:500px;
+        height:250px;
+        z-index:2;
+        text-align:center;
+        padding:20px;
+        box-sizing:border-box;
+        font-family:"Open Sans",sans-serif;
+      }
+       
+      .popup .close-btn {
+        cursor:pointer;
+        position:absolute;
+        right:20px;
+        top:20px;
+        width:30px;
+        height:30px;
+        background:#222; 
+         color:#fff;
+        
+        font-size:25px;
+        font-weight:600;
+        line-height:30px;
+        text-align:center;
+        border-radius:50%;
+      }
+       
+      .popup.active .overlay {
+        display:block;
+      }
+       
+      .popup.active .content {
+        transition:all 300ms ease-in-out;
+        transform:translate(-50%,-50%) scale(1);
+      }
+       
+    .registr-txt{
+        padding-top: 2vw;
+        color: black;
+        font-size: 1.3rem;
+        font-weight: 500;
     }
     
     .btn-submit-popup{
@@ -197,118 +159,6 @@
     font-size: 1rem;
     border-radius: 0;
     }
-
-}
-
-
-@media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
-
-    /* POP UP */
-    
-    .popup .content{
-        border-radius: 10px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%) scale(0);
-        background: #fff;
-        width: 75%;
-        max-width: 500px;
-        height: 190px;
-        z-index: 2;
-        text-align: center;
-        padding: 20px;
-        box-sizing: border-box;
-        font-family: "Open Sans",sans-serif;
-    }
-    
-    .popup .close-btn{
-        cursor: pointer;
-        position: absolute;
-        right: 20px;
-        top: 13px;
-        width: 20px;
-        height: 20px;
-        background: #222;
-        color: #fff;
-        /* color: black; */
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 21px;
-        text-align: center;
-        border-radius: 50%;
-    }
-    
-    .registr-txt{
-        padding-top: 2rem;
-        color: black;
-        font-size: .8rem;
-        font-weight: 500;
-    }
-    
-    .input-txt{
-        height: 1.5rem;
-        width: 7rem;
-        border: 1px solid grey;
-        font-size: 1rem;
-    }
-    
-    .btn-submit-popup{
-        height: 1.5rem;
-        width: 4rem;
-        border: .8px solid grey;
-        background-color: red;
-        color: white;
-        font-size: .9rem;
-        border-radius: 0;
-    }
-    
-    
-    }
-    
-    
-@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
-
-    .popup .content{
-        border-radius: 10px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%) scale(0);
-        background: #fff;
-        width: 75%;
-        max-width: 500px;
-        height: 300px;
-        z-index: 2;
-        text-align: center;
-        padding: 20px;
-        box-sizing: border-box;
-        font-family: "Open Sans",sans-serif;
-    }
-    
-    .popup .close-btn{
-        cursor: pointer;
-        position: absolute;
-        right: 20px;
-        top: 13px;
-        width: 20px;
-        height: 20px;
-        background: #222;
-        color: #fff;
-        /* color: black; */
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 21px;
-        text-align: center;
-        border-radius: 50%;
-    }
-    
-    .registr-txt{
-        padding-top: 2rem;
-        color: black;
-        font-size: 1rem;
-        font-weight: 500;
-    }
     
     .input-txt{
         height: 2rem;
@@ -317,14 +167,1103 @@
         font-size: 1rem;
     }
     
+
+}
+
+
+/* MEDIA QUERY 768-1024 LANDSCAPE MODE */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: LANDSCAPE) {
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: LANDSCAPE) {
+        .popup .overlay {
+            position:fixed;
+            top:0px;
+            left:0px;
+            width:100vw;
+            height:100vh;
+            background:rgba(0,0,0,0.7);
+            z-index:1;
+            display:none;
+          }
+           
+          .popup .content {
+            border-radius: 10px;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%) scale(0);
+            background:#fff;
+            width:95%;
+            max-width:500px;
+            height:250px;
+            z-index:2;
+            text-align:center;
+            padding:20px;
+            box-sizing:border-box;
+            font-family:"Open Sans",sans-serif;
+          }
+           
+          .popup .close-btn {
+            cursor:pointer;
+            position:absolute;
+            right:20px;
+            top:20px;
+            width:30px;
+            height:30px;
+            background:#222; 
+             color:#fff;
+            
+            font-size:25px;
+            font-weight:600;
+            line-height:30px;
+            text-align:center;
+            border-radius:50%;
+          }
+           
+          .popup.active .overlay {
+            display:block;
+          }
+           
+          .popup.active .content {
+            transition:all 300ms ease-in-out;
+            transform:translate(-50%,-50%) scale(1);
+          }
+           
+        .registr-txt{
+            padding-top: 2vw;
+            color: black;
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+        
+        .btn-submit-popup{
+            height: 2rem;
+        width: 6rem;
+        border: .8px solid grey;
+        background-color: red;
+        color: white;
+        font-size: 1rem;
+        border-radius: 0;
+        }
+        
+        .input-txt{
+            height: 2rem;
+            width: 10rem;
+            border: 1px solid grey;
+            font-size: 1rem;
+        }
+        
+    
+    }
+    
+
+}
+
+/* PORTARAIT MODE */
+
+/* MEDIA QUERY 320-480 PORTRAIT MODE */
+
+
+@media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+    .popup .overlay {
+        position:fixed;
+        top:0px;
+        left:0px;
+        width:100vw;
+        height:100vh;
+        background:rgba(0,0,0,0.7);
+        z-index:1;
+        display:none;
+      }
+       
+      .popup .content {
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) scale(0);
+        background: #fff;
+        width: 85%;
+        max-width: 500px;
+        height: 200px;
+        z-index: 2;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+        font-family: "Open Sans",sans-serif;
+      }
+       
+      .popup .close-btn {
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 20px;
+        height: 20px;
+        background: #222;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 22px;
+        text-align: center;
+        border-radius: 50%;
+      }
+       
+      .popup.active .overlay {
+        display:block;
+      }
+       
+      .popup.active .content {
+        transition:all 300ms ease-in-out;
+        transform:translate(-50%,-50%) scale(1);
+      }
+       
+    .registr-txt{
+        padding-top: 2rem;
+    color: black;
+    font-size: .8rem;
+    font-weight: 500;
+    }
+    
+    .btn-submit-popup{
+        height: 1.5rem;
+    width: 6rem;
+    border: .8px solid grey;
+    background-color: red;
+    color: white;
+    font-size: .9rem;
+    border-radius: 0;
+    }
+    
+    .input-txt{
+        height: 1.5rem;
+        width: 8rem;
+        border: 1px solid grey;
+        font-size: 1rem;
+    }
+    
+    }
+
+    /* MEDIA QUERY 481-768 PORTRAIT MODE */
+
+    
+@media (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+    .popup .overlay {
+        position:fixed;
+        top:0px;
+        left:0px;
+        width:100vw;
+        height:100vh;
+        background:rgba(0,0,0,0.7);
+        z-index:1;
+        display:none;
+      }
+       
+      .popup .content {
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) scale(0);
+        background: #fff;
+        width: 85%;
+        max-width: 500px;
+        height: 200px;
+        z-index: 2;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+        font-family: "Open Sans",sans-serif;
+      }
+       
+      .popup .close-btn {
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 20px;
+        height: 20px;
+        background: #222;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 22px;
+        text-align: center;
+        border-radius: 50%;
+      }
+       
+      .popup.active .overlay {
+        display:block;
+      }
+       
+      .popup.active .content {
+        transition:all 300ms ease-in-out;
+        transform:translate(-50%,-50%) scale(1);
+      }
+       
+    .registr-txt{
+        padding-top: 2rem;
+    color: black;
+    font-size: .8rem;
+    font-weight: 500;
+    }
+    
+    .btn-submit-popup{
+        height: 1.5rem;
+    width: 6rem;
+    border: .8px solid grey;
+    background-color: red;
+    color: white;
+    font-size: .9rem;
+    border-radius: 0;
+    }
+    
+    .input-txt{
+        height: 1.5rem;
+        width: 8rem;
+        border: 1px solid grey;
+        font-size: 1rem;
+    }
+    }
+
+
+/* MEDIA QUERY 768-1024 PORTRAIT MODE */
+
+    
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .popup .overlay {
+        position:fixed;
+        top:0px;
+        left:0px;
+        width:100vw;
+        height:100vh;
+        background:rgba(0,0,0,0.7);
+        z-index:1;
+        display:none;
+      }
+       
+      .popup .content {
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) scale(0);
+        background: #fff;
+        width: 90%;
+        max-width: 500px;
+        height: 320px;
+        z-index: 2;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+        font-family: "Open Sans",sans-serif;
+      }
+       
+      .popup .close-btn {
+        cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+      }
+       
+      .popup.active .overlay {
+        display:block;
+      }
+       
+      .popup.active .content {
+        transition:all 300ms ease-in-out;
+        transform:translate(-50%,-50%) scale(1);
+      }
+       
+    .registr-txt{
+        padding-top: 2rem;
+        color: black;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    
     .btn-submit-popup{
         height: 2rem;
         width: 6rem;
-        border: 1px solid grey;
+        border: .8px solid grey;
         background-color: red;
         color: white;
         font-size: 1rem;
         border-radius: 0;
     }
     
-}
+    .input-txt{
+        height: 2rem;
+    width: 10rem;
+    border: 1px solid grey;
+    font-size: 1rem;
+    margin-top: 5%;
+    }
+    }
+
+
+
+
+
+    /* MEDIA QUERY 1080-1920 PORTRAIT MODE */
+    
+@media (min-width: 1080px) and (max-width: 1920px) and (orientation: portrait) {
+    .popup .overlay {
+        position:fixed;
+        top:0px;
+        left:0px;
+        width:100vw;
+        height:100vh;
+        background:rgba(0,0,0,0.7);
+        z-index:1;
+        display:none;
+      }
+       
+      .popup .content {
+        border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background: #fff;
+    width: 85%!important;
+    max-width: none!important;
+    height: 530px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: "Open Sans",sans-serif;
+      }
+       
+      .popup .close-btn {
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 45px;
+        height: 45px;
+        background: #222;
+        color: #fff;
+        font-size: 35px;
+        font-weight: 600;
+        line-height: 45px;
+        text-align: center;
+        border-radius: 50%;
+      }
+       
+      .popup.active .overlay {
+        display:block;
+      }
+       
+      .popup.active .content {
+        transition:all 300ms ease-in-out;
+        transform:translate(-50%,-50%) scale(1);
+      }
+       
+    .registr-txt{
+        padding-top: 9vw;
+    color: black;
+    font-size: 2rem;
+    font-weight: 500;
+    }
+    
+    .btn-submit-popup{
+        height: 4rem;
+        width: 12rem;
+        border: .8px solid grey;
+        background-color: red;
+        color: white;
+        font-size: 2rem;
+        border-radius: 0;
+    }
+    
+    .input-txt{
+        height: 4rem;
+        width: 20rem;
+        border: 1px solid grey;
+        font-size: 2rem;
+        margin-top: 12%;
+    }
+    
+    }
+
+
+
+    /* 2ND POPUP  */
+
+    /* LANDSCAPE MODE */
+    /* MEDIA QUERY 320-480 LANDSCAPE */
+
+    @media (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+
+        .popup .overlay {
+            position:fixed;
+            top:0px;
+            left:0px;
+            width:100vw;
+            height:100vh;
+            background:rgba(0,0,0,0.7);
+            z-index:1;
+            display:none;
+          }
+        
+          .popup .content2{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(15, 1fr);
+        background-color: #ffebd9;
+        
+        
+            height: 80%!important;
+            border-radius: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%) scale(0);
+            /* background: #fff; */
+            width: 60%!important;
+            /* max-width: 500px; */
+            height: 250px;
+            z-index: 2;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            font-family: "Open Sans",sans-serif;
+          }
+          
+          .speaker-column{
+            position: relative;
+          }
+        
+          .popup .close-btn2 {
+            cursor: pointer;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            width: 30px;
+            height: 30px;
+            background: #222;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 50%;
+          }
+        
+          .popup.active .overlay {
+            display:block;
+          }
+        
+          .popup.active .content2 {
+            transition:all 300ms ease-in-out;
+            transform:translate(-50%,-50%) scale(1);
+          }
+        
+          .registr-txt{
+            padding-top: 2vw;
+            color: black;
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+        
+        .btn-submit-popup{
+            height: 1.8vw;
+            width: 6.1vw;
+            border: .8px solid grey;
+            background-color: red;
+            color: white;
+            font-size: .9rem;
+            border-radius: 0;
+        }
+        
+        .input-txt{
+            height: 1.8vw;
+            width: 10vw;
+            border: 1px solid grey;
+            font-size: 1rem;
+        }
+        
+        .hari-image{
+          height: 22vh;
+            width: 22vh;
+            border-radius: 50%;
+            grid-column: 2/5;
+            grid-row: 3/6;
+            align-self: center;
+            justify-self: center;
+        }
+        
+        .hari-name{
+          grid-column: 6/10;
+          grid-row: 3/4;
+          font-size: 1.5vw;
+          color: #02405f;
+          font-weight: 600;
+          justify-self: baseline;
+        }
+        
+        .hari-designation{
+          grid-column: 6/10;
+            color: #02405f;
+            grid-row: 4/5;
+            font-size: 1.2vw;
+            font-weight: 600;
+            align-self: center;
+            justify-self: baseline;
+        }
+        
+        .hari-tagglabs{
+          grid-column: 6/10;
+          grid-row: 5/6;
+          font-size: 1.1vw;
+          color: #02405f;
+          font-weight: 600;
+          justify-self: baseline;
+          align-self: center;
+        }
+        
+        
+        /* LAKSHAY */
+        
+        
+        .lakshay-image{
+          height: 22vh;
+            width: 22vh;
+            border-radius: 50%;
+            grid-column: 2/5;
+            grid-row: 3/6;
+            align-self: center;
+            justify-self: center;
+        }
+        
+        .lakshay-name{
+          grid-column: 6/10;
+          grid-row: 3/4;
+          font-size: 1.5vw;
+          color: #02405f;
+          font-weight: 600;
+          justify-self: baseline;
+        }
+        
+        .lakshay-designation{
+          grid-column: 6/10;
+          color: #02405f;
+          grid-row: 4/5;
+          font-size: 1.2vw;
+          font-weight: 600;
+          align-self: center;
+          justify-self: baseline;
+        }
+        
+        .lakshay-tagglabs{
+          grid-column: 6/10;
+          grid-row: 5/6;
+          font-size: 1.1vw;
+          color: #02405f;
+          font-weight: 600;
+          justify-self: baseline;
+          align-self: center;
+        }
+        
+        
+        
+        /* PANKAJ */
+        
+        
+        
+        .pankaj-image{
+          height: 22vh;
+            width: 22vh;
+            border-radius: 50%;
+            grid-column: 2/5;
+            grid-row: 3/6;
+            align-self: center;
+            justify-self: center;
+        }
+        
+        .pankaj-name{
+          grid-column: 6/10;
+          grid-row: 3/4;
+          font-size: 1.5vw;
+          color: #02405f;
+          font-weight: 600;
+          justify-self: baseline;
+        }
+        
+        .pankaj-designation{
+          grid-column: 6/10;
+          color: #02405f;
+          grid-row: 4/5;
+          font-size: 1.2vw;
+          font-weight: 600;
+          align-self: center;
+          justify-self: baseline;
+        }
+        
+        .pankaj-tagglabs{
+          grid-column: 6/10;
+          grid-row: 5/6;
+          font-size: 1.1vw;
+          color: #02405f;
+          font-weight: 600;
+          justify-self: baseline;
+          align-self: center;
+        }
+
+    }
+
+    /* MEDIA QUERY 481-678 LANDSCAPE */
+
+    @media (min-width: 480px) and (max-width: 768px) and (orientation: landscape) {
+
+
+        .popup .overlay {
+            position:fixed;
+            top:0px;
+            left:0px;
+            width:100vw;
+            height:100vh;
+            background:rgba(0,0,0,0.7);
+            z-index:1;
+            display:none;
+          }
+        
+          .popup .content2{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(15, 1fr);
+        background-color: #ffebd9;
+        
+        
+            height: 80%!important;
+            border-radius: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%) scale(0);
+            /* background: #fff; */
+            width: 60%!important;
+            /* max-width: 500px; */
+            height: 250px;
+            z-index: 2;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            font-family: "Open Sans",sans-serif;
+          }
+          
+          .speaker-column{
+            position: relative;
+          }
+        
+          .popup .close-btn2 {
+            cursor: pointer;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            width: 20px;
+            height: 20px;
+            background: #222;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 23px;
+            text-align: center;
+            border-radius: 50%;
+          }
+        
+          .popup.active .overlay {
+            display:block;
+          }
+        
+          .popup.active .content2 {
+            transition:all 300ms ease-in-out;
+            transform:translate(-50%,-50%) scale(1);
+          }
+        
+          .registr-txt{
+            padding-top: 2vw;
+            color: black;
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+        
+        .btn-submit-popup{
+            height: 1.8vw;
+            width: 6.1vw;
+            border: .8px solid grey;
+            background-color: red;
+            color: white;
+            font-size: .9rem;
+            border-radius: 0;
+        }
+        
+        .input-txt{
+            height: 1.8vw;
+            width: 10vw;
+            border: 1px solid grey;
+            font-size: 1rem;
+        }
+        
+        .hari-image{
+          height: 22vh;
+            width: 22vh;
+            border-radius: 50%;
+            grid-column: 2/5;
+            grid-row: 3/6;
+            align-self: center;
+            justify-self: center;
+        }
+        
+        .hari-name{
+          grid-column: 6/10;
+          grid-row: 3/5;
+          font-size: 1.5vw;
+          color: #02405f;
+          font-weight: 600;
+          justify-self: baseline;
+        }
+        
+        .hari-designation{
+          grid-column: 6/10;
+            color: #02405f;
+            grid-row: 4/5;
+            font-size: 1.2vw;
+            font-weight: 600;
+            align-self: center;
+            justify-self: baseline;
+        }
+        
+        .hari-tagglabs{
+          grid-column: 6/10;
+          grid-row: 5/6;
+          font-size: 1.1vw;
+          color: #02405f;
+          font-weight: 600;
+          justify-self: baseline;
+          align-self: center;
+        }
+        
+        
+        /* LAKSHAY */
+        
+        
+        .lakshay-image{
+          height: 22vh;
+            width: 22vh;
+            border-radius: 50%;
+            grid-column: 2/5;
+            grid-row: 3/6;
+            align-self: center;
+            justify-self: center;
+        }
+        
+        .lakshay-name{
+          grid-column: 6/10;
+          grid-row: 3/4;
+          font-size: 1.5vw;
+          color: #02405f;
+          font-weight: 600;
+          justify-self: baseline;
+        }
+        
+        .lakshay-designation{
+          grid-column: 6/10;
+          color: #02405f;
+          grid-row: 4/5;
+          font-size: 1.2vw;
+          font-weight: 600;
+          align-self: center;
+          justify-self: baseline;
+        }
+        
+        .lakshay-tagglabs{
+          grid-column: 6/10;
+          grid-row: 5/6;
+          font-size: 1.1vw;
+          color: #02405f;
+          font-weight: 600;
+          justify-self: baseline;
+          align-self: center;
+        }
+        
+        
+        
+        /* PANKAJ */
+        
+        
+        
+        .pankaj-image{
+          height: 22vh;
+            width: 22vh;
+            border-radius: 50%;
+            grid-column: 2/5;
+            grid-row: 3/6;
+            align-self: center;
+            justify-self: center;
+        }
+        
+        .pankaj-name{
+          grid-column: 6/10;
+          grid-row: 3/4;
+          font-size: 1.5vw;
+          color: #02405f;
+          font-weight: 600;
+          justify-self: baseline;
+        }
+        
+        .pankaj-designation{
+          grid-column: 6/10;
+          color: #02405f;
+          grid-row: 4/5;
+          font-size: 1.2vw;
+          font-weight: 600;
+          align-self: center;
+          justify-self: baseline;
+        }
+        
+        .pankaj-tagglabs{
+          grid-column: 6/10;
+          grid-row: 5/6;
+          font-size: 1.1vw;
+          color: #02405f;
+          font-weight: 600;
+          justify-self: baseline;
+          align-self: center;
+        }
+
+    }
+
+
+    /* MEDIA QUERY 768-1024 LANDSCAPE */
+
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+
+        .popup .overlay {
+            position:fixed;
+            top:0px;
+            left:0px;
+            width:100vw;
+            height:100vh;
+            background:rgba(0,0,0,0.7);
+            z-index:1;
+            display:none;
+          }
+        
+          .popup .content2{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(15, 1fr);
+        background-color: #ffebd9;
+        
+        
+            height: 80%!important;
+            border-radius: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%) scale(0);
+            /* background: #fff; */
+            width: 60%!important;
+            /* max-width: 500px; */
+            height: 250px;
+            z-index: 2;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            font-family: "Open Sans",sans-serif;
+          }
+          
+          .speaker-column{
+            position: relative;
+          }
+        
+          .popup .close-btn2 {
+            cursor: pointer;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            width: 25px;
+            height: 25px;
+            background: #222;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 25px;
+            text-align: center;
+            border-radius: 50%;
+          }
+        
+          .popup.active .overlay {
+            display:block;
+          }
+        
+          .popup.active .content2 {
+            transition:all 300ms ease-in-out;
+            transform:translate(-50%,-50%) scale(1);
+          }
+        
+          .registr-txt{
+            padding-top: 2vw;
+            color: black;
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+        
+        .btn-submit-popup{
+            height: 1.8vw;
+            width: 6.1vw;
+            border: .8px solid grey;
+            background-color: red;
+            color: white;
+            font-size: .9rem;
+            border-radius: 0;
+        }
+        
+        .input-txt{
+            height: 1.8vw;
+            width: 10vw;
+            border: 1px solid grey;
+            font-size: 1rem;
+        }
+        
+        .hari-image{
+          height: 22vh;
+            width: 22vh;
+            border-radius: 50%;
+            grid-column: 2/5;
+            grid-row: 3/6;
+            align-self: center;
+            justify-self: center;
+        }
+        
+        .hari-name{
+          grid-column: 6/10;
+          grid-row: 3/5;
+          font-size: 2vw;
+          color: #02405f;
+          font-weight: 600;
+          justify-self: baseline;
+        }
+        
+        .hari-designation{
+          grid-column: 6/10;
+            color: #02405f;
+            grid-row: 4/5;
+            font-size: 1.5vw;
+            font-weight: 600;
+            align-self: center;
+            justify-self: baseline;
+        }
+        
+        .hari-tagglabs{
+          grid-column: 6/10;
+          grid-row: 5/6;
+          font-size: 1.2vw;
+          color: #02405f;
+          font-weight: 600;
+          justify-self: baseline;
+          align-self: center;
+        }
+        
+        
+        /* LAKSHAY */
+        
+        
+        .lakshay-image{
+          height: 22vh;
+            width: 22vh;
+            border-radius: 50%;
+            grid-column: 2/5;
+            grid-row: 3/6;
+            align-self: center;
+            justify-self: center;
+        }
+        
+        .lakshay-name{
+          grid-column: 6/10;
+          grid-row: 3/4;
+          font-size: 1.5vw;
+          color: #02405f;
+          font-weight: 600;
+          justify-self: baseline;
+        }
+        
+        .lakshay-designation{
+          grid-column: 6/10;
+          color: #02405f;
+          grid-row: 4/5;
+          font-size: 1.2vw;
+          font-weight: 600;
+          align-self: center;
+          justify-self: baseline;
+        }
+        
+        .lakshay-tagglabs{
+          grid-column: 6/10;
+          grid-row: 5/6;
+          font-size: 1.1vw;
+          color: #02405f;
+          font-weight: 600;
+          justify-self: baseline;
+          align-self: center;
+        }
+        
+        
+        
+        /* PANKAJ */
+        
+        
+        
+        .pankaj-image{
+          height: 22vh;
+            width: 22vh;
+            border-radius: 50%;
+            grid-column: 2/5;
+            grid-row: 3/6;
+            align-self: center;
+            justify-self: center;
+        }
+        
+        .pankaj-name{
+          grid-column: 6/10;
+          grid-row: 3/4;
+          font-size: 1.5vw;
+          color: #02405f;
+          font-weight: 600;
+          justify-self: baseline;
+        }
+        
+        .pankaj-designation{
+          grid-column: 6/10;
+          color: #02405f;
+          grid-row: 4/5;
+          font-size: 1.2vw;
+          font-weight: 600;
+          align-self: center;
+          justify-self: baseline;
+        }
+        
+        .pankaj-tagglabs{
+          grid-column: 6/10;
+          grid-row: 5/6;
+          font-size: 1.1vw;
+          color: #02405f;
+          font-weight: 600;
+          justify-self: baseline;
+          align-self: center;
+        }
+
+    }

@@ -1,4 +1,15 @@
+*{
+    overflow-x: hidden;
+}
 
+
+body{
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y:scroll
+}
 
 .bottom {
     height: 11vh;
@@ -6,6 +17,7 @@
     display: grid;
     grid-template-columns: repeat(20, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    overflow: hidden!important;
 }
 
 .bottom-logo {

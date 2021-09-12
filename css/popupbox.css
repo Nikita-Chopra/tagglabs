@@ -119,7 +119,7 @@ background-color: #ffebd9;
 
 
     height: 80%!important;
-    border-radius: 20px;
+    border-radius: 10px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -139,21 +139,20 @@ background-color: #ffebd9;
     position: relative;
   }
 
-  .popup .close-btn {
-    cursor:pointer;
-    position:absolute;
-    right:20px;
-    top:20px;
-    width:30px;
-    height:30px;
-    background:#222; 
-     color:#fff;
-    /* color:black; */
-    font-size:25px;
-    font-weight:600;
-    line-height:30px;
-    text-align:center;
-    border-radius:50%;
+  .popup .close-btn2 {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
   }
 
   .popup.active .overlay {
@@ -200,37 +199,32 @@ background-color: #ffebd9;
 }
 
 .hari-name{
-  grid-column: 5/8;
-    grid-row: 3/4;
-    font-size: 1.4vw;
-    color: #02405f;
-    font-weight: 600;
-    margin-left: -5.3vw;
-    align-self: center;
-    margin-top: 1vw;
+  grid-column: 6/10;
+  grid-row: 3/4;
+  font-size: 1.5vw;
+  color: #02405f;
+  font-weight: 600;
+  justify-self: baseline;
 }
 
 .hari-designation{
-  grid-column: 5/9;
+  grid-column: 6/10;
     color: #02405f;
     grid-row: 4/5;
-    font-size: 1.1vw;
+    font-size: 1.2vw;
     font-weight: 600;
-    margin-left: -6.3vw;
-    margin-top: -1.5vw;
     align-self: center;
+    justify-self: baseline;
 }
 
 .hari-tagglabs{
-  grid-column: 5/9;
-    grid-row: 5/6;
-    font-size: 1.1vw;
-    color: #02405f;
-    font-weight: 600;
-    justify-self: baseline;
-    margin-left: .5vw;
-    margin-top: -4vw;
-    align-self: center;
+  grid-column: 6/10;
+  grid-row: 5/6;
+  font-size: 1.1vw;
+  color: #02405f;
+  font-weight: 600;
+  justify-self: baseline;
+  align-self: center;
 }
 
 
@@ -248,37 +242,32 @@ background-color: #ffebd9;
 }
 
 .lakshay-name{
-  grid-column: 5/8;
-    grid-row: 3/4;
-    font-size: 1.4vw;
-    color: #02405f;
-    font-weight: 600;
-    margin-left: -5.3vw;
-    align-self: center;
-    margin-top: 1vw;
+  grid-column: 6/10;
+  grid-row: 3/4;
+  font-size: 1.5vw;
+  color: #02405f;
+  font-weight: 600;
+  justify-self: baseline;
 }
 
 .lakshay-designation{
-  grid-column: 5/9;
-    color: #02405f;
-    grid-row: 4/5;
-    font-size: 1.1vw;
-    font-weight: 600;
-    margin-left: -3.7vw;
-    margin-top: -1.5vw;
-    align-self: center;
+  grid-column: 6/10;
+  color: #02405f;
+  grid-row: 4/5;
+  font-size: 1.2vw;
+  font-weight: 600;
+  align-self: center;
+  justify-self: baseline;
 }
 
 .lakshay-tagglabs{
-  grid-column: 5/9;
-    grid-row: 5/6;
-    font-size: 1.1vw;
-    color: #02405f;
-    font-weight: 600;
-    justify-self: baseline;
-    margin-left: -.2vw;
-    margin-top: -4vw;
-    align-self: center;
+  grid-column: 6/10;
+  grid-row: 5/6;
+  font-size: 1.1vw;
+  color: #02405f;
+  font-weight: 600;
+  justify-self: baseline;
+  align-self: center;
 }
 
 
@@ -298,35 +287,30 @@ background-color: #ffebd9;
 }
 
 .pankaj-name{
-  grid-column: 5/8;
-    grid-row: 3/4;
-    font-size: 1.4vw;
-    color: #02405f;
-    font-weight: 600;
-    margin-left: -5.2vw;
-    align-self: center;
-    margin-top: 1vw;
+  grid-column: 6/10;
+  grid-row: 3/4;
+  font-size: 1.5vw;
+  color: #02405f;
+  font-weight: 600;
+  justify-self: baseline;
 }
 
 .pankaj-designation{
-  grid-column: 5/11;
-    grid-row: 4/5;
-    font-size: 1.1vw;
-    color: #02405f;
-    font-weight: 600;
-    margin-left: -8.3vw;
-    align-self: center;
-    margin-top: -1vw;
+  grid-column: 6/10;
+  color: #02405f;
+  grid-row: 4/5;
+  font-size: 1.2vw;
+  font-weight: 600;
+  align-self: center;
+  justify-self: baseline;
 }
 
 .pankaj-tagglabs{
-  grid-column: 5/9;
-    grid-row: 5/6;
-    font-size: 1.1vw;
-    color: #02405f;
-    font-weight: 600;
-    justify-self: baseline;
-    margin-left: .2vw;
-    margin-top: -4vw;
-    align-self: center;
+  grid-column: 6/10;
+  grid-row: 5/6;
+  font-size: 1.1vw;
+  color: #02405f;
+  font-weight: 600;
+  justify-self: baseline;
+  align-self: center;
 }

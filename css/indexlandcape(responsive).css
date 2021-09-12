@@ -1,0 +1,2364 @@
+*{
+    overflow-x: hidden;
+}
+
+body{
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y:scroll
+}
+/* MEDIA QUERY 320-480 LANDSCAPE */
+
+@media (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+    *{
+        overflow-x: hidden;
+    }
+    
+    body{
+        height: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-y:scroll
+    }
+    .navbar-header{
+        height: 11vh;
+    }
+    
+    .logo-header{
+        height: auto;
+    width: 12%;
+    position: absolute;
+    margin-top: -2%;
+    }
+    .time-txt{
+        font-size: 1.5vw;
+    font-weight: 700;
+    align-self: center;
+    }
+    
+    .abt-header{
+        font-size: .4rem;
+    }
+    
+    .spk-header{
+        font-size: .4rem;
+    }
+    .agnd-header{
+    
+        font-size: .4rem;
+    }
+    
+    .navbar-header-items{
+        height: 100%;
+    width: 35%;
+    }
+    .cont-header{
+        font-size: .4rem;
+    }
+    
+    .navbar-icons{
+        grid-column: 19/21;
+        grid-row: 5/12;
+        height: 90%;
+        width: 100%;
+        align-self: end;
+        justify-self: center;
+    }
+    .nav-icons{
+        height: 95%;
+        width: 100%;
+    }
+
+.fb-img{
+    height: auto;
+    width: 12px;
+}
+
+.twt-img{
+    height: auto;
+    width: 12px;
+}
+
+.inst-img{
+    height: auto;
+    width: 12px;
+}
+
+.in-img{
+    height: auto;
+    width: 12px;
+}
+
+
+
+
+    .button-reg{
+        grid-column: 13/16;
+    grid-row: 5/8;
+    align-self: center;
+    justify-self: auto;
+    }
+    
+    .btn-reg{
+        height: 5vw;
+    width: 13vw;
+    border-radius: 50px;
+    background-color: white;
+    border: 2px solid #eb3337;
+    outline: none;
+    font-size: 1.3vw;
+   
+    }
+    
+    .button-join{
+        grid-column: 15/20;
+        grid-row: 5/8;
+        justify-self: center;
+        align-self: center;
+        margin-left: 1.5vw;
+    }
+    
+    .btn-join{
+        height: 5vw;
+    border-radius: 50px;
+    background-color: #eb3337;
+    color: white;
+    border: 1px solid #eb3337;
+    width: 16vw;
+    font-size: 1.3vw;
+    }
+
+    .img-join{
+        height: auto;
+    width: 1.5vw;
+    margin-left: 5px;
+    }
+    
+    .navbar-time{
+        grid-column: 14/20;
+    grid-row: 3/6;
+    align-self: center;
+    justify-self: flex-end;
+    }
+    
+    .day{
+        height: 50px;
+    width: 38px;
+    border-radius:2px;
+    }
+    
+    .hrs{
+        height: 50px;
+    width: 38px;
+    border-radius:2px;
+    }
+    
+    .mts{
+        height: 50px;
+    width: 38px;
+    border-radius:2px;
+    }
+    
+    .secs{
+        height: 50px;
+    width: 38px;
+    border-radius:2px;
+    }
+    
+    .zero{
+        font-size: 3vw;
+        color: white;
+        font-weight: 600;
+        margin-left: 1vw;
+        position: absolute;
+    }
+    
+    .day-txt{
+        color: white;
+        font-size: 1.3vw;
+        margin-left: 2.6vw;
+        margin-top: 2.3vw;
+    }
+    
+    .hrs-txt{
+        color: white;
+        font-size: 1.3vw;
+        margin-left: 1.9vw;
+        margin-top: 2.3vw;
+    }
+    
+    .mts-txt{
+        color: white;
+        font-size: 1.3vw;
+        margin-left: 1.4vw;
+        margin-top: 2.3vw;
+    }
+    
+    .sec-txt{
+        color: white;
+        font-size: 1.3vw;
+        margin-left: 1.2vw;
+        margin-top: 2.3vw;
+    }
+    
+    .about-column{
+        overflow: auto;
+        height: 120vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(13,1fr);
+        grid-template-rows: repeat(20, 1fr);
+    }
+    
+    
+    .abt-evnt-txt{
+       font-size: .8rem;
+    font-weight: 600;
+    color: #eb3337;
+    grid-column: 1/5;
+    grid-row: 2/4;
+    align-self: center;
+    justify-self: center;
+
+    }
+    
+    .lorem1{
+        grid-column: 2/13;
+        grid-row: 4/9;
+        color: #01415f;
+        font-size: 2vw;
+    }
+    
+    .lorem2{
+        grid-column: 2/13;
+        grid-row: 9/15;
+        color: #01415f;
+        font-size: 2vw;
+    }
+    
+    .lorem3{
+        grid-column: 2/13;
+        grid-row: 15/22;
+        color: #01415f;
+        font-size: 2vw;
+    }
+
+
+    .speaker-column{
+        height: auto;
+        width: 100%;
+        display: grid;
+        background-color: rgb(235, 51, 55);
+        grid-template-columns: repeat(17, 1fr);
+        grid-template-rows: repeat(15, 1fr);
+    }
+    
+    .txt-speak {
+        grid-area: 1 / 2 / 3 / 5;
+        align-self: center;
+        font-size: 1.2vw;
+        color: white;
+        font-weight: 500;
+        justify-self: auto;
+    }
+    
+    .hari-img{
+        grid-area: 3 / 3 / 10/ 7;
+        height: auto;
+        width: 70%;
+    }
+    
+    .hari-name-title{
+        grid-column: 3/7;
+        grid-row: 11/13;
+        font-size: 1.5vw;
+        font-weight: 500;
+    }
+    
+    .hari-designatn{
+        grid-column: 3/7;
+        grid-row: 12/14;
+        font-size: 1.1vw;
+        font-weight: 500;
+    }
+    
+    .arr-hari{
+        grid-column: 3/4;
+        grid-row: 14/15;
+        height: auto;
+        width: 1.5vw;
+    }
+    
+    .bio-hari{
+        grid-column: 4/7;
+        grid-row: 14/15;
+        font-size: 1.5vw;
+        font-weight: 500;
+    }
+    
+    .lakshay-img{
+        grid-column: 8/12;
+        grid-row: 3/10;
+        height: auto;
+        width: 70%;
+    }
+    
+    .lakshay-name-title{
+        grid-column: 8/12;
+        grid-row: 11/13;
+        font-size: 1.5vw;
+        font-weight: 500;
+    }
+    
+    .arr-lakshay{
+        grid-column: 8/9;
+        grid-row: 14/15;
+        height: auto;
+        width: 1.5vw;
+    }
+    
+    .lakshay-designatn{
+        grid-column: 8/12;
+        grid-row: 12/14;
+        font-size: 1.1vw;
+        font-weight: 500;
+    }
+    
+    
+    
+    .bio-lakshay{
+        grid-column: 9/12;
+        grid-row: 14/15;
+        font-weight: 500;
+        font-size: 1.5vw;
+    }
+    
+    .pankaj-img{
+        grid-column: 13/17;
+        grid-row: 3/10;
+        height: auto;
+        width: 70%;
+    }
+    
+    .pankaj-name-title{
+        grid-row: 11/13;
+        grid-column: 13/17;
+        font-size: 1.5vw;
+        font-weight: 500;
+    }
+    
+    .pankaj-designatn{
+        grid-column: 13/17;
+        font-size: 1.1vw;
+        font-weight: 500;
+        grid-row: 12/14;
+    }
+    
+    .arr-pankaj{
+        grid-column: 13/14;
+      
+        grid-row: 14/15;
+        height: auto;
+        width: 1.5vw;
+    }
+    
+    .bio-pankaj{
+        grid-column: 14/17;
+        grid-row: 14/15;
+        font-weight: 500;
+        font-size: 1.5vw;
+    }
+    
+    .p1{
+        font-size: 1.3vw;
+        font-weight: 600;
+        color: black;
+    }
+    
+    .p2{
+        font-size: 1.3vw;
+        font-weight: 500;
+        color: black;
+    }
+    
+    .p3{
+        font-size: 1vw;
+        margin-top: -14px;
+        color: black;
+    }
+    
+    .p4{
+        font-size: 1.3vw;
+        color: white;
+        overflow: hidden!important;
+    }
+    
+    .p5{
+        font-size: 1.3vw;
+        color: white;
+        overflow: hidden!important;
+    }
+    
+    .p6{
+        font-size: 1vw;
+        margin-top: -14px;
+        color: white;
+    }
+    
+    .agenda-txt{
+        font-size: .8rem;
+        place-self: center;
+        color: rgb(235, 51, 55);
+        font-weight: 500;
+        grid-column: 1/4;
+        grid-row: 2/4;
+    }
+    
+    .contact-column{
+        height: 25vh;
+        width: 100%;
+        background-color: #eb3337;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    
+    .contact-txt{
+        grid-column: 2/4;
+        grid-row: 2/4;
+        font-size: 1.5vw;
+        color: white;
+        font-weight: 600;
+        overflow: hidden!important;
+    }
+    
+    .p7{
+        font-size: 1.5vw;
+        color: white;
+        overflow: hidden!important;
+    }
+    
+    .p8{
+        font-size: 1.3vw;
+    color: white;
+    overflow: hidden!important;
+    margin-top: -13px;
+    }
+    
+    
+    .bottom{
+        height: 12vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(20, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+    .bottom-logo{
+        grid-column: 1/4;
+        grid-row: 1/3;
+        justify-self: center;
+        align-self: center;
+        height: auto;
+        width: 12vw;
+    }
+    
+    .bottom-abt{
+        grid-column: 16/17;
+        grid-row: 1/2;
+        /* justify-self: center; */
+        align-self: center;
+        /* height: 100%; */
+        margin-top: 15px;
+        font-size: .3rem;
+    }
+    
+    .bottom-spk{
+        grid-column: 17/18;
+        grid-row: 1/2;
+        /* justify-self: center; */
+        align-self: center;
+        margin-top: 15px;
+        font-size: .3rem;
+    }
+    
+    .bottom-agnd{
+        grid-column: 18/19;
+        grid-row: 1/2;
+        /* justify-self: center; */
+        align-self: center;
+        margin-top: 15px;
+        font-size: .3rem;
+    }
+    
+    .bottom-cont{
+        grid-column: 19/20;
+        grid-row: 1/2;
+        /* justify-self: center; */
+        align-self: center;
+        margin-top: 15px;
+        font-size: .3rem;
+    }
+    
+    .regd-txt{
+        grid-column: 16/20;
+        grid-row: 2/3;
+        justify-self: center;
+        font-size: 1vw;
+        color: black;
+        font-size: .3rem;
+        margin-top: 10px;
+    }
+    
+        }
+
+
+
+  
+/* MEDIA QUERY 481-768 LANDSCAPE */
+
+ @media (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
+    *{
+        overflow-x: hidden;
+    }
+    
+    body{
+        height: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-y:scroll
+    }
+
+    .navbar-header{
+        height: 12vh;
+    }
+    
+    .logo-header{
+        height: auto;
+    width: 10%;
+    position: absolute;
+    
+    }
+.scrn-txt{
+    font-size: 3vw;
+    font-weight: 650;
+}
+
+
+    .time-txt{
+        font-size: 1.4vw;
+        font-weight: 650;
+        align-self: center;
+    }
+    
+    .abt-header{
+        font-size: .5rem;
+    }
+    
+    .spk-header{
+        font-size: .5rem;
+    }
+    .agnd-header{
+    
+        font-size: .5rem;
+    }
+    
+    .navbar-header-items{
+        height: 100%;
+    width: 30%;
+    }
+    .cont-header{
+        font-size: .5rem;
+    }
+    
+    .navbar-icons{
+        grid-column: 19/21;
+        grid-row: 6/12;
+        height: 95%;
+        width: 100%;
+        align-self: center;
+        justify-self: center;
+    }
+    .nav-icons{
+        height: 100%;
+    width: 100%;
+    }
+
+.fb-img{
+    height: auto;
+    width: 14px;
+}
+
+.twt-img{
+    height: auto;
+    width: 14px;
+}
+
+.inst-img{
+    height: auto;
+    width: 14px;
+}
+
+.in-img{
+    height: auto;
+    width: 14px;
+}
+
+
+
+
+    .button-reg{
+        grid-column: 13/16;
+        grid-row: 5/8;
+        align-self: center;
+        justify-self: auto;
+    }
+    
+    .btn-reg{
+        height: 4.5vw;
+    width: 12vw;
+    border-radius: 50px;
+    background-color: white;
+    border: 2px solid #eb3337;
+    outline: none;
+    font-size: 1.2vw;
+    cursor: pointer;
+   
+    }
+    
+    .button-join{
+        grid-column: 15/19;
+        grid-row: 5/8;
+        justify-self: end;
+        align-self: center;
+    }
+    
+    .btn-join{
+        height: 4.5vw;
+        border-radius: 50px;
+        background-color: #eb3337;
+        color: white;
+        border: 1px solid #eb3337;
+        width: 17vw;
+        font-size: 1.2vw;
+    }
+
+    .img-join{
+        height: auto;
+    width: 1.8vw;
+    margin-left: 5px;
+    }
+    
+    .navbar-time{
+        grid-column: 13/19;
+        grid-row: 3/6;
+        align-self: center;
+        justify-self: center;
+    
+    }
+    
+   
+.time-navbar {
+    height: 100% !important;
+    width: 100% !important;
+    justify-content: space-evenly;
+}
+
+
+.day {
+    height: 50px;
+    width: 45px;
+    background-color: #eb3337;
+    padding: 0;
+    overflow: hidden !important;
+    border-radius: 2px;
+}
+
+.day1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.hrs {
+    height: 50px;
+    width: 45px;
+    background-color: #eb3337;
+    padding: 0;
+    overflow: hidden !important;
+    border-radius: 3px;
+    margin-left:2px;
+}
+
+.mts {
+    height: 50px;
+    width: 45px;
+    background-color: #eb3337;
+    padding: 0;
+    overflow: hidden !important;
+    border-radius: 3px;
+    margin-left:2px;
+}
+
+.secs {
+    height: 50px;
+    width: 45px;
+    background-color: #eb3337;
+    padding: 0;
+    overflow: hidden !important;
+    border-radius: 3px;
+    margin-left:2px;
+  
+}
+
+.zero {
+    font-size: 1rem;
+    color: white;
+    font-weight: 650;
+    position: absolute;
+    
+}
+
+.a{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.b{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+}
+
+
+.day-txt {
+    
+   
+    color: white;
+    font-size: .4rem;
+    position: absolute;
+    margin-top: 2vw;
+}
+
+.hrs-txt {
+    color: white;
+    font-size: .4rem;
+    position: absolute;
+    margin-top: 2vw;
+   }
+
+
+.mts-txt {
+    color: white;
+    font-size: .4rem;
+    position: absolute;
+    margin-top: 2vw;
+   }
+
+
+.sec-txt {
+    color: white;
+    font-size: .4rem;
+    position: absolute;
+    margin-top: 2vw;
+   }
+
+.about-column{
+    overflow: auto;
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(13,1fr);
+    grid-template-rows: repeat(24, 1fr);
+}
+    
+    .abt-evnt-txt{
+        font-size: .8rem;
+        font-weight: 600;
+        color: #eb3337;
+        grid-column: 1/5;
+        grid-row: 2/4;
+        align-self: center;
+        justify-self: center;
+
+    }
+    
+    .lorem1{
+        grid-column: 2/13;
+    grid-row: 4/10;
+    color: #01415f;
+    font-size: 2.3vw;
+    }
+    
+    .lorem2{
+        grid-column: 2/13;
+        grid-row: 10/17;
+        color: #01415f;
+        font-size: 2.3vw;
+    }
+    
+    .lorem3{
+        grid-column: 2/13;
+        grid-row: 17/25;
+        color: #01415f;
+        font-size: 2.3vw;
+    }
+
+
+
+    .speaker-column{
+        height: auto;
+        width: 100%;
+        display: grid;
+        background-color: rgb(235, 51, 55);
+        grid-template-columns: repeat(17, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+    }
+    
+    .txt-speak {
+        grid-area: 1 / 2 / 3 / 5;
+    align-self: center;
+    font-size: .8rem;
+    color: white;
+    font-weight: 500;
+    justify-self: auto;
+    }
+    
+    .hari-img{
+        grid-area: 2/ 3 / 7/ 7;
+        height: auto;
+        width: 80%;
+        align-self: center;
+    }
+    
+    .hari-name-title{
+        grid-column: 3/7;
+    grid-row: 7/8;
+    font-size: .9rem;
+    font-weight: 400;
+    align-self: center;
+    color: white;
+    }
+    
+    .hari-designatn{
+        grid-column: 3/7;
+    grid-row: 8/10;
+    font-size: .6rem;
+    font-weight: 500;
+    color: white;
+    }
+    
+    .arr-hari{
+        grid-column: 3/4;
+    grid-row: 10/11;
+    height: auto;
+    width: .8rem;
+    }
+    
+    .bio-hari{
+        grid-column: 4/7;
+        grid-row: 10/11;
+        font-size: .8rem;
+        font-weight: 500;
+    }
+    
+    .lakshay-img{
+        grid-column: 8/12;
+        grid-row: 2/7;
+        height: auto;
+        width: 80%;
+        align-self: center;
+    }
+    
+    .lakshay-name-title{
+        grid-column: 8/12;
+        grid-row: 7/8;
+        font-size: .9rem;
+        font-weight: 400;
+        align-self: center;
+        color: white;
+    }
+    
+    .arr-lakshay{
+        grid-column: 8/9;
+    grid-row: 10/11;
+    height: auto;
+    width: .8rem;
+    }
+    
+    .lakshay-designatn{
+        grid-column: 8/12;
+    grid-row: 8/10;
+    font-size: .6rem;
+    font-weight: 500;
+    color: white;
+    }
+    
+    
+    
+    .bio-lakshay{
+        grid-column: 9/12;
+    grid-row: 10/11;
+    font-weight: 500;
+    font-size: .8rem;
+    }
+    
+    .pankaj-img{
+        grid-column: 13/17;
+        grid-row: 2/7;
+        height: auto;
+        width: 80%;
+        align-self: center;
+    }
+    
+    .pankaj-name-title{
+        grid-row: 7/8;
+        grid-column: 13/17;
+        font-size: .9rem;
+        font-weight: 400;
+        align-self: center;
+        color: white;
+    }
+    
+    .pankaj-designatn{
+        grid-column: 13/17;
+    font-size: .6rem;
+    font-weight: 500;
+    /* grid-row: 8/9; */
+    grid-row: 8/10;
+    color: white;
+    }
+    
+    
+    .arr-pankaj{
+        grid-column: 13/14;
+        grid-row: 10/11;
+        height: auto;
+        width: .8rem;
+    }
+    
+    .bio-pankaj{
+        grid-column: 14/17;
+    grid-row: 10/11;
+    font-weight: 500;
+    font-size: .8rem;
+    }
+            
+    .p1{
+        font-size: 1.3vw;
+    font-weight: 750;
+    color: black;
+    }
+    
+    .p2{
+        font-size: 1.3vw;
+    font-weight: 700;
+    color: black;
+    }
+    
+    .p3{
+        font-size: 1vw;
+        margin-top: -14px;
+        color: black;
+    }
+    
+    .p4{
+        font-size: 1.3vw;
+        color: white;
+        font-weight: 750;
+        overflow: hidden!important;
+    }
+    
+    .p5{
+        font-size: 1.3vw;
+        color: white;
+        font-weight: 700;
+        overflow: hidden!important;
+    }
+    
+    .p6{
+        font-size: 1vw;
+        margin-top: -14px;
+        color: white;
+    }
+    
+.agenda-6{
+    overflow: hidden!important;
+}
+
+
+    .agenda-txt{
+        font-size: .8rem;
+        place-self: center;
+        color: rgb(235, 51, 55);
+        font-weight: 500;
+        grid-column: 1/4;
+        grid-row: 2/4;
+    }
+    
+    .contact-column{
+        height: 25vh;
+        width: 100%;
+        background-color: #eb3337;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    
+    .contact-txt{
+        grid-column: 2/4;
+        grid-row: 2/4;
+        font-size: 1.5vw;
+        color: white;
+        font-weight: 600;
+        overflow: hidden!important;
+    }
+    
+    .p7{
+        font-size: 1.5vw;
+        color: white;
+        overflow: hidden!important;
+    }
+    
+    .p8{
+        font-size: 1.3vw;
+    color: white;
+    overflow: hidden!important;
+    margin-top: -13px;
+    }
+    
+    .add1{
+        grid-column: 4/7;
+    grid-row: 2/4;
+    }
+
+.add2{
+    grid-column: 7/10;
+    grid-row: 2/4;
+}
+
+    
+    .bottom{
+        height: 10vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(20, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+    .bottom-logo{
+        grid-column: 1/4;
+        grid-row: 1/3;
+        justify-self: center;
+        align-self: center;
+        height: auto;
+        width: 10vw;
+    }
+    
+    .bottom-abt{
+        grid-column: 16/17;
+        grid-row: 1/2;
+        /* justify-self: center; */
+      
+        /* height: 100%; */
+        margin-top: 15px;
+        font-size: .4rem;
+        align-self: end;
+        font-weight: 500;
+    }
+    
+    .bottom-spk{
+        grid-column: 17/18;
+        grid-row: 1/2;
+        /* justify-self: center; */
+        align-self: end;
+        margin-top: 15px;
+        font-size: .4rem;
+        font-weight: 500;
+    }
+    
+    .bottom-agnd{
+        grid-column: 18/19;
+        grid-row: 1/2;
+        /* justify-self: center; */
+        align-self: end;
+        margin-top: 15px;
+        font-size: .4rem;
+        font-weight: 500;
+    }
+    
+    .bottom-cont{
+        grid-column: 19/20;
+        grid-row: 1/2;
+        /* justify-self: center; */
+        align-self: end;
+        margin-top: 15px;
+        font-size: .4rem;
+        font-weight: 500;
+    }
+    
+    .regd-txt{
+        grid-column: 16/20;
+        grid-row: 2/3;
+        justify-self: center;
+        font-size: 1vw;
+        color: black;
+        font-size: .4rem;
+        margin-top: 10px;
+    }
+   
+    
+        }
+
+/* MEDIA QUERY 768-1024 LANDSCAPE */
+
+ @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    *{
+        overflow-x: hidden;
+    }
+    
+    body{
+        height: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-y:scroll
+    }
+    .navbar-header{
+        height: 12vh;
+    }
+    
+    .logo-header{
+        height: auto;
+        width: 9%;
+        position: absolute;
+    
+    }
+.scrn-txt{
+    font-size: 3vw;
+    font-weight: 650;
+}
+.navbar-header-items{
+    height: 100%;
+width: 30%;
+}
+
+    .time-txt{
+        font-size: 1.2vw;
+        font-weight: 650;
+        align-self: center;
+    }
+    
+    .abt-header{
+        font-size: .5rem;
+    }
+    
+    .spk-header{
+        font-size: .5rem;
+    }
+    .agnd-header{
+    
+        font-size: .5rem;
+    }
+    
+   
+    .cont-header{
+        font-size: .5rem;
+    }
+    
+    .navbar-icons{
+        grid-column: 19/21;
+        grid-row: 6/12;
+        height: 95%;
+        width: 100%;
+        align-self: center;
+        justify-self: center;
+    }
+    .nav-icons{
+        height: 100%;
+    width: 100%;
+    }
+
+.fb-img{
+    height: auto;
+    width: 18px;
+}
+
+.twt-img{
+    height: auto;
+    width: 18px;
+}
+
+.inst-img{
+    height: auto;
+    width: 18px;
+}
+
+.in-img{
+    height: auto;
+    width: 18px;
+}
+
+
+
+
+    .button-reg{
+        grid-column: 13/17;
+    grid-row: 4/9;
+    align-self: center;
+    justify-self: center;
+    }
+    
+    .btn-reg{
+        height: 2rem;
+        width: 4.5rem;
+        border-radius: 50px;
+        background-color: white;
+        border: 2px solid #eb3337;
+        outline: none;
+        font-size: .5rem;
+        cursor: pointer;
+   
+    }
+    
+    .button-join{
+        grid-column: 15/20;
+        grid-row: 4/9;
+        /* justify-self: center; */
+        align-self: center;
+    }
+    
+    .btn-join{
+        height: 2rem;
+    border-radius: 50px;
+    background-color: #eb3337;
+    color: white;
+    border: 1px solid #eb3337;
+    width: 7rem;
+    font-size: .5rem;
+    }
+
+    .img-join{
+        height: auto;
+    width: .7rem;
+    margin-left: 5px;
+    }
+    
+    .navbar-time{
+        grid-column: 13/20;
+    grid-row: 3/6;
+    align-self: center;
+    justify-self: center;
+    
+    }
+    
+   
+.time-navbar {
+    height: 100% !important;
+    width: 100% !important;
+    justify-content: space-evenly;
+}
+
+
+.day {
+    height: 55px;
+    width: 45px;
+    background-color: #eb3337;
+    padding: 0;
+    overflow: hidden !important;
+    border-radius: 2px;
+}
+
+.day1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.hrs {
+    height: 55px;
+    width: 45px;
+    background-color: #eb3337;
+    padding: 0;
+    overflow: hidden !important;
+    border-radius: 2px;
+}
+
+.mts {
+    height: 55px;
+    width: 45px;
+    background-color: #eb3337;
+    padding: 0;
+    overflow: hidden !important;
+    border-radius: 2px;
+}
+
+.secs {
+    height: 55px;
+    width: 45px;
+    background-color: #eb3337;
+    padding: 0;
+    overflow: hidden !important;
+    border-radius: 2px;
+  
+}
+
+.zero {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    margin-top:1vw;
+    
+}
+
+.a{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.b{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+}
+
+
+.day-txt {
+    color: white;
+    font-size: .4rem;
+    position: absolute;
+    margin-top: 2vw;
+}
+
+.hrs-txt {
+    color: white;
+    font-size: .4rem;
+    position: absolute;
+    margin-top: 2vw;
+   }
+
+
+.mts-txt {
+    color: white;
+    font-size: .4rem;
+    position: absolute;
+    margin-top: 2vw;
+   }
+
+
+.sec-txt {
+    color: white;
+    font-size: .4rem;
+    position: absolute;
+    margin-top: 2vw;
+   }
+
+.about-column{
+    overflow: auto;
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(13,1fr);
+    grid-template-rows: repeat(21, 1fr);
+}
+    
+    .abt-evnt-txt{
+        font-size: 1.8vw;
+    font-weight: 600;
+    color: #eb3337;
+    grid-column: 1/4;
+    grid-row: 2/4;
+    align-self: center;
+    justify-self: center;
+
+    }
+    
+    .lorem1{
+        grid-column: 2/13;
+    grid-row: 4/9;
+    color: #01415f;
+    font-size: 1.8vw;
+    }
+    
+    .lorem2{
+        grid-column: 2/13;
+        grid-row: 9/15;
+        color: #01415f;
+        font-size: 1.8vw;
+    }
+    
+    .lorem3{
+        grid-column: 2/13;
+        grid-row: 15/22;
+        color: #01415f;
+        font-size: 1.8vw;
+    }
+
+  
+
+    .speaker-column{
+        height: 115vh;
+    width: 100%;
+    display: grid;
+    background-color: rgb(235, 51, 55);
+    grid-template-columns: repeat(17, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    }
+    
+    .txt-speak {
+        grid-area: 1 / 2 / 3 / 5;
+        /* align-self: end; */
+        font-size: 1.8vw;
+        color: white;
+        font-weight: 640;
+        justify-self: auto;
+    }
+    
+    .hari-img{
+        grid-area: 2 / 3 / 7/ 7;
+    height: auto;
+    width: 80%;
+    align-self: center;
+    }
+    
+    .hari-name-title{
+        grid-column: 3/7;
+        grid-row: 7/8;
+        font-size: .9rem;
+        font-weight: 500;
+        /* align-self: center; */
+        color: white;
+    }
+    
+    .hari-designatn{
+        grid-column: 3/7;
+        grid-row: 8/10;
+        font-size: .7rem;
+        font-weight: 500;
+        color: white;
+    }
+    
+    .arr-hari{
+        grid-column: 3/4;
+        grid-row: 9/11;
+        height: auto;
+        width: .8rem;
+        align-self: center;
+    }
+    
+    .bio-hari{
+        grid-column: 4/7;
+        grid-row: 9/11;
+        font-size: 1rem;
+        font-weight: 500;
+        align-self: center;
+        margin-top: 1.5vw;
+    }
+    
+    .lakshay-img{
+        grid-column: 8/12;
+        grid-row: 2/7;
+        height: auto;
+        width: 80%;
+        align-self: center;
+    }
+    
+    .lakshay-name-title{
+        grid-column: 8/12;
+    grid-row: 7/8;
+    font-size: .9rem;
+    font-weight: 500;
+    align-self: center;
+    color: white;
+    }
+    
+    .arr-lakshay{
+        grid-column: 8/9;
+        grid-row: 9/11;
+        height: auto;
+        width: .8rem;
+        align-self: center;
+    }
+    
+    .lakshay-designatn{
+        grid-column: 8/12;
+        grid-row: 8/10;
+        font-size: .7rem;
+        font-weight: 500;
+        color: white;
+    }
+    
+    
+    .bio-lakshay{
+        grid-column: 9/12;
+    grid-row: 9/11;
+    font-weight: 500;
+    font-size: 1rem;
+    align-self: center;
+    margin-top: 1.5vw;
+    }
+    
+    .pankaj-img{
+        grid-column: 13/17;
+    grid-row: 2/7;
+    height: auto;
+    width: 80%;
+    align-self: center;
+    }
+    
+    .pankaj-name-title{
+        grid-row: 7/8;
+        grid-column: 13/17;
+        font-size: .9rem;
+        font-weight: 500;
+        align-self: center;
+        color: white;
+    }
+    
+    .pankaj-designatn{
+        grid-column: 13/17;
+        font-size: .7rem;
+        font-weight: 500;
+        /* grid-row: 8/9; */
+        grid-row: 8/10;
+        color: white;
+    }
+    
+    
+    .arr-pankaj{
+        grid-column: 13/14;
+        grid-row: 9/11;
+        height: auto;
+        width: .8rem;
+        align-self: center;
+        justify-self: auto;
+    }
+    
+    .bio-pankaj{
+        grid-column: 14/17;
+    grid-row: 9/11;
+    font-weight: 500;
+    font-size: 1rem;
+    align-self: center;
+    margin-top:1.5vw;
+   
+    }
+  
+    .p1{
+        font-size: 1.2vw;
+    font-weight: 650;
+        color: black;
+    }
+    
+    .p2{
+        font-size: 1vw;
+    font-weight: 650;
+        color: black;
+    }
+    
+    .p3{
+        font-size: .8vw;
+        margin-top: -14px;
+        color: black;
+    }
+    
+    .p4{
+        font-size: 1.2vw;
+    font-weight: 650;
+        color: white;
+        overflow: hidden!important;
+    }
+    
+    .p5{
+        font-size: 1vw;
+        color: white;
+        overflow: hidden!important;
+        font-weight: 650;
+    }
+    
+    .p6{
+        font-size: .8vw;
+    font-weight: 550;
+        margin-top: -14px;
+        color: white;
+    }
+    
+.agenda-6{
+    overflow: hidden!important;
+    grid-area: 16 / 8 / 20 / 15;
+}
+
+.agenda-4{
+    grid-area: 11/ 8 / 16 / 15;
+}
+
+.agenda-8{
+    grid-area: 21 / 8 / 25 / 15;
+    overflow: hidden !important;
+}
+
+
+
+    .agenda-txt{
+        font-size: .8rem;
+        place-self: center;
+        color: rgb(235, 51, 55);
+        font-weight: 500;
+        grid-column: 1/4;
+        grid-row: 2/4;
+    }
+    
+    .contact-column{
+        height: 25vh;
+        width: 100%;
+        background-color: #eb3337;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    
+    .contact-txt{
+        grid-column: 2/4;
+        grid-row: 2/4;
+        font-size: 1.5vw;
+        color: white;
+        font-weight: 600;
+        overflow: hidden!important;
+    }
+    
+    .p7{
+        font-size: 1.5vw;
+        color: white;
+        overflow: hidden!important;
+    }
+    
+    .p8{
+        font-size: 1.3vw;
+    color: white;
+    overflow: hidden!important;
+    margin-top: -13px;
+    }
+    
+    
+    .bottom{
+        height: 10vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(20, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+    .bottom-logo{
+        grid-column: 1/4;
+        grid-row: 1/3;
+        justify-self: center;
+        align-self: center;
+        height: auto;
+        width: 9vw;
+    }
+    
+    .bottom-abt{
+        grid-column: 16/17;
+        grid-row: 1/2;
+        /* justify-self: center; */
+      
+        /* height: 100%; */
+        margin-top: 15px;
+        font-size: 1vw;
+        align-self: end;
+    }
+    
+    .bottom-spk{
+        grid-column: 17/18;
+        grid-row: 1/2;
+        /* justify-self: center; */
+        align-self: end;
+        margin-top: 15px;
+        font-size: 1vw;
+    }
+    
+    .bottom-agnd{
+        grid-column: 18/19;
+        grid-row: 1/2;
+        /* justify-self: center; */
+        align-self: end;
+        margin-top: 15px;
+        font-size: 1vw;
+    }
+    
+    .bottom-cont{
+        grid-column: 19/20;
+        grid-row: 1/2;
+        /* justify-self: center; */
+        align-self: end;
+        margin-top: 15px;
+        font-size: 1vw;
+    }
+    
+    .regd-txt{
+        grid-column: 16/20;
+        grid-row: 2/3;
+        justify-self: center;
+        font-size: 1vw;
+        color: black;
+        font-size: 1vw;
+        margin-top: 10px;
+    }
+   
+    
+        }
+
+
+
+        
+/* MEDIA QUERY 1024-1366 LANDSCAPE */
+
+ @media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+    *{
+        overflow-x: hidden;
+    }
+    
+    body{
+        height: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-y:scroll
+    }
+
+    .navbar-header{
+        height: 12vh;
+    }
+    
+    .logo-header{
+        height: auto;
+        width: 13%;
+        position: absolute;
+    
+    }
+.scrn-txt{
+    font-size: 4vw;
+    font-weight: 650;
+}
+.navbar-header-items{
+    height: 100%;
+width: 30%;
+}
+
+    .time-txt{
+        font-size: 1.6vw;
+        font-weight: 650;
+        align-self: center;
+    }
+    
+    .abt-header{
+        font-size: 1rem;
+    }
+    
+    .spk-header{
+        font-size: 1rem;
+    }
+    .agnd-header{
+    
+        font-size: 1rem;
+    }
+    
+   
+    .cont-header{
+        font-size: 1rem;
+    }
+    
+    .navbar-icons{
+        grid-column: 19/21;
+        grid-row: 6/12;
+        height: 95%;
+        width: 100%;
+        align-self: center;
+        justify-self: center;
+    }
+    .nav-icons{
+        height: 100%;
+    width: 100%;
+    }
+
+    .navbar-nav-icons{
+        height: 85%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    }
+
+
+
+
+.fb-img{
+    height: auto;
+    width: 30px;
+}
+
+.twt-img{
+    height: auto;
+    width: 30px;
+}
+
+.inst-img{
+    height: auto;
+    width: 30px;
+}
+
+.in-img{
+    height: auto;
+    width: 30px;
+}
+
+
+
+
+    .button-reg{
+        grid-column: 13/16;
+    grid-row: 4/8;
+    align-self: center;
+    justify-self: end;
+    }
+    
+    .btn-reg{
+        height: 3rem;
+    width: 8rem;
+    border-radius: 50px;
+    background-color: white;
+    border: 2px solid #eb3337;
+    outline: none;
+    font-size: .9rem;
+    cursor: pointer;
+   
+    }
+    
+    .button-join{
+        grid-column: 16/20;
+        grid-row: 4/8;
+        justify-self: auto;
+        align-self: center;
+        margin-left: 1vw;
+    }
+    
+    .btn-join{
+        height: 3rem;
+        border-radius: 50px;
+        background-color: #eb3337;
+        color: white;
+        border: 1px solid #eb3337;
+        width: 11.5rem;
+        font-size: .8rem;
+    }
+
+    .img-join{
+        height: auto;
+    width: 1.2rem;
+    margin-left: 10px;
+    }
+    
+    .navbar-time{
+        grid-column: 13/20;
+        grid-row: 3/6;
+        align-self: center;
+        justify-self: center;
+    
+    }
+    
+   
+.time-navbar {
+    height: 100% !important;
+    width: 100% !important;
+    justify-content: space-evenly;
+}
+
+
+.day {
+    height: 100px;
+    width: 80px;
+    background-color: #eb3337;
+    padding: 0;
+    overflow: hidden !important;
+    border-radius: 2px;
+}
+
+.day1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.hrs {
+    height: 100px;
+    width: 80px;
+    background-color: #eb3337;
+    padding: 0;
+    overflow: hidden !important;
+    border-radius: 2px;
+}
+
+.mts {
+    height: 100px;
+    width: 80px;
+    background-color: #eb3337;
+    padding: 0;
+    overflow: hidden !important;
+    border-radius: 2px;
+}
+
+.secs {
+    height: 100px;
+    width: 80px;
+    background-color: #eb3337;
+    padding: 0;
+    overflow: hidden !important;
+    border-radius: 2px;
+  
+}
+
+.zero {
+    font-size: 2.2rem;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    
+}
+
+.a{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.b{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+}
+
+
+.day-txt {
+    color: white;
+    font-size: .8rem;
+    position: absolute;
+    margin-top: 2vw;
+}
+
+.hrs-txt {
+    color: white;
+    font-size: .8rem;
+    position: absolute;
+    margin-top: 2vw;
+   }
+
+
+.mts-txt {
+    color: white;
+    font-size: .8rem;
+    position: absolute;
+    margin-top: 2vw;
+   }
+
+
+.sec-txt {
+    color: white;
+    font-size: .8rem;
+    position: absolute;
+    margin-top: 2vw;
+   }
+
+.about-column{
+    overflow: auto;
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(13,1fr);
+    grid-template-rows: repeat(21, 1fr);
+}
+    
+    .abt-evnt-txt{
+        font-size: 1.8vw;
+    font-weight: 600;
+    color: #eb3337;
+    grid-column: 1/4;
+    grid-row: 2/4;
+    align-self: center;
+    justify-self: center;
+
+    }
+    
+    .lorem1{
+        grid-column: 2/13;
+    grid-row: 4/9;
+    color: #01415f;
+    font-size: 1.8vw;
+    }
+    
+    .lorem2{
+        grid-column: 2/13;
+        grid-row: 9/15;
+        color: #01415f;
+        font-size: 1.8vw;
+    }
+    
+    .lorem3{
+        grid-column: 2/13;
+        grid-row: 15/22;
+        color: #01415f;
+        font-size: 1.8vw;
+    }
+
+  
+
+    .speaker-column{
+        height: auto;
+        width: 100%;
+        display: grid;
+        background-color: rgb(235, 51, 55);
+        grid-template-columns: repeat(17, 1fr);
+        grid-template-rows: repeat(11, 1fr);
+    }
+    
+    .txt-speak {
+        grid-area: 1 / 2 / 3 / 5;
+        align-self: center;
+        font-size: 1.8vw;
+        color: white;
+        font-weight: 640;
+        justify-self: auto;
+    }
+    
+    .hari-img{
+        grid-area: 3 / 3 / 8/ 7;
+        height: auto;
+        width: 85%;
+    }
+    
+    .hari-name-title{
+        grid-column: 3/7;
+    grid-row: 8/9;
+    font-size: 1.5rem;
+    font-weight: 500;
+    align-self: center;
+    color: white;
+    }
+    
+    .hari-designatn{
+        grid-column: 3/7;
+    grid-row: 9/11;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    }
+    
+    .arr-hari{
+        grid-column: 3/4;
+    grid-row: 10/12;
+    height: auto;
+    width: 1.2rem;
+    align-self: center;
+    }
+    
+    .bio-hari{
+        grid-column: 4/7;
+        grid-row: 10/12;
+        font-size: 1.5rem;
+        font-weight: 500;
+        align-self: center;
+        margin-top: 1.5vw;
+    }
+    
+    .lakshay-img{
+        grid-column: 8/12;
+        grid-row: 3/8;
+        height: auto;
+        width: 85%;
+    }
+    
+    .lakshay-name-title{
+        grid-column: 8/12;
+        grid-row: 8/9;
+        font-size: 1.5rem;
+        font-weight: 500;
+        align-self: center;
+        color: white;
+    }
+    
+    .arr-lakshay{
+        grid-column: 8/9;
+        grid-row: 10/12;
+        height: auto;
+        width: 1.2rem;
+        align-self: center;
+    }
+    
+    .lakshay-designatn{
+        grid-column: 8/12;
+    grid-row: 9/11;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    }
+    
+    
+    .bio-lakshay{
+        grid-column: 9/12;
+        grid-row: 10/12;
+        font-size: 1.5rem;
+        font-weight: 500;
+        align-self: center;
+        margin-top: 1.5vw;
+    }
+    
+    .pankaj-img{
+        grid-column: 13/17;
+        grid-row: 3/8;
+        height: auto;
+        width: 85%;
+    }
+    
+    .pankaj-name-title{
+        grid-row: 8/9;
+        grid-column: 13/17;
+        font-size: 1.5rem;
+        font-weight: 500;
+        align-self: center;
+        color: white;
+    }
+    
+    .pankaj-designatn{
+        grid-column: 13/17;
+        font-size: 1rem;
+        font-weight: 500;
+        /* grid-row: 8/9; */
+        grid-row: 9/11;
+        color: white;
+    }
+    
+    
+    .arr-pankaj{
+        grid-column: 13/14;
+        grid-row: 10/12;
+        height: auto;
+        width: 1.2rem;
+        align-self: center;
+    }
+    
+    .bio-pankaj{
+        grid-column: 14/17;
+        grid-row: 10/12;
+        font-size: 1.5rem;
+        font-weight: 500;
+        align-self: center;
+        margin-top: 1.5vw;
+    }
+  
+
+   .p1{
+        font-size: 1.6vw;
+    font-weight: 650;
+        color: black;
+    }
+    
+    .p2{
+        font-size: 1.6vw;
+    font-weight: 550;
+        color: black;
+    }
+    
+    .p3{
+        font-size: 1.3vw;
+        margin-top: -14px;
+        color: black;
+    }
+    
+    .p4{
+        font-size: 1.6vw;
+    font-weight: 650;
+        color: white;
+        overflow: hidden!important;
+    }
+    
+    .p5{
+        font-size: 1.3vw;
+        color: white;
+        overflow: hidden!important;
+    }
+    
+    .p6{
+        font-size: 1.3vw;
+    font-weight: 550;
+        margin-top: -14px;
+        color: white;
+    }
+    
+.agenda-6{
+    overflow: hidden!important;
+    grid-area: 16 / 8 / 20 / 15;
+}
+
+.agenda-4{
+    grid-area: 11/ 8 / 16 / 15;
+}
+
+.agenda-8{
+    grid-area: 21 / 8 / 25 / 15;
+    overflow: hidden !important;
+}
+
+
+
+    .agenda-txt{
+        font-size: 1.8vw;
+        place-self: center;
+        color: rgb(235, 51, 55);
+        font-weight: 640;
+        grid-column: 1/4;
+        grid-row: 1/4;
+    }
+    
+    .contact-column{
+        height: 20vh;
+        width: 100%;
+        background-color: #eb3337;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    
+    .contact-txt{
+        grid-column: 2/4;
+        grid-row: 2/4;
+        font-size: 1.5vw;
+        color: white;
+        font-weight: 600;
+        overflow: hidden!important;
+    }
+    
+    .p7{
+        font-size: 1.5vw;
+        color: white;
+        overflow: hidden!important;
+    }
+    
+    .p8{
+        font-size: 1.3vw;
+    color: white;
+    overflow: hidden!important;
+    margin-top: -13px;
+    }
+    
+    
+    .bottom{
+        height: 10vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(20, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+    .bottom-logo{
+        grid-column: 1/4;
+        grid-row: 1/3;
+        justify-self: center;
+        align-self: center;
+        height: auto;
+        width: 12vw;
+    }
+    
+    .bottom-abt{
+        grid-column: 16/17;
+        grid-row: 1/2;
+        /* justify-self: center; */
+      
+        /* height: 100%; */
+        margin-top: 15px;
+        font-size: 1vw;
+        align-self: center;
+    }
+    
+    .bottom-spk{
+        grid-column: 17/18;
+        grid-row: 1/2;
+        /* justify-self: center; */
+        align-self: center;
+        margin-top: 15px;
+        font-size: 1vw;
+    }
+    
+    .bottom-agnd{
+        grid-column: 18/19;
+        grid-row: 1/2;
+        /* justify-self: center; */
+        align-self: center;
+        margin-top: 15px;
+        font-size: 1vw;
+    }
+    
+    .bottom-cont{
+        grid-column: 19/20;
+        grid-row: 1/2;
+        /* justify-self: center; */
+        align-self: center;
+        margin-top: 15px;
+        font-size: 1vw;
+    }
+    
+    .regd-txt{
+        grid-column: 16/20;
+        grid-row: 2/3;
+        justify-self: center;
+        font-size: 1vw;
+        color: black;
+        font-size: 1vw;
+        margin-top: 10px;
+    }
+   
+  
+
+
+
+ }
