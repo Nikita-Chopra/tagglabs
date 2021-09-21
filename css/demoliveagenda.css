@@ -1,0 +1,136 @@
+
+/* AGENDA COLUMN */
+
+
+
+.agenda-column{
+    height: 125vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(28, 1fr);
+
+}
+.agenda-txt2 {
+    font-size: 1.2vw;
+    place-self: center;
+    color: rgb(235, 51, 55);
+    font-weight: 500;
+    grid-column: 1/4;
+    grid-row: 1/4;
+}
+
+.agenda-1 {
+    grid-area: 5/ 5 / 7 / 8;
+}
+
+.agenda-2 {
+    grid-area: 5 / 8 / 10 / 15;
+    overflow: hidden !important;
+}
+
+.agenda-3 {
+    grid-area: 11/ 5 / 13 / 8;
+    overflow: hidden !important;
+}
+
+.agenda-4 {
+    grid-area: 11/ 8 / 15 / 15;
+    overflow: hidden !important;
+}
+
+.agenda-5 {
+    grid-area: 16 / 5 / 18 / 8;
+    overflow: hidden !important;
+}
+
+.agenda-6 {
+    grid-area: 16 / 8 / 19 / 15;
+    overflow: hidden !important;
+}
+
+.agenda-7 {
+    grid-area: 21 / 5 / 23 / 8;
+    overflow: hidden !important;
+}
+
+.agenda-8 {
+    grid-area: 21 / 8 / 24 / 15;
+    overflow: hidden !important;
+}
+
+.agenda-9 {
+    grid-area: 26 / 5 / 28 / 8;
+    overflow: hidden !important;
+}
+
+.agenda-10 {
+    grid-area: 26 / 8 / 28 / 15;
+    overflow: hidden !important;
+}
+
+.p1 {
+    font-size: 1.2vw;
+    font-weight: 650;
+    color: black;
+}
+
+.p2 {
+    font-size: 1.1vw;
+    font-weight: 550;
+    color: black;
+}
+
+.p3 {
+    font-size: .9vw;
+    margin-top: -14px;
+    color: black;
+}
+
+.p4{
+    font-size: 1.2vw;
+    font-weight: 650;
+    color: white;
+}
+
+.p5{
+    font-size: 1.1vw;
+    font-weight: 550;
+    color: white;
+}
+
+.p6{
+    font-size: .9vw;
+    margin-top: -14px;
+    color: white;
+}
+
+.color1 {
+    grid-area: 4 / 3 / 10 / 15;
+    z-index: -1;
+    background-color: rgb(255, 235, 217);
+}
+
+.color2 {
+    z-index: -1;
+    background-color: rgb(235, 51, 55);
+    grid-area: 10 / 3 / 15 / 15;
+}
+
+.color3 {
+    grid-area: 15 / 3 / 20 / 15;
+    z-index: -1;
+    background-color: rgb(255, 235, 217);
+}
+
+.color4 {
+    z-index: -1;
+    background-color: rgb(235, 51, 55);
+    grid-area: 20 / 3 / 25 / 15;
+}
+
+.color5 {
+    grid-area: 25 / 3 / 29 / 15;
+    z-index: -1;
+    background-color: rgb(255, 235, 217);
+}

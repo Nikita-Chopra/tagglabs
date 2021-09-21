@@ -520,7 +520,7 @@ body{
   
 /* MEDIA QUERY 481-768 LANDSCAPE */
 
- @media (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
+ @media (min-width: 480px) and (max-width: 768px) and (orientation: landscape) {
     *{
         overflow-x: hidden;
     }
@@ -693,7 +693,7 @@ body{
     background-color: #eb3337;
     padding: 0;
     overflow: hidden !important;
-    border-radius: 3px;
+    border-radius: 2px;
     margin-left:2px;
 }
 
@@ -703,7 +703,7 @@ body{
     background-color: #eb3337;
     padding: 0;
     overflow: hidden !important;
-    border-radius: 3px;
+    border-radius: 2px;
     margin-left:2px;
 }
 
@@ -713,7 +713,7 @@ body{
     background-color: #eb3337;
     padding: 0;
     overflow: hidden !important;
-    border-radius: 3px;
+    border-radius: 2px;
     margin-left:2px;
   
 }

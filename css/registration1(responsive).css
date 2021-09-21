@@ -2010,7 +2010,7 @@ select.selt-country{
 .title-txt{
     grid-column: 2/10;
     grid-row: 1/2;
-   
+    color: #eb3337;
     align-self: end;
     font-weight:500;
     font-size: 1.2rem;
@@ -2656,8 +2656,10 @@ select.selt-country{
     
     .title-txt{
         grid-column: 4/10;
-        grid-row: 1/2;
-        font-size: .9vw;
+    grid-row: 1/2;
+    font-size: .9vw;
+    color: #eb3337;
+    font-weight: 600;
        
        
     }
@@ -4370,7 +4372,7 @@ select.selt-country{
 
 
 .button-submit{
-    grid-column: 4/7;
+    grid-column: 4/8;
     grid-row: 5/8;
     align-self: center;
     justify-self: center;
@@ -4412,6 +4414,7 @@ select.selt-country{
     justify-self: center;
     align-self: center;
     font-weight: 500;
+    margin-top:2vw;
 }
 
 
@@ -5039,6 +5042,7 @@ select.selt-country{
     justify-self: center;
     align-self: center;
     font-weight: 500;
+    margin-top:2vw;
 }
 
 
@@ -5626,7 +5630,7 @@ select.selt-country{
     
     
     .button-submit{
-        grid-column: 4/7;
+        grid-column: 4/8;
         grid-row: 5/8;
         align-self: center;
         justify-self: center;

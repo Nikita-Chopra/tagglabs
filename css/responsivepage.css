@@ -1,0 +1,68 @@
+/* MEDIA QUERY */
+
+/* PORTRAIT MODE */
+
+/* MEDIA QUERY 320-480 PORTRAIT MODE */
+
+@media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+
+}
+
+/* MEDIA QUERY 480-768 PORTRAIT MODE */
+
+@media (min-width: 480px) and (max-width: 768px) and (orientation: portrait) {
+
+}
+
+/* MEDIA QUERY 768-1024 PORTRAIT MODE */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+
+}
+
+
+/* MEDIA QUERY 1024-1366 PORTRAIT MODE */
+
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+
+}
+
+/* MEDIA QUERY 1080-1920 PORTRAIT MODE */
+
+@media (min-width: 1080px) and (max-width: 1920px) and (orientation: portrait) {
+
+}
+
+
+
+
+
+
+/* MEDIA QUERY */
+
+/* LANDSCAPE MODE */
+
+/* MEDIA QUERY 320-480 LANDSCAPE MODE */
+
+@media (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+
+}
+
+/* MEDIA QUERY 480-768 LANDSCAPE MODE */
+
+@media (min-width: 480px) and (max-width: 768px) and (orientation: landscape) {
+
+}
+
+/* MEDIA QUERY 768-1024 LANDSCAPE MODE */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+}
+
+
+/* MEDIA QUERY 1024-1366 LANDSCAPE MODE */
+
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+
+}

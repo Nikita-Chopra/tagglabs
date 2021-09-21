@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="../css/searchbox.css">
     <link rel="stylesheet" href="../css/livedemolandscape(responsive).css">
     <link rel="stylesheet" href="../css/livedemoportrait(responsive).css">
-
+    <link rel="stylesheet" href="../css/demolivepopup.css">
+    <link rel="stylesheet" href="../css/demolivepopup(responsive).css">
+    <link rel="stylesheet" href="../css/demoliveagendapopup.css">
+    <!-- <link rel="stylesheet" href="../css/demoliveagenda.css"> -->
 
 </head>
 
@@ -21,13 +24,15 @@
     <section class="header-section">
         <div class="header">
             <img class="logo-header" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Common/logo.png">
-            <p class="download-txt">DOWNLOADS</p>
+            <p class="download-txt" onclick="downloadopen()">DOWNLOADS</p>
             <img class="download-img"
-                src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Live/brochure_download.png">
+                src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Live/brochure_download.png"
+                onclick="downloadopen()">
             <p class="feedback-txt">FEEDBACK</p>
             <img class="feedback-img" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Live/feedback.png">
-            <p class="saved-txt">SAVED NOTES</p>
-            <img class="saved-img" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Live/saved_notes.png">
+            <p class="saved-txt" onclick="savednotesopen()">SAVED NOTES</p>
+            <img class="saved-img" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Live/saved_notes.png"
+                onclick="savednotesopen()">
         </div>
     </section>
 
@@ -38,19 +43,22 @@
             <div class="poll-box d-none">
                 <p class="poll-box-txt">POLL</p>
                 <img class="poll-box-img" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Live/no_poll.png">
-                <img class="poll-box-cross" src="https://d1wswrkiissxa5.cloudfront.net/aiu/cross.png">
+                <img class="poll-box-cross" src="https://d1wswrkiissxa5.cloudfront.net/aiu/cross.png"
+                    onclick="pollcross()">
                 <p class="nopoll-txt">No Poll!</p>
             </div>
             <div class="note-box d-none">
                 <p class="note-box-txt">TAKE A NOTE</p>
-                <img class="note-box-cross" src="https://d1wswrkiissxa5.cloudfront.net/aiu/cross.png">
+                <img class="note-box-cross" src="https://d1wswrkiissxa5.cloudfront.net/aiu/cross.png"
+                    onclick="notecross()">
                 <textarea class="type-box-txt">Type a Note...</textarea>
                 <button class="note-box-save">SAVE</button>
                 <div class="color1"></div>
             </div>
             <div class="question-box d-none">
                 <p class="ques-box-txt">ASK A QUESTION</p>
-                <img class="ques-box-cross" src="https://d1wswrkiissxa5.cloudfront.net/aiu/cross.png">
+                <img class="ques-box-cross" src="https://d1wswrkiissxa5.cloudfront.net/aiu/cross.png"
+                    onclick="quescross()">
                 <textarea class="ques-box-txtarea">Type a Note...</textarea>
                 <button class="ques-box-save">SUBMIT</button>
                 <div class="color2"></div>
@@ -59,47 +67,205 @@
 
         </div>
 
-
-
-
-
-
-
-
-
         <div class="message-section">
-            <p class="attendes-txt">ALL ATTENDEES</p>
-            <p class="network-txt">NETWORKING ZONE</p>
-            <div class="attendes-box"></div>
-            <div class="network-box"></div>
-            <form class="example1">
+            <p class="attendes-txt" onclick="attendesopen()">ALL ATTENDEES</p>
+            <p class="network-txt" onclick="networkopen()">NETWORKING ZONE</p>
+            <div class="attendes-box d-none"></div>
+            <div class="network-box d-none"></div>
+            <form class="example1 d-none">
                 <input class="search-txt" type="text" placeholder="Search.." name="search2">
             </form>
-            <form class="example2">
+            <form class="example2 d-none">
                 <input class="type-txt" type="text" placeholder="Type your message">
-                <img class="type-img" src="https://d1wswrkiissxa5.cloudfront.net/dc/connect-series/platform/send_chat.png"> 
+                <img class="type-img"
+                    src="https://d1wswrkiissxa5.cloudfront.net/dc/connect-series/platform/send_chat.png">
             </form>
 
         </div>
+
+        <div class="download-box d-none">
+            <p class="down-box-txt">DOWNLOAD</p>
+            <p class="down-box-cross" onclick="downloadboxcross()">X</p>
+        </div>
+
+        <div class="savednotes-box d-none">
+            <p class="saved-box-txt">SAVED NOTES</p>
+            <p class="saved-box-cross" onclick="savednotesboxcross()">X</p>
+            <img class="saved-box-img" src="https://d1wswrkiissxa5.cloudfront.net/dc/ps/live/no_notes_icon.png">
+            <p class="saved-box-txt2">
+                You can download your saved notes
+                <br> <span class="here-txt">from here</span>
+            </p>
+
+
+        </div>
+
+
 
 
     </section>
 
     <section class="bottom-section">
-        <img class="cross-img" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Live/exit.png">
-        <img class="agenda-img" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Live/agenda.png">
-        <img class="poll-img" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Live/poll.png">
-        <img class="note-img" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Live/takeanote.png">
-        <img class="ques-img" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Live/ask.png">
-        <p class="cross-txt">LOGOUT</p>
-        <p class="agenda-txt">AGENDA</p>
-        <p class="poll-txt">POLL</p>
-        <p class="note-txt">TAKE A NOTE</p>
-        <p class="ques-txt">ASK A QUESTION</p>
+        <img class="cross-img" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Live/exit.png"
+            onclick="togglePopup()">
+        <img class="agenda-img" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Live/agenda.png"
+            onclick="agendPopup()">
+        <img class="poll-img" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Live/poll.png"
+            onclick="pollopen()">
+        <img class="note-img" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Live/takeanote.png"
+            onclick="noteopen()">
+        <img class="ques-img" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Live/ask.png"
+            onclick="quesopen()">
+        <p class="cross-txt" onclick="togglePopup()">LOGOUT</p>
+        <p class="agenda-txt" onclick="agendaPopup()">AGENDA</p>
+        <p class="poll-txt" onclick="pollopen()">POLL</p>
+        <p class="note-txt" onclick="noteopen()">TAKE A NOTE</p>
+        <p class="ques-txt" onclick="quesopen()">ASK A QUESTION</p>
 
         <img class="emoji-like" src="https://d1wswrkiissxa5.cloudfront.net/livestudio/emoticon/like.png">
         <img class="emoji-heart" src="https://d1wswrkiissxa5.cloudfront.net/livestudio/emoticon/heart.png">
         <img class="emoji-hand" src="https://d1wswrkiissxa5.cloudfront.net/livestudio/emoticon/clapping.png">
+
+
+
+        <div class="popup2" id="popup-2">
+            <div class="overlay"></div>
+            <div class="content2">
+                <!-- AGENDA COLUMN -->
+
+                <div class="agenda-column" id="agenda-column">
+                    <p class="agenda-txt2">
+                        AGENDA
+                    </p>
+
+                    <div class="color1"></div>
+                    <div class="color2"></div>
+                    <div class="color3"></div>
+                    <div class="color4"></div>
+                    <div class="color5"></div>
+
+                    <div class="agenda-1">
+                        <p class="p1">
+                            09:00 - 09:05 GMT
+                            <br>
+                            13:00 - 13:05 GST
+                        </p>
+                    </div>
+                    <div class="agenda-2">
+                        <p class="p2">
+                            Facilitator Introduction: Agenda Outline and Event Objectives
+                            <br>
+                            Event Objectives<br>
+                            Laylla Derizz
+                        </p>
+                        <p class="p3">
+                            Project Director, International Relations
+                            <br>
+                            Dubai Chamber of Commerce & Industry
+                        </p>
+                    </div>
+
+                    <div class="agenda-3">
+                        <p class="p4">
+                            09:00 - 09:05 GMT
+                            <br>
+                            13:00 - 13:05 GST
+                        </p>
+                    </div>
+                    <div class="agenda-4">
+                        <p class="p5">
+                            Welcome Remarks
+                            <br>
+                            H.E. Hamad Buamim
+                        </p>
+                        <p class="p6">
+                            President & CEO
+                            <BR>
+                            Dubai Chamber of Commerce & Industry
+                        </p>
+                    </div>
+
+                    <div class="agenda-5">
+                        <p class="p1">
+                            09:00 - 09:05 GMT
+                            <br>
+                            13:00 - 13:05 GST
+                        </p>
+                    </div>
+                    <div class="agenda-6">
+                        <p class="p2">
+                            Moderator:
+                            <br>
+                            Mike Van der Vijver
+                        </p>
+                        <p class="p3">
+                            Managing Partner
+                            <br>
+                            Mind Meeting
+                        </p>
+                    </div>
+
+                    <div class="agenda-7">
+                        <p class="p4">
+                            09:00 - 09:05 GMT
+                            <br>
+                            13:00 - 13:05 GST
+                        </p>
+                    </div>
+                    <div class="agenda-8">
+                        <p class="p5">
+                            Deep Dive Discussion:
+                            <br>
+                            Nola Watson
+                        </p>
+                        <p class="p6">
+                            CEO
+                            <br>
+                            Business NSW
+
+                        </p>
+                    </div>
+
+                    <div class="agenda-9">
+                        <p class="p1">
+                            09:00 - 09:05 GMT
+                            <br>
+                            13:00 - 13:05 GST
+                        </p>
+                    </div>
+                    <div class="agenda-10">
+                        <p class="p2">
+                            Questions and Answers
+                        </p>
+
+                    </div>
+                </div>
+                <div class="break1">
+                </div>
+
+
+                <button class="popup-cancel" onclick="togglePopup()">CANCEL</button>
+
+
+            </div>
+        </div>
+
+
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content">
+
+
+
+
+                <button class="popup-save" onclick="popuplog()">LOGOUT</button>
+                <button class="popup-cancel" onclick="agendaPopup()">CANCEL</button>
+
+
+            </div>
+        </div>
+
+
 
 
 
@@ -131,6 +297,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="../js/livedemo.js"></script>
+    <script src="../js/demolivepopup.js"></script>
+    <script src="../js/demoliveagendapopup.js"></script>
 </body>
 
 </html>

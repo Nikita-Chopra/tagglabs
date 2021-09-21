@@ -1,0 +1,122 @@
+*{
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+#popup-2 { 
+  overflow-y:scroll;
+ }
+
+.overlay{
+  overflow-y: scroll;
+}
+
+.content2{
+  overflow-y: scroll;
+}
+
+.popup2 .overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+    z-index:1;
+    display:none;
+    overflow-y: scroll;
+  }
+   
+  .popup2 .content2 {
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background: #fff;
+    width: 59%;
+    /* max-width: 500px; */
+    height: 60vh;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: "Open Sans",sans-serif;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(10,1fr);
+    overflow: scroll;
+    overflow-x: auto;
+    overflow-y: hidden;
+    
+
+
+display: grid;
+grid-template-columns: repeat(6,1fr);
+grid-template-rows: repeat(10,1fr);
+  }
+   
+
+
+.popup-txt{
+    grid-row: 5/9;
+    grid-column: 2/6;
+    align-self: center;
+    justify-self: center;
+    font-size: 1vw;
+}
+
+.popup-save{
+    grid-row: 9/11;
+    grid-column: 1/4;
+    align-self: center;
+    justify-self: center;
+    height: 2.5vw;
+    width: 8vw;
+    background-color: #ff0718;
+    border: 1px solid #ff0718;
+    color: white;
+    font-size: 1vw;
+    border-radius: 10px;
+    outline: none;
+}
+
+.popup-cancel{
+    grid-row: 9/11;
+    grid-column: 4/7;
+    height: 2.5vw;
+    align-self: center;
+    justify-self: center;
+    width: 8vw;
+    background-color: #ff0718;
+    border: 1px solid #ff0718;
+    color: white;
+    border-radius: 10px;
+    font-size: 1vw;
+}
+
+  /* .popup .close-btn {
+    cursor:pointer;
+    position:absolute;
+    right:20px;
+    top:20px;
+    width:30px;
+    height:30px;
+    background:#222; 
+     color:#fff;
+    
+    font-size:25px;
+    font-weight:600;
+    line-height:30px;
+    text-align:center;
+    border-radius:50%;
+  } */
+   
+  .popup2.active .overlay {
+    display:block;
+  }
+   
+  .popup2.active .content2 {
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+  }
+   

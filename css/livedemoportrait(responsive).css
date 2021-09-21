@@ -9,7 +9,7 @@
 
 .logo-header{
     grid-column: 1/6;
-    grid-row: 1/2;
+    grid-row: 1/3;
     align-self: center;
     justify-self: center;
     height: auto;
@@ -19,42 +19,44 @@
 .download-txt{
     color: white;
     grid-column: 2/4;
-    grid-row: 2/3;
+    grid-row: 3/5;
     align-self: end;
     justify-self: center;
     font-size: .5rem;
 }
 
 .download-img{
-    grid-row: 2/3;
-    grid-column: 4/5;
+    grid-row: 3/5;
+    grid-column: 3/5;
     height: auto;
     width: 4vw;
     align-self: center;
     justify-self: end;
+    margin-top: 2vw;
 }
 
 .feedback-txt{
     color: white;
     font-size: .5rem;
     grid-column: 7/9;
-    grid-row: 2/3;
+    grid-row: 2/5;
     align-self: end;
     justify-self: center;
 }
 
 .feedback-img{
     grid-column: 9/10;
-    grid-row: 2/3;
+    grid-row: 3/5;
     align-self: center;
     height: auto;
     width: 5vw;
     justify-self: center;
+    margin-top: 2vw;
 }
 
 .saved-txt{
     grid-column: 12/15;
-    grid-row: 2/3;
+    grid-row: 2/5;
     color: white;
     font-size: .5rem;
     align-self: end;
@@ -62,11 +64,12 @@
 
 .saved-img{
     grid-column: 14/16;
-    grid-row: 2/3;
+    grid-row: 3/5;
     align-self: center;
     height: auto;
-    width: 4.5vw;
+    width: 5vw;
     justify-self: center;
+    margin-top: 2vw;
 }
 
 .main-section{
@@ -93,10 +96,10 @@
 }
 
 .zoom-img{
-    grid-column: 15/16;
-    grid-row: 15/16;
+    grid-column: 14/16;
+    grid-row: 14/16;
     height: auto;
-    width: 2.5vw;
+    width: 3vw;
     align-self: center;
     justify-self: center;
 }
@@ -201,18 +204,18 @@ form.example1 input[type=text]{
 }
 
 form.example2 input[type=text]{
-
     grid-column: 1/7;
     grid-row: 1/2;
-    font-size: .7rem;
+    font-size: .6rem;
     float: left;
     width: 93%;
-    border: 1px solid #ff0718;
+    /* border: 1px solid #ff0718; */
     float: left;
     height: 100%;
-    background-color: #ff0718;
+    /* background-color: #ff0718; */
     color: white;
     outline: none;
+    border: none;
 
 }
 .type-txt{
@@ -223,7 +226,7 @@ form.example2 input[type=text]{
     grid-column: 5/6;
     grid-row: 1/2;
     height: auto;
-    width: 1rem;
+    width: 1rem!important;
     align-self: center;
     justify-self: end;
     margin-top: 0;;
@@ -291,6 +294,7 @@ form.example2 input[type=text]{
     grid-column: 3/4;
     justify-self: center;
     font-size: .5rem;
+    margin-top:-2vw;
 }
 
 .agenda-txt{
@@ -302,6 +306,7 @@ form.example2 input[type=text]{
     justify-self: center;
     /* margin-top: 1vw; */
     font-size: .5rem;
+    margin-top:-2vw;
 }
 
 .poll-txt{
@@ -309,22 +314,25 @@ form.example2 input[type=text]{
     align-self: center;
     color: white;
     grid-column: 10/11;
-    grid-column: 9/10;
-    justify-self: end;
+    grid-column: 8/11;
+    justify-self: center;
     /* margin-top: 1vw; */
     font-size: .5rem;
     font-weight: 500;
+    margin-top: -2vw;
+    margin-left: -1vw;
 }
 
 .note-txt{
     grid-row: 3/5;
     align-self: center;
     color: white;
-    grid-column: 12/14;
+    grid-column: 11/14;
     /* margin-top: 1vw; */
     justify-self: center;
     font-size: .5rem;
     font-weight: 500;
+    margin-top:-2vw;
 }
 
 .ques-txt{
@@ -336,6 +344,7 @@ form.example2 input[type=text]{
     justify-self: auto;
     font-size: .5rem;
     font-weight: 500;
+    margin-top:-2vw;
 }
 
 .emoji-like{
@@ -349,6 +358,114 @@ form.example2 input[type=text]{
 .emoji-heart{
     display: none;
 }
+
+
+
+/* DOWNLOAD-BOX */
+.download-box{
+    border: 1px solid white;
+    position: relative;
+    z-index: 2;
+    grid-column: 5/24;
+    grid-row: 1/10;
+    height: 15rem;
+    width: 14rem;
+    justify-self: center;
+    background-color: white;
+    border-radius: 0;
+   
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.down-box-txt{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    justify-self: center;
+    align-self: center;
+    color: #ff0718;
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.down-box-cross{
+    grid-column: 6/7;
+    grid-row: 1/3;
+    align-self: center;
+    justify-self: center;
+    font-size: .8rem;
+    /* width: 2vw; */
+    font-weight: 700;
+}
+
+
+
+/* SAVED NOTES BOX */
+
+
+.savednotes-box{
+    border: 1px solid white;
+    position: relative;
+    z-index: 2;
+    grid-column: 5/24;
+    grid-row: 1/10;
+    height: 15rem;
+    width: 14rem;
+    justify-self: center;
+    background-color: white;
+    border-radius: 0;
+
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.saved-box-txt{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    justify-self: center;
+    align-self: center;
+    color: #ff0718;
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.saved-box-cross{
+    grid-column: 6/7;
+    grid-row: 1/3;
+    align-self: center;
+    justify-self: center;
+    font-size: .9rem;
+    /* width: 2vw; */
+    font-weight: 700;
+}
+
+.saved-box-img{
+    grid-column: 2/6;
+    grid-row: 3/5;
+    height: auto;
+    width: 5rem;
+    align-self: center;
+    justify-self: center;
+}
+
+.saved-box-txt2{
+    grid-column: 1/7;
+    grid-row: 6/8;
+    align-self: center;
+    justify-self: center;
+    font-size: .6rem;
+    font-weight: 700;
+}
+
+.here-txt{
+    margin-left: 15vw;
+}
+
+
+
+
 
 
 
@@ -682,6 +799,113 @@ form.example2 input[type=text]{
         }
         
 
+/* DOWNLOAD-BOX */
+.download-box{
+    border: 1px solid white;
+    position: relative;
+    z-index: 2;
+    grid-column: 5/24;
+    grid-row: 1/10;
+    height: 15rem;
+    width: 14rem;
+    justify-self: center;
+    background-color: white;
+    border-radius: 0;
+   
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.down-box-txt{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    justify-self: center;
+    align-self: center;
+    color: #ff0718;
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.down-box-cross{
+    grid-column: 6/7;
+    grid-row: 1/3;
+    align-self: center;
+    justify-self: center;
+    font-size: .8rem;
+    /* width: 2vw; */
+    font-weight: 700;
+}
+
+
+
+/* SAVED NOTES BOX */
+
+
+.savednotes-box{
+    border: 1px solid white;
+    position: relative;
+    z-index: 2;
+    grid-column: 5/24;
+    grid-row: 1/10;
+    height: 15rem;
+    width: 14rem;
+    justify-self: center;
+    background-color: white;
+    border-radius: 0;
+
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.saved-box-txt{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    justify-self: center;
+    align-self: center;
+    color: #ff0718;
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.saved-box-cross{
+    grid-column: 6/7;
+    grid-row: 1/3;
+    align-self: center;
+    justify-self: center;
+    font-size: .9rem;
+    /* width: 2vw; */
+    font-weight: 700;
+}
+
+.saved-box-img{
+    grid-column: 2/6;
+    grid-row: 3/5;
+    height: auto;
+    width: 5rem;
+    align-self: center;
+    justify-self: center;
+}
+
+.saved-box-txt2{
+    grid-column: 1/7;
+    grid-row: 6/8;
+    align-self: center;
+    justify-self: center;
+    font-size: .6rem;
+    font-weight: 700;
+}
+
+.here-txt{
+    margin-left: 15vw;
+}
+
+
+
+
+
+
 }
 
 /* MEDIA QUERY 768-1024 */
@@ -696,7 +920,7 @@ form.example2 input[type=text]{
     
     .logo-header{
         grid-column: 1/6;
-        grid-row: 1/3;
+        grid-row: 1/4;
         align-self: center;
         justify-self: center;
         height: auto;
@@ -706,7 +930,7 @@ form.example2 input[type=text]{
     .download-txt{
         color: white;
     grid-column: 7/8;
-    grid-row: 1/3;
+    grid-row: 1/4;
     align-self: center;
     justify-self: center;
     font-size: 1.5vw;
@@ -714,7 +938,7 @@ form.example2 input[type=text]{
     }
     
     .download-img{
-        grid-row: 1/3;
+        grid-row: 1/4;
     grid-column: 8/9;
     height: auto;
     width: 2.5vw;
@@ -726,7 +950,7 @@ form.example2 input[type=text]{
         color: white;
         font-size: 1.5vw;
         grid-column: 10/11;
-        grid-row: 1/3;
+        grid-row: 1/4;
         align-self: center;
         justify-self: center;
         margin-top: 1.8vw;
@@ -734,7 +958,7 @@ form.example2 input[type=text]{
     
     .feedback-img{
         grid-column: 11/12;
-    grid-row: 1/3;
+        grid-row: 1/4;
     align-self: center;
     height: auto;
     width: 3.3vw;
@@ -743,7 +967,7 @@ form.example2 input[type=text]{
     
     .saved-txt{
         grid-column: 13/15;
-        grid-row: 1/3;
+        grid-row: 1/4;
         color: white;
         font-size: 1.5vw;
         align-self: center;
@@ -753,7 +977,7 @@ form.example2 input[type=text]{
     
     .saved-img{
         grid-column: 15/16;
-        grid-row: 1/3;
+        grid-row: 1/4;
         align-self: center;
         height: auto;
         width: 3.3vw;
@@ -892,16 +1116,18 @@ form.example2 input[type=text]{
     
     form.example2 input[type=text]{    
         grid-column: 1/7;
-    grid-row: 1/2;
-    font-size: 2vw;
-    float: left;
-    width: 100%;
-    /* padding: 1px; */
-    border: 1px solid #ff0718;
-    float: left;
-    height: 100%;
-    background-color: #ff0718;
-    color: white;    
+        grid-row: 1/2;
+        font-size: 2vw;
+        float: left;
+        width: 94%;
+        /* padding: 1px; */
+        /* border: 1px solid #ff0718; */
+        float: left;
+        height: 100%;
+        /* background-color: #ff0718; */
+        color: white;
+        outline: none;
+        border: none;
     }
 
 
@@ -912,12 +1138,12 @@ form.example2 input[type=text]{
     
     .type-img{
         grid-column: 5/6!important;
-    grid-row: 1/2!important;
-    height: auto;
-    width: 1.8rem;
-    align-self: center;
-    justify-self: end;
-    margin-top: 0;
+        grid-row: 1/2!important;
+        height: auto;
+        width: 4vw!important;
+        align-self: center;
+        justify-self: end;
+        margin-top: 0;
     }
     
     .bottom-section{
@@ -981,7 +1207,7 @@ form.example2 input[type=text]{
         grid-column: 3/4;
         justify-self: center;
         font-size: 1rem;
-        margin-top:-1vw;
+        margin-top:-2vw;
     }
     
     .agenda-txt{
@@ -992,7 +1218,7 @@ form.example2 input[type=text]{
     justify-self: center;
     /* margin-top: 1vw; */
     font-size: 1rem;
-    margin-top:-1vw;
+    margin-top:-2vw;
     }
     
     .poll-txt{
@@ -1005,7 +1231,8 @@ form.example2 input[type=text]{
         /* margin-top: 1vw; */
         font-size: 1rem;
         font-weight: 500;
-        margin-top:-1vw;
+        margin-top:-2vw;
+        margin-left: -2vw;
     }
     
     .note-txt{
@@ -1017,7 +1244,7 @@ form.example2 input[type=text]{
     justify-self: center;
     font-size: 1rem;
     font-weight: 500;
-    margin-top:-1vw;
+    margin-top:-2vw;
     }
     
     .ques-txt{
@@ -1029,7 +1256,7 @@ form.example2 input[type=text]{
     justify-self: auto;
     font-size: 1rem;
     font-weight: 500;
-    margin-top:-1vw;
+    margin-top:-2vw;
     }
 
     .break1{
@@ -1049,6 +1276,111 @@ display: none;
 }
 
 
+/* DOWNLOAD-BOX */
+.download-box{
+    border: 1px solid white;
+    position: relative;
+    z-index: 2;
+    grid-column: 5/24;
+    grid-row: 1/10;
+    height: 50vw;
+    width: 40vw;
+    justify-self: center;
+    background-color: white;
+    border-radius: 0;
+   
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.down-box-txt{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    justify-self: center;
+    align-self: center;
+    color: #ff0718;
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.down-box-cross{
+    grid-column: 6/7;
+    grid-row: 1/3;
+    align-self: center;
+    justify-self: center;
+    font-size: 2vw;
+    /* width: 2vw; */
+    font-weight: 700;
+}
+
+
+
+/* SAVED NOTES BOX */
+
+
+.savednotes-box{
+    border: 1px solid white;
+    position: relative;
+    z-index: 2;
+    grid-column: 5/24;
+    grid-row: 1/10;
+    height: 55vw;
+    width: 50vw;
+    justify-self: center;
+    background-color: white;
+    border-radius: 0;
+
+
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.saved-box-txt{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    justify-self: center;
+    align-self: center;
+    color: #ff0718;
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.saved-box-cross{
+    grid-column: 6/7;
+    grid-row: 1/3;
+    align-self: center;
+    justify-self: center;
+    font-size: 2vw;
+    /* width: 2vw; */
+    font-weight: 700;
+}
+
+.saved-box-img{
+    grid-column: 2/6;
+    grid-row: 3/5;
+    height: auto;
+    width: 15vw;
+    align-self: center;
+    justify-self: center;
+}
+
+.saved-box-txt2{
+    grid-column: 1/7;
+    grid-row: 6/8;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.8vw;
+    font-weight: 700;
+}
+
+.here-txt{
+    margin-left: 10vw;
+}
+
+
+
 
 
 
@@ -1060,6 +1392,7 @@ MEDIA QUERY 1080-1920 */
 
 @media (min-width: 1080px) and (max-width: 1920px) and (orientation: portrait) {
 
+   
     .header-section{
         height: 13vh;
         width: 100%;
@@ -1067,7 +1400,7 @@ MEDIA QUERY 1080-1920 */
     
     .logo-header{
         grid-column: 1/6;
-        grid-row: 1/3;
+        grid-row: 1/4;
         align-self: center;
         justify-self: center;
         height: auto;
@@ -1076,61 +1409,62 @@ MEDIA QUERY 1080-1920 */
     
     .download-txt{
         color: white;
-    grid-column: 7/8;
-    grid-row: 1/3;
-    align-self: center;
-    justify-self: center;
-    font-size: 1.5vw;
-    margin-top: 1.8vw;
+        grid-column: 7/8;
+        grid-row: 1/4;
+        align-self: center;
+        justify-self: center;
+        font-size: 1.7vw;
+        margin-top: 1.8vw;
     }
     
     .download-img{
-        grid-row: 1/3;
+        grid-row: 1/4;
     grid-column: 8/9;
     height: auto;
     width: 2.5vw;
     align-self: center;
-    justify-self: center;
+    justify-self: end;
     }
     
     .feedback-txt{
         color: white;
-        font-size: 1.5vw;
-        grid-column: 10/11;
-        grid-row: 1/3;
-        align-self: center;
-        justify-self: center;
-        margin-top: 1.8vw;
+    font-size: 1.7vw;
+    grid-column: 10/11;
+    grid-row: 1/4;
+    align-self: center;
+    justify-self: center;
+    margin-top: 1.8vw;
     }
     
     .feedback-img{
         grid-column: 11/12;
-    grid-row: 1/3;
+    grid-row: 1/4;
     align-self: center;
     height: auto;
-    width: 3.3vw;
-    justify-self: center;
+    width: 3.5vw;
+    justify-self: end;
+    margin-top: 1vw;
     }
     
     .saved-txt{
         grid-column: 13/15;
-        grid-row: 1/3;
-        color: white;
-        font-size: 1.5vw;
-        align-self: center;
-        margin-top: 1.8vw;
-        justify-self: center;
+    grid-row: 1/4;
+    color: white;
+    font-size: 1.7vw;
+    align-self: center;
+    margin-top: 1.8vw;
+    justify-self: center;
     }
     
     .saved-img{
         grid-column: 15/16;
-        grid-row: 1/3;
-        align-self: center;
-        height: auto;
-        width: 3.3vw;
-        justify-self: auto;
+    grid-row: 1/4;
+    align-self: center;
+    height: auto;
+    width: 3.5vw;
+    justify-self: auto;
     }
-    
+ 
     .main-section{
         display: grid;
         grid-template-columns: repeat(25,1fr);
@@ -1145,7 +1479,7 @@ MEDIA QUERY 1080-1920 */
     height: auto;
     width: 3vw;
     align-self: center;
-    justify-self: end;
+    justify-self: center;
 }
 
 
@@ -1187,8 +1521,9 @@ MEDIA QUERY 1080-1920 */
         /* border: 2px solid white; */
         align-self: center;
         justify-self: center;
-        font-size: 2.2vw;
+        font-size: 2.5vw;
         font-weight: 500;
+        margin-top: -1vw;
     }
     
     .network-txt{
@@ -1198,8 +1533,9 @@ MEDIA QUERY 1080-1920 */
     /* border: 2px solid white; */
     align-self: center;
     justify-self: center;
-    font-size: 2.2vw;
+    font-size: 2.5vw;
     font-weight: 500;
+    margin-top: -1vw;
     }
     
     .attendes-box{
@@ -1269,10 +1605,10 @@ MEDIA QUERY 1080-1920 */
         float: left;
         width: 90%;
         /* padding: 1px; */
-        border: 1px solid #ff0718;
+      
         float: left;
         height: 100%;
-        background-color: #ff0718;
+       
         color: white;
         outline: none;
     }
@@ -1287,10 +1623,9 @@ MEDIA QUERY 1080-1920 */
         grid-column: 5/6!important;
         grid-row: 1/2!important;
         height: auto;
-        width: 5vw;
+        width: 5vw!important;
         align-self: center;
         justify-self: end;
-        margin-top: 0;
     }
     
     .bottom-section{
@@ -1307,7 +1642,7 @@ MEDIA QUERY 1080-1920 */
         grid-column: 3/4;
         justify-self: center;
         height: auto;
-        width: 5vw;
+        width: 6vw;
     }
     
     .agenda-img{
@@ -1315,7 +1650,7 @@ MEDIA QUERY 1080-1920 */
         grid-row: 1/4;
         grid-column: 6/7;
         height: auto;
-        width: 5vw;
+        width: 6vw;
         justify-self: center;
     }
     
@@ -1325,7 +1660,7 @@ MEDIA QUERY 1080-1920 */
         grid-column: 9/10;
         justify-self: center;
         height: auto;
-        width: 5vw;
+        width: 6vw;
     }
     
     .note-img{
@@ -1342,7 +1677,7 @@ MEDIA QUERY 1080-1920 */
     align-self: center;
     grid-column: 15/17;
     height: auto;
-    width: 5vw;
+    width: 6vw;
     justify-self: center;
     }
     
@@ -1353,7 +1688,7 @@ MEDIA QUERY 1080-1920 */
         font-weight: 500;
         grid-column: 3/4;
         justify-self: center;
-        font-size: 2vw;
+        font-size: 2.2vw;
     }
     
     .agenda-txt{
@@ -1363,7 +1698,7 @@ MEDIA QUERY 1080-1920 */
     grid-column: 6/7;
     justify-self: center;
     /* margin-top: 1vw; */
-    font-size: 2vw;
+    font-size: 2.2vw;
    
     }
     
@@ -1375,7 +1710,8 @@ MEDIA QUERY 1080-1920 */
         grid-column: 9/10;
         justify-self: center;
         /* margin-top: 1vw; */
-        font-size: 2vw;
+        font-size: 2.2vw;
+        margin-left:-1vw;
         
     }
     
@@ -1386,7 +1722,7 @@ MEDIA QUERY 1080-1920 */
     grid-column: 11/14;
    
     justify-self: center;
-    font-size: 2vw;
+    font-size: 2.2vw;
     font-weight: 500;
   
     }
@@ -1395,10 +1731,10 @@ MEDIA QUERY 1080-1920 */
         grid-row: 2/5;
     align-self: center;
     color: white;
-    grid-column: 15/18;
+    grid-column: 15/19;
     /* margin-top: 1vw; */
     justify-self: auto;
-    font-size: 2vw;
+    font-size: 2.2vw;
     font-weight: 500;
     }
 
@@ -1417,5 +1753,114 @@ display: none;
 .emoji-hand{
     display: none;
 }
+
+
+/* DOWNLOAD-BOX */
+.download-box{
+    border: 1px solid white;
+    position: relative;
+    z-index: 2;
+    grid-column: 5/24;
+    grid-row: 1/10;
+    height: 65vw;
+    width: 55vw;
+    justify-self: center;
+    background-color: white;
+    border-radius: 0;
+   
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.down-box-txt{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    justify-self: center;
+    align-self: center;
+    color: #ff0718;
+    font-size: 3vw;
+    font-weight: 700;
+}
+
+.down-box-cross{
+    grid-column: 6/7;
+    grid-row: 1/3;
+    align-self: center;
+    justify-self: center;
+    font-size: 3vw;
+    /* width: 2vw; */
+    font-weight: 700;
+}
+
+
+
+/* SAVED NOTES BOX */
+
+
+.savednotes-box{
+    border: 1px solid white;
+    position: relative;
+    z-index: 2;
+    grid-column: 5/24;
+    grid-row: 1/10;
+    height: 65vw;
+    width: 50vw;
+    justify-self: center;
+    background-color: white;
+    border-radius: 0;
+
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.saved-box-txt{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    justify-self: center;
+    align-self: center;
+    color: #ff0718;
+    font-size: 2.5vw;
+    font-weight: 700;
+}
+
+.saved-box-cross{
+    grid-column: 6/7;
+    grid-row: 1/3;
+    align-self: center;
+    justify-self: center;
+    font-size: 2.5vw;
+    /* width: 2vw; */
+    font-weight: 700;
+}
+
+.saved-box-img{
+    grid-column: 2/6;
+    grid-row: 3/5;
+    height: auto;
+    width: 18vw;
+    align-self: center;
+    justify-self: center;
+}
+
+.saved-box-txt2{
+    grid-column: 1/7;
+    grid-row: 6/8;
+    align-self: center;
+    justify-self: center;
+    font-size: 2.5vw;
+    font-weight: 700;
+}
+
+.here-txt{
+    margin-left: 15vw;
+}
+
+
+
+
+
+
 
 }
