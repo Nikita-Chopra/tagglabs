@@ -1,6 +1,25 @@
 
 /* AGENDA COLUMN */
 
+*{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+
+.modal-xl{
+    max-width: 1450px;
+    
+}
+
+
+.modal-content{
+    z-index: -2;
+    overflow: auto;
+    height: 80vh;
+   
+}
 
 
 .agenda-column{
@@ -11,17 +30,30 @@
     grid-template-rows: repeat(28, 1fr);
 
 }
-.agenda-txt2 {
+
+
+.modal-title {
     font-size: 1.2vw;
     place-self: center;
     color: rgb(235, 51, 55);
     font-weight: 500;
     grid-column: 1/4;
     grid-row: 1/4;
+   
 }
+
+.close{
+    grid-column: 14/16;
+    grid-row: 1/4;
+    justify-self: end;
+    font-size: 2vw;
+}
+
+
 
 .agenda-1 {
     grid-area: 5/ 5 / 7 / 8;
+    overflow: hidden!important;
 }
 
 .agenda-2 {
@@ -73,64 +105,75 @@
     font-size: 1.2vw;
     font-weight: 650;
     color: black;
+    overflow: hidden!important;
 }
 
 .p2 {
     font-size: 1.1vw;
     font-weight: 550;
     color: black;
+    overflow: hidden!important;
 }
 
 .p3 {
     font-size: .9vw;
     margin-top: -14px;
     color: black;
+    overflow: hidden!important;
 }
 
 .p4{
     font-size: 1.2vw;
     font-weight: 650;
     color: white;
+    overflow: hidden!important;
 }
 
 .p5{
     font-size: 1.1vw;
     font-weight: 550;
     color: white;
+    overflow: hidden!important;
 }
 
 .p6{
     font-size: .9vw;
     margin-top: -14px;
     color: white;
+    overflow: hidden!important;
 }
 
 .color1 {
     grid-area: 4 / 3 / 10 / 15;
     z-index: -1;
     background-color: rgb(255, 235, 217);
+    overflow: hidden!important;
 }
 
 .color2 {
     z-index: -1;
     background-color: rgb(235, 51, 55);
     grid-area: 10 / 3 / 15 / 15;
+    overflow: hidden!important;
 }
 
 .color3 {
     grid-area: 15 / 3 / 20 / 15;
     z-index: -1;
     background-color: rgb(255, 235, 217);
+    overflow: hidden!important;
 }
 
 .color4 {
     z-index: -1;
     background-color: rgb(235, 51, 55);
     grid-area: 20 / 3 / 25 / 15;
+    overflow: hidden!important;
 }
 
 .color5 {
     grid-area: 25 / 3 / 29 / 15;
     z-index: -1;
     background-color: rgb(255, 235, 217);
+    overflow: hidden!important;
 }

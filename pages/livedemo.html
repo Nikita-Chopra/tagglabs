@@ -8,6 +8,7 @@
     <title>LIVE DEMO</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ 
     <link rel="stylesheet" href="../css/livedemo.css">
     <link rel="stylesheet" href="../css/searchbox.css">
     <link rel="stylesheet" href="../css/livedemolandscape(responsive).css">
@@ -15,7 +16,8 @@
     <link rel="stylesheet" href="../css/demolivepopup.css">
     <link rel="stylesheet" href="../css/demolivepopup(responsive).css">
     <link rel="stylesheet" href="../css/demoliveagendapopup.css">
-    <!-- <link rel="stylesheet" href="../css/demoliveagenda.css"> -->
+    <link rel="stylesheet" href="../css/demoliveagenda.css">
+    <link rel="stylesheet" href="../css/demoliveagenda(responsive).css">
 
 </head>
 
@@ -40,6 +42,13 @@
     <section class="main-section">
         <p class="networking-txt">NETWORKING ZONE</p>
         <div class="video-part">
+
+
+            <video class="vd1" width="320" height="240" controls>
+                <source src="movie.mp4" type="video/mp4">               
+              </video>
+              
+
             <div class="poll-box d-none">
                 <p class="poll-box-txt">POLL</p>
                 <img class="poll-box-img" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Live/no_poll.png">
@@ -109,7 +118,7 @@
         <img class="cross-img" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Live/exit.png"
             onclick="togglePopup()">
         <img class="agenda-img" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Live/agenda.png"
-            onclick="agendPopup()">
+        data-toggle="modal" data-target="#myModal">
         <img class="poll-img" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Live/poll.png"
             onclick="pollopen()">
         <img class="note-img" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Live/takeanote.png"
@@ -117,7 +126,7 @@
         <img class="ques-img" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Live/ask.png"
             onclick="quesopen()">
         <p class="cross-txt" onclick="togglePopup()">LOGOUT</p>
-        <p class="agenda-txt" onclick="agendaPopup()">AGENDA</p>
+        <p class="agenda-txt" data-toggle="modal" data-target="#myModal">AGENDA</p>
         <p class="poll-txt" onclick="pollopen()">POLL</p>
         <p class="note-txt" onclick="noteopen()">TAKE A NOTE</p>
         <p class="ques-txt" onclick="quesopen()">ASK A QUESTION</p>
@@ -127,150 +136,149 @@
         <img class="emoji-hand" src="https://d1wswrkiissxa5.cloudfront.net/livestudio/emoticon/clapping.png">
 
 
+<!-- POP UP CLOSE -->
 
-        <div class="popup2" id="popup-2">
-            <div class="overlay"></div>
-            <div class="content2">
+<div class=" popup" id="popup-1">
+    <div class="overlay"></div>
+    <div class="content">
+            <img class="img1" src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Live/exit_img.png"></img>
+        <p class="popup-txt">Please make sure you have downloaded your saved notes before you exit the session</p>
+        <button class="popup-save">LOGOUT</button>
+        <button class="popup-cancel" onclick="togglePopup()">CANCEL</button>
+    </div>
+</div>
+
+        
                 <!-- AGENDA COLUMN -->
 
-                <div class="agenda-column" id="agenda-column">
-                    <p class="agenda-txt2">
-                        AGENDA
-                    </p>
 
-                    <div class="color1"></div>
-                    <div class="color2"></div>
-                    <div class="color3"></div>
-                    <div class="color4"></div>
-                    <div class="color5"></div>
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog modal-xl">
+                      <div class="modal-content">
+                      
+                        <!-- Modal Header -->
+                        <!-- <div class="modal-header">
+                         
+                        
+                        </div> -->
+                        
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <div class="agenda-column" id="agenda-column">
+                         
+                                <h4 class="modal-title"> AGENDA</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
 
-                    <div class="agenda-1">
-                        <p class="p1">
-                            09:00 - 09:05 GMT
-                            <br>
-                            13:00 - 13:05 GST
-                        </p>
+                                <div class="color1"></div>
+                                <div class="color2"></div>
+                                <div class="color3"></div>
+                                <div class="color4"></div>
+                                <div class="color5"></div>
+                    
+                                <div class="agenda-1">
+                                    <p class="p1">
+                                        09:00 - 09:05 GMT
+                                        <br>
+                                        13:00 - 13:05 GST
+                                    </p>
+                                </div>
+                                <div class="agenda-2">
+                                    <p class="p2">
+                                        Facilitator Introduction: Agenda Outline and Event Objectives
+                                        <br>
+                                        Event Objectives<br>
+                                        Laylla Derizz
+                                    </p>
+                                    <p class="p3">
+                                        Project Director, International Relations
+                                        <br>
+                                        Dubai Chamber of Commerce & Industry
+                                    </p>
+                                </div>
+                    
+                                <div class="agenda-3">
+                                    <p class="p4">
+                                        09:00 - 09:05 GMT
+                                        <br>
+                                        13:00 - 13:05 GST
+                                    </p>
+                                </div>
+                                <div class="agenda-4">
+                                    <p class="p5">
+                                        Welcome Remarks
+                                        <br>
+                                        H.E. Hamad Buamim
+                                    </p>
+                                    <p class="p6">
+                                        President & CEO
+                                        <BR>
+                                        Dubai Chamber of Commerce & Industry
+                                    </p>
+                                </div>
+                    
+                                <div class="agenda-5">
+                                    <p class="p1">
+                                        09:00 - 09:05 GMT
+                                        <br>
+                                        13:00 - 13:05 GST
+                                    </p>
+                                </div>
+                                <div class="agenda-6">
+                                    <p class="p2">
+                                        Moderator:
+                                        <br>
+                                        Mike Van der Vijver
+                                    </p>
+                                    <p class="p3">
+                                        Managing Partner
+                                        <br>
+                                        Mind Meeting
+                                    </p>
+                                </div>
+                    
+                                <div class="agenda-7">
+                                    <p class="p4">
+                                        09:00 - 09:05 GMT
+                                        <br>
+                                        13:00 - 13:05 GST
+                                    </p>
+                                </div>
+                                <div class="agenda-8">
+                                    <p class="p5">
+                                        Deep Dive Discussion:
+                                        <br>
+                                        Nola Watson
+                                    </p>
+                                    <p class="p6">
+                                        CEO
+                                        <br>
+                                        Business NSW
+                    
+                                    </p>
+                                </div>
+                    
+                                <div class="agenda-9">
+                                    <p class="p1">
+                                        09:00 - 09:05 GMT
+                                        <br>
+                                        13:00 - 13:05 GST
+                                    </p>
+                                </div>
+                                <div class="agenda-10">
+                                    <p class="p2">
+                                        Questions and Answers
+                                    </p>
+                    
+                                </div>
+                            </div>
+                           
+                        </div>
+                        
+                      
+                        
+                      </div>
                     </div>
-                    <div class="agenda-2">
-                        <p class="p2">
-                            Facilitator Introduction: Agenda Outline and Event Objectives
-                            <br>
-                            Event Objectives<br>
-                            Laylla Derizz
-                        </p>
-                        <p class="p3">
-                            Project Director, International Relations
-                            <br>
-                            Dubai Chamber of Commerce & Industry
-                        </p>
-                    </div>
-
-                    <div class="agenda-3">
-                        <p class="p4">
-                            09:00 - 09:05 GMT
-                            <br>
-                            13:00 - 13:05 GST
-                        </p>
-                    </div>
-                    <div class="agenda-4">
-                        <p class="p5">
-                            Welcome Remarks
-                            <br>
-                            H.E. Hamad Buamim
-                        </p>
-                        <p class="p6">
-                            President & CEO
-                            <BR>
-                            Dubai Chamber of Commerce & Industry
-                        </p>
-                    </div>
-
-                    <div class="agenda-5">
-                        <p class="p1">
-                            09:00 - 09:05 GMT
-                            <br>
-                            13:00 - 13:05 GST
-                        </p>
-                    </div>
-                    <div class="agenda-6">
-                        <p class="p2">
-                            Moderator:
-                            <br>
-                            Mike Van der Vijver
-                        </p>
-                        <p class="p3">
-                            Managing Partner
-                            <br>
-                            Mind Meeting
-                        </p>
-                    </div>
-
-                    <div class="agenda-7">
-                        <p class="p4">
-                            09:00 - 09:05 GMT
-                            <br>
-                            13:00 - 13:05 GST
-                        </p>
-                    </div>
-                    <div class="agenda-8">
-                        <p class="p5">
-                            Deep Dive Discussion:
-                            <br>
-                            Nola Watson
-                        </p>
-                        <p class="p6">
-                            CEO
-                            <br>
-                            Business NSW
-
-                        </p>
-                    </div>
-
-                    <div class="agenda-9">
-                        <p class="p1">
-                            09:00 - 09:05 GMT
-                            <br>
-                            13:00 - 13:05 GST
-                        </p>
-                    </div>
-                    <div class="agenda-10">
-                        <p class="p2">
-                            Questions and Answers
-                        </p>
-
-                    </div>
-                </div>
-                <div class="break1">
-                </div>
-
-
-                <button class="popup-cancel" onclick="togglePopup()">CANCEL</button>
-
-
-            </div>
-        </div>
-
-
-        <div class="popup" id="popup-1">
-            <div class="overlay"></div>
-            <div class="content">
-
-
-
-
-                <button class="popup-save" onclick="popuplog()">LOGOUT</button>
-                <button class="popup-cancel" onclick="agendaPopup()">CANCEL</button>
-
-
-            </div>
-        </div>
-
-
-
-
-
-
-
+                  </div>
     </section>
 
 
@@ -296,6 +304,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  
     <script src="../js/livedemo.js"></script>
     <script src="../js/demolivepopup.js"></script>
     <script src="../js/demoliveagendapopup.js"></script>

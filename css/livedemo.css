@@ -53,6 +53,7 @@ body{
     justify-self: center;
     font-size: .8vw;
     margin-top: -.5vw;
+    overflow: hidden!important;
 }
 
 .download-img{
@@ -71,6 +72,7 @@ body{
     align-self: center;
     justify-self: center;
     margin-top: -.5vw;
+    overflow: hidden!important;
 }
 
 .feedback-img{
@@ -90,6 +92,7 @@ body{
     align-self: center;
     justify-self: center;
     margin-top: -.5vw;
+    overflow: hidden!important;
 }
 
 .saved-img{
@@ -131,8 +134,20 @@ background-color: rgba(219, 43, 38, 0.7);
 display: grid;
     grid-template-columns: repeat(15,1fr);
     grid-template-rows: repeat(15,1fr);
-
+    overflow: hidden!important;
 }
+
+.vd1{
+    grid-column: 2/10;
+    grid-row: 2/10;
+    position: relative;
+    grid-column: 2/10;
+    grid-row: 2/10;
+    position: relative;
+    align-self: center;
+    justify-self: center;
+}
+
 
 .zoom-img{
     grid-column: 15/16;
@@ -151,6 +166,7 @@ display: grid;
     font-size: 1.2vw;
     color: white;
     font-weight: 550;
+    overflow: hidden!important;
 }
 
 .message-section{
@@ -161,6 +177,7 @@ display: grid;
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: repeat(8,1fr);
+    overflow: hidden!important;
 }
 
 .attendes-txt{
@@ -172,6 +189,7 @@ display: grid;
     justify-self: center;
     font-size: .9vw;
     font-weight: 500;
+    overflow: hidden!important;
    
 }
 
@@ -183,6 +201,7 @@ display: grid;
     justify-self: center;
     font-size: .9vw;
     font-weight: 500;
+    overflow: hidden!important;
    
 }
 
@@ -633,6 +652,7 @@ z-index: 1;
     justify-self: end;
     font-size: 1vw;
     margin-top: 1vw;
+    overflow: hidden!important;
 }
 
 .agenda-img{
@@ -652,6 +672,7 @@ z-index: 1;
     justify-self: center;
     margin-top: 1vw;
     font-size: 1vw;
+    overflow: hidden!important;
 }
 
 .poll-img{
@@ -674,6 +695,7 @@ z-index: 1;
     font-size: 1vw;
     font-weight: 500;
     margin-left: -3vw;
+    overflow: hidden!important;
 }
 
 .note-img{
@@ -694,6 +716,7 @@ z-index: 1;
     justify-self: center;
     font-size: 1vw;
     font-weight: 500;
+    overflow: hidden!important;
 }
 
 .ques-img{
@@ -715,6 +738,7 @@ z-index: 1;
     font-size: 1vw;
     font-weight: 500;
     margin-left: -1vw;
+    overflow: hidden!important;
 }
 
 .emoji-like{
