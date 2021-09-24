@@ -77,3 +77,12 @@ function savednotesopen(){
  function savednotesboxcross(){
     $('.savednotes-box').addClass('d-none');
  }
+
+
+ function feedbackopen(){
+    location.href = "../pages/session.html";
+ }
+
+ function logoutopen(){
+    location.href = "../pages/thankyou.html";
+ }

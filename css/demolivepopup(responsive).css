@@ -471,7 +471,7 @@
        
       .popup .content {
         border-radius: 10px;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%) scale(0);
@@ -583,7 +583,7 @@
        
       .popup .content {
         border-radius: 10px;
-        position: absolute;
+        position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%) scale(0);
@@ -698,69 +698,68 @@
        
       .popup .content {
         border-radius: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%) scale(0);
-    background: #fff;
-    width: 65%;
-    max-width: 500px;
-    height: 250px;
-    z-index: 2;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-    font-family: "Open Sans",sans-serif;
-        
-    
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(10,1fr);
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) scale(0);
+        background: #fff;
+        width: 55%;
+        max-width: 500px;
+        height: 450px;
+        z-index: 2;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+        font-family: "Open Sans",sans-serif;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(10,1fr);
       }
        
     .img1{
-        grid-column: 2/6;
-        grid-row: 1/5;
-        align-self: center;
-        justify-self: center;
-        height: auto;
-        width: 4rem;
+      grid-column: 2/6;
+      grid-row: 1/5;
+      align-self: center;
+      justify-self: center;
+      height: auto;
+      width: 7rem;
     }
     
     .popup-txt{
-        grid-row: 5/9;
-    grid-column: 2/6;
-    align-self: center;
-    justify-self: center;
-    font-size: 2.5vw;
+      grid-row: 5/9;
+      grid-column: 2/6;
+      align-self: center;
+      justify-self: center;
+      font-size: 2vw;
     }
     
     .popup-save{
-        grid-row: 9/11;
-    grid-column: 1/4;
-    align-self: center;
-    justify-self: center;
-    height: 1.5rem;
-    width: 4rem;
-    background-color: #ff0718;
-    border: 1px solid #ff0718;
-    color: white;
-    font-size: .5rem;
-    border-radius: 10px;
-    outline: none;
-    }
+      grid-row: 9/11;
+      grid-column: 1/4;
+      align-self: center;
+      justify-self: center;
+      height: 2.5rem;
+      width: 6rem;
+      background-color: #ff0718;
+      border: 1px solid #ff0718;
+      color: white;
+      font-size: .8rem;
+      border-radius: 10px;
+      outline: none;
+  }
+    
     
     .popup-cancel{
-       grid-row: 9/11;
+      grid-row: 9/11;
     grid-column: 4/7;
     align-self: center;
     justify-self: center;
-    height: 1.5rem;
-    width: 4rem;
+    height: 2.5rem;
+    width: 6rem;
     background-color: #ff0718;
     border: 1px solid #ff0718;
     color: white;
-    font-size: .5rem;
+    font-size: .8rem;
     border-radius: 10px;
     outline: none;
     }
@@ -815,7 +814,7 @@
        
       .popup .content {
         border-radius: 10px;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%) scale(0);
@@ -933,7 +932,7 @@
        
       .popup .content {
         border-radius: 10px;
-        position: absolute;
+        position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%) scale(0);
