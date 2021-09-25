@@ -16,6 +16,8 @@ function read1() {
   function sub() {
     
     location.href = "./registration2.html";
-  
+
  
   }
+
+

@@ -65,6 +65,7 @@ body{
     font-size: 1.1vw;
     background-color: rgb(235, 51, 55);
     border: 1px solid rgb(235, 51, 55);
+    outline: none;
 }
 
 .break{
