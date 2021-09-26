@@ -322,7 +322,7 @@ form.example2 input[type=text]{
     display: grid;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(10, 1fr);
-    border: 5px solid #ff0718;
+
    
 }
 
@@ -371,13 +371,13 @@ NOTE BOX */
 .note-box{
     height: 22vw;
     width: 22vw;
-    border: 5px solid black;
+  
     position: relative;
   z-index: 1;
     grid-column: 5/10;
     grid-row: 8/16;
     background-color: black;
-    border: 5px solid #ff0718;
+   
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(8, 1fr);
     display: grid;
@@ -448,13 +448,13 @@ NOTE BOX */
 .question-box{
     height: 22vw;
     width: 22vw;
-    border: 5px solid black;
+   
     position: relative;
 z-index: 1;
     grid-column: 8/14;
     grid-row: 8/16;
     background-color: black;
-    border: 5px solid #ff0718;
+   
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(8, 1fr);
     display: grid;

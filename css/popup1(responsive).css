@@ -59,7 +59,7 @@
     transform:translate(-50%,-50%) scale(1);
   }
    
-.registr-txt{
+.registr-txt-popup1{
     padding-top: 2vw;
     color: black;
     font-size: 1.3rem;
@@ -76,7 +76,7 @@
     border-radius: 0;
 }
 
-.input-txt{
+.input-txt-popup1{
     height: 1.8vw;
     width: 10vw;
     border: 1px solid grey;
@@ -122,13 +122,13 @@
         position: absolute;
         right: 20px;
         top: 20px;
-        width: 15px;
-        height: 15px;
+        width: 12px;
+        height: 12px;
         background: #222;
         color: #fff;
-        font-size: 13px;
+        font-size: 10px;
         font-weight: 600;
-        line-height: 16px;
+        line-height: 12px;
         text-align: center;
         border-radius: 50%;
       }
@@ -142,7 +142,7 @@
         transform:translate(-50%,-50%) scale(1);
       }
        
-    .registr-txt{
+    .registr-txt-popup1{
       padding-top: 2vw;
       color: black;
       font-size: .8rem;
@@ -150,20 +150,20 @@
     }
     
     .btn-submit-popup{
-      height: 3.1vw;
-    width: 11vw;
-    border: .8px solid grey;
-    background-color: red;
-    color: white;
-    font-size: 2vw;
-    border-radius: 0;
+      height: 3vw!important;
+      width: 11vw!important;
+      border: .8px solid grey;
+      background-color: red;
+      color: white;
+      font-size: 2vw!important;
+      border-radius: 0;
     }
     
-    .input-txt{
-      height: 3vw;
-      width: 17vw;
+    .input-txt-popup1{
+      height: 3vw!important;
+      width: 14vw!important;
       border: 1px solid grey;
-      font-size: 1rem;
+      font-size: 1rem!important;
     }
     
     
@@ -227,7 +227,7 @@
             transform:translate(-50%,-50%) scale(1);
           }
            
-        .registr-txt{
+        .registr-txt-popup1{
           padding-top: 2vw;
           color: black;
           font-size: .8rem;
@@ -235,20 +235,20 @@
         }
         
         .btn-submit-popup{
-          height: 3vw;
-    width: 11vw;
+          height: 3vw!important;
+    width: 11vw!important;
     border: .8px solid grey;
     background-color: red;
     color: white;
-    font-size: 1.8vw;
+    font-size: 1.8vw!important;
     border-radius: 0;
         }
         
-        .input-txt{
-          height: 3vw;
-          width: 17vw;
+        .input-txt-popup1{
+          height: 3vw!important;
+          width: 17vw!important;
           border: 1px solid grey;
-          font-size: 1rem;
+          font-size: 1rem!important;
         }
         
     
@@ -311,7 +311,7 @@
       transform:translate(-50%,-50%) scale(1);
     }
      
-  .registr-txt{
+  .registr-txt-popup1{
     padding-top: 2vw;
     color: black;
     font-size: .8rem;
@@ -319,20 +319,20 @@
   }
   
   .btn-submit-popup{
-    height: 3vw;
-width: 11vw;
+    height: 3vw!important;
+width: 11vw!important;
 border: .8px solid grey;
 background-color: red;
 color: white;
-font-size: 1rem;
+font-size: 1rem!important;
 border-radius: 0;
   }
   
-  .input-txt{
-    height: 3vw;
-    width: 17vw;
+  .input-txt-popup1{
+    height: 3vw!important;
+    width: 17vw!important;
     border: 1px solid grey;
-    font-size: 1rem;
+    font-size: 1rem!important;
   }
 
 }
@@ -384,9 +384,9 @@ border-radius: 0;
         height: 20px;
         background: #222;
         color: #fff;
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 600;
-        line-height: 22px;
+        line-height: 20px;
         text-align: center;
         border-radius: 50%;
       }
@@ -400,7 +400,7 @@ border-radius: 0;
         transform:translate(-50%,-50%) scale(1);
       }
        
-    .registr-txt{
+    .registr-txt-popup1{
         padding-top: 2rem;
     color: black;
     font-size: .8rem;
@@ -417,7 +417,7 @@ border-radius: 0;
     border-radius: 0;
     }
     
-    .input-txt{
+    .input-txt-popup1{
         height: 1.5rem;
         width: 8rem;
         border: 1px solid grey;
@@ -467,9 +467,9 @@ border-radius: 0;
         height: 20px;
         background: #222;
         color: #fff;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 600;
-        line-height: 22px;
+        line-height: 20px;
         text-align: center;
         border-radius: 50%;
       }
@@ -483,7 +483,7 @@ border-radius: 0;
         transform:translate(-50%,-50%) scale(1);
       }
        
-    .registr-txt{
+    .registr-txt-popup1{
         padding-top: 2rem;
     color: black;
     font-size: .8rem;
@@ -500,7 +500,7 @@ border-radius: 0;
     border-radius: 0;
     }
     
-    .input-txt{
+    .input-txt-popup1{
         height: 1.5rem;
         width: 8rem;
         border: 1px solid grey;
@@ -550,7 +550,7 @@ border-radius: 0;
     height: 30px;
     background: #222;
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     line-height: 30px;
     text-align: center;
@@ -566,7 +566,7 @@ border-radius: 0;
         transform:translate(-50%,-50%) scale(1);
       }
        
-    .registr-txt{
+    .registr-txt-popup1{
         padding-top: 2rem;
         color: black;
         font-size: 1rem;
@@ -583,7 +583,7 @@ border-radius: 0;
         border-radius: 0;
     }
     
-    .input-txt{
+    .input-txt-popup1{
         height: 2rem;
     width: 10rem;
     border: 1px solid grey;
@@ -652,7 +652,7 @@ border-radius: 0;
         transform:translate(-50%,-50%) scale(1);
       }
        
-    .registr-txt{
+    .registr-txt-popup1{
         padding-top: 9vw;
     color: black;
     font-size: 2rem;
@@ -669,7 +669,7 @@ border-radius: 0;
         border-radius: 0;
     }
     
-    .input-txt{
+    .input-txt-popup1{
         height: 4rem;
         width: 20rem;
         border: 1px solid grey;

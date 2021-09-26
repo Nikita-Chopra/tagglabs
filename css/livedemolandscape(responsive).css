@@ -340,13 +340,13 @@ form.example2 input[type=text]{
     .note-box{
         height: 22vw;
         width: 22vw;
-        border: 5px solid black;
+      
         position: relative;
       z-index: 1;
         grid-column: 5/10;
         grid-row: 8/16;
         background-color: black;
-        border: 5px solid #ff0718;
+    
         grid-template-columns: repeat(5,1fr);
         grid-template-rows: repeat(8, 1fr);
         display: grid;
@@ -1011,7 +1011,7 @@ form.example2 input[type=text]{
     /* POLL BOX */
     
     .poll-box{
-        grid-column: 1/6;
+        grid-column: 3/8;
         grid-row: 8/16;
         position: relative;
         height: 22vw;
@@ -1023,7 +1023,7 @@ form.example2 input[type=text]{
         display: grid;
         grid-template-columns: repeat(5,1fr);
         grid-template-rows: repeat(10, 1fr);
-        border: 5px solid #ff0718;
+      
        
     }
     
@@ -1074,13 +1074,13 @@ form.example2 input[type=text]{
     .note-box{
         height: 22vw;
         width: 22vw;
-        border: 5px solid black;
+       
         position: relative;
       z-index: 1;
         grid-column: 5/10;
         grid-row: 8/16;
         background-color: black;
-        border: 5px solid #ff0718;
+      
         grid-template-columns: repeat(5,1fr);
         grid-template-rows: repeat(8, 1fr);
         display: grid;
@@ -1260,13 +1260,13 @@ form.example2 input[type=text]{
     .question-box{
         height: 22vw;
         width: 22vw;
-        border: 5px solid black;
+       
         position: relative;
     z-index: 1;
         grid-column: 8/14;
         grid-row: 8/16;
         background-color: black;
-        border: 5px solid #ff0718;
+      
         grid-template-columns: repeat(5,1fr);
         grid-template-rows: repeat(8, 1fr);
         display: grid;
@@ -1747,19 +1747,19 @@ form.example2 input[type=text] {
 /* POLL BOX */
 
 .poll-box{
-    grid-column: 1/6;
+    grid-column: 3/8;
     grid-row: 8/16;
     position: relative;
     height: 22vw;
     width: 22vw;
-    border: 5px solid black;
+  
     position: relative;
  z-index: 1;
     background-color: black;
     display: grid;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(10, 1fr);
-    border: 5px solid #ff0718;
+   
    
 }
 
@@ -1808,13 +1808,13 @@ NOTE BOX */
 .note-box{
     height: 22vw;
     width: 22vw;
-    border: 5px solid black;
+  
     position: relative;
   z-index: 1;
     grid-column: 5/10;
     grid-row: 8/16;
     background-color: black;
-    border: 5px solid #ff0718;
+   
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(8, 1fr);
     display: grid;
@@ -1994,13 +1994,13 @@ NOTE BOX */
 .question-box{
     height: 22vw;
     width: 22vw;
-    border: 5px solid black;
+   
     position: relative;
 z-index: 1;
     grid-column: 8/14;
     grid-row: 8/16;
     background-color: black;
-    border: 5px solid #ff0718;
+   
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(8, 1fr);
     display: grid;
@@ -2019,7 +2019,7 @@ z-index: 1;
 }
 
 .ques-box-cross{
-    background-color: red;
+  
     grid-row: 1/2;
     grid-column: 5/6;
     align-self: center;
@@ -2466,10 +2466,11 @@ z-index: 1;
         grid-template-rows: 1fr;
         margin-left: 3%!important;
         margin-right: 3%!important;
-        height: 80%;
+        height: 100%;
         justify-self: auto;
         align-self: center;
         overflow:hidden!important;
+        margin-bottom:2%;
     }
     
     form.example2 input[type=text]{
@@ -2479,10 +2480,10 @@ z-index: 1;
         float: left;
         width: 84%;
         padding: 13px;
-        border: 1px solid #ff0718;
+      
         float: left;
         height: 100%;
-        background-color: #ff0718;
+       
         color: white;
         outline: none;
     }
@@ -2496,7 +2497,7 @@ z-index: 1;
         grid-column: 5/6;
         grid-row: 1/2;
         height: auto;
-        width: 2vw!important;
+        width: 2.5vw!important;
         align-self: center;
         justify-self: center;
         position: relative;
@@ -2507,19 +2508,19 @@ z-index: 1;
     /* POLL BOX */
     
     .poll-box{
-        grid-column: 1/6;
+        grid-column: 3/8;
         grid-row: 8/16;
         position: relative;
         height: 27vw;
         width: 27vw;
-        border: 5px solid black;
+      
         position: relative;
      z-index: 1;
         background-color: black;
         display: grid;
         grid-template-columns: repeat(5,1fr);
         grid-template-rows: repeat(10, 1fr);
-        border: 5px solid #ff0718;
+       
        
     }
     
@@ -2568,13 +2569,13 @@ z-index: 1;
     .note-box{
         height: 27vw;
         width: 27vw;
-        border: 5px solid black;
+      
         position: relative;
       z-index: 1;
         grid-column: 5/10;
         grid-row: 8/16;
         background-color: black;
-        border: 5px solid #ff0718;
+       
         grid-template-columns: repeat(5,1fr);
         grid-template-rows: repeat(8, 1fr);
         display: grid;
@@ -2754,13 +2755,13 @@ z-index: 1;
     .question-box{
         height: 27vw;
         width: 27vw;
-        border: 5px solid black;
+       
         position: relative;
     z-index: 1;
         grid-column: 8/14;
         grid-row: 8/16;
         background-color: black;
-        border: 5px solid #ff0718;
+      
         grid-template-columns: repeat(5,1fr);
         grid-template-rows: repeat(8, 1fr);
         display: grid;
@@ -2779,7 +2780,7 @@ z-index: 1;
     }
     
     .ques-box-cross{
-        background-color: red;
+        
         grid-row: 1/2;
         grid-column: 5/6;
         align-self: center;

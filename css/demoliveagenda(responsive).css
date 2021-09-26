@@ -211,7 +211,7 @@
         }
 
     .modal-xl{
-        max-width: 620px;
+        max-width: 550px;
         
     }
     
@@ -597,7 +597,7 @@
 .modal-content{
     z-index: -2;
     overflow: auto;
-    height: 80vh;
+    height: 70vh;
    
 }
 
@@ -987,7 +987,7 @@
         
         
         .agenda-column{
-            height: 125vh;
+            height: 140vh;
             width: 100%;
             display: grid;
             grid-template-columns: repeat(16, 1fr);

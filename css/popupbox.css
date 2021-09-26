@@ -55,7 +55,7 @@
     transform:translate(-50%,-50%) scale(1);
   }
    
-.registr-txt{
+.registr-txt-popup1{
     padding-top: 2vw;
     color: black;
     font-size: 1.3rem;
@@ -72,7 +72,7 @@
     border-radius: 0;
 }
 
-.input-txt{
+.input-txt-popup1{
     height: 1.8vw;
     width: 10vw;
     border: 1px solid grey;
@@ -150,7 +150,7 @@ background-color: #ffebd9;
     color: #fff;
     font-size: 18px;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 32px;
     text-align: center;
     border-radius: 50%;
   }
@@ -296,7 +296,7 @@ background-color: #ffebd9;
 }
 
 .pankaj-designation{
-  grid-column: 6/10;
+  grid-column: 6/15;
   color: #02405f;
   grid-row: 4/5;
   font-size: 1.2vw;
