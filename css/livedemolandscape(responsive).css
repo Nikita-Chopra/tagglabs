@@ -135,15 +135,28 @@ body{
     
     }
     
+    .vd1{
+        grid-column: 1/16;
+        grid-row: 1/16;
+        position: relative;
+        align-self: center;
+        justify-self: center;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+    }
+    
+    
     .zoom-img{
-        grid-column: 17/18;
+        grid-column: 15/16;
         grid-row: 15/16;
         height: auto;
         width: 2.2vw;
         align-self: auto;
         justify-self: center;
+        position: relative;
+        z-index: 5;
     }
-    
     .networking-txt{
         grid-column: 19/25;
         grid-row: 1/2;
@@ -165,7 +178,7 @@ body{
     }
     
     .attendes-txt{
-        color: white;
+        color: black;
         grid-column: 1/4;
         grid-row: 1/2;
         /* border: 2px solid white; */
@@ -276,215 +289,238 @@ form.example2 input[type=text]{
 
     
     
-    /* POLL BOX */
-    
-    .poll-box{
-        grid-column: 1/6;
-        grid-row: 8/16;
-        position: relative;
-        height: 22vw;
-        width: 22vw;
-        border: 5px solid black;
-        position: relative;
-     z-index: 1;
-        background-color: black;
-        display: grid;
-        grid-template-columns: repeat(5,1fr);
-        grid-template-rows: repeat(10, 1fr);
-        border: 5px solid #ff0718;
-       
-    }
-    
-    
-    .poll-box-txt{
-        color: #ff0718;
-        grid-column: 1/2;
-        grid-row: 1/3;
-        font-size: .9vw;
-        font-weight: 650;
-        align-self: center;
-        justify-self: center;
-    }
-    
-    .poll-box-img{
-        grid-row: 4/8;
-        grid-column: 2/5;
-        height: auto;
-        width: 7vw;
-        align-self: center;
-        justify-self: center;
-    }
-    
-    .nopoll-txt{
-        color: white;
-        grid-column: 3/4;
-        grid-row: 8/9;
-        align-self: center;
-        justify-self: center;
-        font-size: 1.2vw;
-    }
-    
-    .poll-box-cross{
-        height: auto;
-        width: 1.2vw;
-        background-color: #ff0718;
-        grid-row: 1/2;
-        grid-column: 5/6;
-        align-self: center;
-        justify-self: center;
-    }
-    
-    /* 
-    NOTE BOX */
-    
-    .note-box{
-        height: 22vw;
-        width: 22vw;
-      
-        position: relative;
-      z-index: 1;
-        grid-column: 5/10;
-        grid-row: 8/16;
-        background-color: black;
-    
-        grid-template-columns: repeat(5,1fr);
-        grid-template-rows: repeat(8, 1fr);
-        display: grid;
-    }
-    
-    .note-box-txt{
-        color: #ff0718;
-        grid-column: 1/3;
-        grid-row: 1/2;
-        font-size: .9vw;
-        font-weight: 650;
-        justify-self: center;
-        align-self: center;
-        margin-top: .7vw;
-    }
-    
-    .note-box-cross{
-        grid-row: 1/2;
-        grid-column: 5/6;
-        background-color: white;
-        height: auto;
-        width: 1vw;
-        align-self: center;
-        justify-self: center;
-    }
-    
-    .type-box-txt{
-        color: white;
-        grid-row: 2/8;
-        grid-column: 1/6;
-        background-color: black;
-        border: none;
-        font-size: 1.1vw;
-        padding-top: 1vw;
-        padding-left: 1vw;
-        overflow: hidden;
-    }
-    
-    .note-box-save{
-        grid-row: 8/9;   
-        grid-column: 4/6;  
-        border: 1px solid #ff0718;
-        background-color: #ff0718;
-        color: white;
-        border-radius: 10px;
-        height: auto;
-        width: 8vw;
-        font-size: 1vw;
-        margin-bottom: .2vw;
-    }
-    
-    
-    .color1{
-        z-index: -1;
-        background-color: white;
-        grid-row: 1/2;
-        grid-column: 1/9;
-    }
-    
-    /* ::placeholder {
-        font-size: 1vw;
-       top:1vw;
-       float: left;
-      } */
-    
-    /* QUESTION  BOX */
-    
-    .question-box{
-        height: 22vw;
-        width: 22vw;
-        border: 5px solid black;
-        position: relative;
+
+/* POLL BOX */
+
+.poll-box{
+    grid-column: 4/9;
+    grid-row: 8/16;
+    position: relative;
+    height: 22vw;
+    width: 22vw;
+    /* border: 5px solid #ff0718; */
+    position: relative;
+    z-index: 5;
+    background-color: #ff0718;
+    border:1px solid #ff0718;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(8, 1fr);
+
+   
+}
+
+
+.poll-box-txt{
+color: #ff0718;
+   
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 1vw;
+    font-weight: 650;
+    align-self: center;
+    justify-self: center;
+    margin-top: 1vw;
+}
+
+.poll-box-img{
+    grid-row: 4/8;
+    grid-column: 2/5;
+    height: auto;
+    width: 7vw;
+    align-self: center;
+    justify-self: center;
+}
+
+.nopoll-txt{
+    color: white;
+    grid-column: 2/5;
+    grid-row: 7/9;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+.poll-box-cross{
+    height: auto;
+    width: 1.2vw;
+    /* background-color: #ff0718; */
+    grid-row: 1/2;
+    grid-column: 5/6;
+    align-self: center;
+    justify-self: center;
+}
+
+.color33{
+    z-index: -1;
+    background-color: white;
+    grid-column: 1/9;
+    grid-row: 1/2;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* 
+NOTE BOX */
+
+.note-box{
+    height: 22vw;
+    width: 22vw;
+    position: relative;
     z-index: 1;
-        grid-column: 8/14;
-        grid-row: 8/16;
-        background-color: black;
-        border: 5px solid #ff0718;
-        grid-template-columns: repeat(5,1fr);
-        grid-template-rows: repeat(8, 1fr);
-        display: grid;
-    }
-    
-    
-    .ques-box-txt{
-        color: white;
-        grid-row: 1/2;
-        grid-column: 1/3;
-        align-self: center;
-        justify-self: center;
-        font-size: .9vw;
-        font-weight: 550;
-        padding-top: .5vw;
-    }
-    
-    .ques-box-cross{
-        /* background-color: red; */
-        grid-row: 1/2;
-        grid-column: 5/6;
-        align-self: center;
-        justify-self: center;
-        height: auto;
-        width: 1.2vw;
-    }
-    
-    
-    .ques-box-txtarea{
-        grid-row: 2/8;
-        grid-column: 1/7;
-        background-color: black;
-        outline: none;
-        border: none;
-        color: white;
-        font-size: 1vw;
-        padding-left: 1vw;
-        padding-top: 1vw;
-        overflow: hidden;
-    }
-    
-    .ques-box-save{
-        grid-row: 8/9;
-        grid-column: 4/6;
-        background-color: #ff0718;
-        border: none;
-        outline: none;
-        color: white;
-        font-size: 1vw;
-        border-radius: 10px;
-        height: auto;
-        width: 8vw;
-        margin-bottom:.2vw;
-    }
-    
-    .color2{
-        background-color: darkblue;
-        z-index: -1;
-        grid-column: 1/6;
-        grid-row: 1/2;
-    }
+    grid-column: 7/12;
+    grid-row: 8/16;
+    background-color: #ff0718;
+   
+    border:1px solid #ff0718;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(8, 1fr);
+    display: grid;
+
+}
+
+.note-box-txt{
+    color: #ff0718;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    font-size: 1vw;
+    font-weight: 650;
+    justify-self: center;
+    align-self: center;
+    margin-top: .7vw;
+}
+
+.note-box-cross{
+    grid-row: 1/2;
+    grid-column: 5/6;
+    background-color: white;
+    height: auto;
+    width: 1vw;
+    align-self: center;
+    justify-self: center;
+}
+
+.type-box-txt{
+    color: white;
+    grid-row: 2/8;
+    grid-column: 1/6;
+    background-color: #ff0718;
+    border: none;
+    font-size: 1.1vw;
+    padding-top: 1vw;
+    padding-left: 1vw;
+    overflow: hidden;
+}
+
+.note-box-save{
+    grid-row: 8/9;
+    grid-column: 4/6;
+    border: 1px solid #ff0718;
+    background-color: white;
+    color: #ff0718;
+    border-radius: 10px;
+    height: auto;
+    width: 8vw;
+    font-size: 1.2vw;
+    margin-bottom: .2vw;
+    font-weight: 500;
+}
+
+
+.color11{
+    z-index: -1;
+    background-color: white;
+    grid-row: 1/2;
+    grid-column: 1/9;
+}
+
+/* ::placeholder {
+    font-size: 1vw;
+   top:1vw;
+   float: left;
+  } */
+
+
+ 
+/* QUESTION  BOX */
+
+.question-box{
+    height: 22vw;
+    width: 22vw;
+    position: relative;
+    z-index: 5;
+    grid-column: 15/20;
+    grid-row: 8/16;
+    background-color: #ff0718;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(8, 1fr);
+    display: grid;
+    border: 1px solid #ff0718;
+}
+
+
+.ques-box-txt{
+    color: #ff0718;
+    grid-row: 1/2;
+    grid-column: 1/4;
+    align-self: center;
+    /* justify-self: center; */
+    font-size: 1vw;
+    font-weight: 650;
+    padding-top: .5vw;
+    margin-left: 1vw;
+}
+
+.ques-box-cross{
+    /* background-color: red; */
+    grid-row: 1/2;
+    grid-column: 5/6;
+    align-self: center;
+    justify-self: center;
+    height: auto;
+    width: 1.2vw;
+}
+
+
+.ques-box-txtarea{
+    grid-row: 2/8;
+    grid-column: 1/7;
+    background-color: #ff0718;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1vw;
+    padding-left: 1vw;
+    padding-top: 1vw;
+    overflow: hidden;
+}
+
+.ques-box-save{
+    grid-row: 8/9;
+    grid-column: 4/6;
+    background-color: white;
+    border: none;
+    outline: none;
+    color: #ff0718;
+    font-size: 1.2vw;
+    border-radius: 10px;
+    height: auto;
+    width: 8vw;
+    margin-bottom: .2vw;
+    font-weight: 500;
+}
+
+.color22{
+    background-color: white;
+    z-index: -1;
+    grid-column: 1/6;
+    grid-row: 1/2;
+     /* height: 6vh; */
+}
+
 
 
 /* DOWNLOAD-BOX */
@@ -857,6 +893,18 @@ form.example2 input[type=text]{
     
     }
     
+    .vd1{
+        grid-column: 1/16;
+        grid-row: 1/16;
+        position: relative;
+        align-self: center;
+        justify-self: center;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+    }
+    
+    
     .zoom-img{
         grid-column: 15/16;
         grid-row: 15/16;
@@ -864,6 +912,8 @@ form.example2 input[type=text]{
         width: 2.2vw;
         align-self: auto;
         justify-self: center;
+        position: relative;
+        z-index: 5;
     }
     
     .networking-txt{
@@ -888,7 +938,7 @@ form.example2 input[type=text]{
 }
 
 .attendes-txt{
-    color: white;
+    color: black;
     grid-column: 1/4;
     grid-row: 1/2;
     /* border: 2px solid white; */
@@ -1008,131 +1058,238 @@ form.example2 input[type=text]{
 
     
     
-    /* POLL BOX */
+
+/* POLL BOX */
+
+.poll-box{
+    grid-column: 4/9;
+    grid-row: 8/16;
+    position: relative;
+    height: 22vw;
+    width: 20vw;
+    /* border: 5px solid #ff0718; */
+    position: relative;
+    z-index: 5;
+    background-color: #ff0718;
+    border:1px solid #ff0718;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(8, 1fr);
+
+   
+}
+
+
+.poll-box-txt{
+color: #ff0718;
+   
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 1vw;
+    font-weight: 650;
+    align-self: baseline;
+    justify-self: center;
     
-    .poll-box{
-        grid-column: 3/8;
-        grid-row: 8/16;
-        position: relative;
-        height: 22vw;
-        width: 22vw;
-        border: 5px solid black;
-        position: relative;
-     z-index: 1;
-        background-color: black;
-        display: grid;
-        grid-template-columns: repeat(5,1fr);
-        grid-template-rows: repeat(10, 1fr);
-      
-       
-    }
-    
-    
-    .poll-box-txt{
-        color: #ff0718;
-        grid-column: 1/2;
-        grid-row: 1/3;
-        font-size: .9vw;
-        font-weight: 650;
-        align-self: center;
-        justify-self: center;
-    }
-    
-    .poll-box-img{
-        grid-row: 4/8;
-        grid-column: 2/5;
-        height: auto;
-        width: 7vw;
-        align-self: center;
-        justify-self: center;
-    }
-    
-    .nopoll-txt{
-        grid-column: 2/5;
-        grid-row: 8/11;
-        align-self: center;
-        /* height: auto; */
-        /* width: 1vw; */
-        justify-self: center;
-        font-size: 1.2vw;
-       
-    }
-    
-    .poll-box-cross{
-        height: auto;
-        width: 1.2vw;
-        background-color: #ff0718;
-        grid-row: 1/2;
-        grid-column: 5/6;
-        align-self: center;
-        justify-self: center;
-    }
-    
-    /* 
-    NOTE BOX */
-    
-    .note-box{
-        height: 22vw;
-        width: 22vw;
-       
-        position: relative;
-      z-index: 1;
-        grid-column: 5/10;
-        grid-row: 8/16;
-        background-color: black;
-      
-        grid-template-columns: repeat(5,1fr);
-        grid-template-rows: repeat(8, 1fr);
-        display: grid;
-    }
-    
-    .note-box-txt{
-        color: #ff0718;
-        grid-column: 1/3;
-        grid-row: 1/2;
-        font-size: .9vw;
-        font-weight: 650;
-        justify-self: center;
-        align-self: baseline;
-        /* margin-top: .7vw; */
-    }
-    
-    .note-box-cross{
-        grid-row: 1/2;
-        grid-column: 5/6;
-        background-color: white;
-        height: auto;
-        width: 1vw;
-        align-self: center;
-        justify-self: center;
-    }
-    
-    .type-box-txt{
-        color: white;
-        grid-row: 2/8;
-        grid-column: 1/6;
-        background-color: black;
-        border: none;
-        font-size: 1.1vw;
-        padding-top: 1vw;
-        padding-left: 1vw;
-        overflow: hidden;
-    }
-    
-    .note-box-save{
-        grid-row: 8/9;   
-        grid-column: 4/6;  
-        border: 1px solid #ff0718;
-        background-color: #ff0718;
-        color: white;
-        border-radius: 10px;
-        height: auto;
-        width: 8vw;
-        font-size: 1vw;
-        margin-bottom: .2vw;
-    }
-    
-    
+}
+
+.poll-box-img{
+    grid-row: 4/8;
+    grid-column: 2/5;
+    height: auto;
+    width: 7vw;
+    align-self: center;
+    justify-self: center;
+}
+
+.nopoll-txt{
+    color: white;
+    grid-column: 2/5;
+    grid-row: 7/9;
+    align-self: end;
+    justify-self: center;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+.poll-box-cross{
+    height: auto;
+    width: 1.2vw;
+    /* background-color: #ff0718; */
+    grid-row: 1/2;
+    grid-column: 5/6;
+    align-self: center;
+    justify-self: center;
+}
+
+.color33{
+    z-index: -1;
+    background-color: white;
+    grid-column: 1/9;
+    grid-row: 1/2;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* 
+NOTE BOX */
+
+.note-box{
+    height: 22vw;
+    width: 20vw;
+    position: relative;
+    z-index: 1;
+    grid-column: 7/12;
+    grid-row: 8/16;
+    background-color: #ff0718;
+   
+    border:1px solid #ff0718;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(8, 1fr);
+    display: grid;
+
+}
+
+.note-box-txt{
+    color: #ff0718;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    font-size: 1vw;
+    font-weight: 650;
+    justify-self: center;
+    align-self: baseline;
+  
+}
+
+.note-box-cross{
+    grid-row: 1/2;
+    grid-column: 5/6;
+    background-color: white;
+    height: auto;
+    width: 1vw;
+    align-self: center;
+    justify-self: center;
+}
+
+.type-box-txt{
+    color: white;
+    grid-row: 2/8;
+    grid-column: 1/6;
+    background-color: #ff0718;
+    border: none;
+    font-size: 1.1vw;
+    padding-top: 1vw;
+    padding-left: 1vw;
+    overflow: hidden;
+}
+
+.note-box-save{
+    grid-row: 8/9;
+    grid-column: 4/6;
+    border: 1px solid #ff0718;
+    background-color: white;
+    color: #ff0718;
+    border-radius: 10px;
+    height: auto;
+    width: 8vw;
+    font-size: 1.2vw;
+    margin-bottom: .2vw;
+    font-weight: 500;
+}
+
+
+.color11{
+    z-index: -1;
+    background-color: white;
+    grid-row: 1/2;
+    grid-column: 1/9;
+}
+
+/* ::placeholder {
+    font-size: 1vw;
+   top:1vw;
+   float: left;
+  } */
+
+/* QUESTION  BOX */
+
+.question-box{
+    height: 22.7vw;
+    width: 20vw;
+    position: relative;
+    z-index: 5;
+    grid-column: 15/20;
+    grid-row: 8/16;
+    background-color: #ff0718;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(8, 1fr);
+    display: grid;
+    border: 1px solid #ff0718;
+}
+
+
+.ques-box-txt{
+    color: #ff0718;
+    grid-row: 1/2;
+    grid-column: 1/4;
+    align-self: baseline;
+    /* justify-self: center; */
+    font-size: 1vw;
+    font-weight: 650;
+    padding-top: .5vw;
+    margin-left: 1vw;
+}
+
+.ques-box-cross{
+    /* background-color: red; */
+    grid-row: 1/2;
+    grid-column: 5/6;
+    align-self: center;
+    justify-self: center;
+    height: auto;
+    width: 1.2vw;
+}
+
+
+.ques-box-txtarea{
+    grid-row: 2/8;
+    grid-column: 1/7;
+    background-color: #ff0718;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1vw;
+    padding-left: 1vw;
+    padding-top: 1vw;
+    overflow: hidden;
+}
+
+.ques-box-save{
+    grid-row: 8/9;
+    grid-column: 4/6;
+    background-color: white;
+    border: none;
+    outline: none;
+    color: #ff0718;
+    font-size: 1.2vw;
+    border-radius: 10px;
+    height: auto;
+    width: 8vw;
+    margin-bottom: .2vw;
+    font-weight: 500;
+}
+
+.color22{
+    background-color: white;
+    z-index: -1;
+    grid-column: 1/6;
+    grid-row: 1/2;
+     /* height: 6vh; */
+}
+
+
+
 
 /* DOWNLOAD-BOX */
 .download-box{
@@ -1255,79 +1412,6 @@ form.example2 input[type=text]{
        float: left;
       } */
     
-    /* QUESTION  BOX */
-    
-    .question-box{
-        height: 22vw;
-        width: 22vw;
-       
-        position: relative;
-    z-index: 1;
-        grid-column: 8/14;
-        grid-row: 8/16;
-        background-color: black;
-      
-        grid-template-columns: repeat(5,1fr);
-        grid-template-rows: repeat(8, 1fr);
-        display: grid;
-    }
-    
-    
-    .ques-box-txt{
-        color: white;
-        grid-row: 1/2;
-        grid-column: 1/3;
-        align-self: baseline;
-        justify-self: center;
-        font-size: .8vw;
-        font-weight: 550;
-        padding-top: 1vw;
-    }
-    
-    .ques-box-cross{
-        /* background-color: red; */
-        grid-row: 1/2;
-        grid-column: 5/6;
-        align-self: center;
-        justify-self: center;
-        height: auto;
-        width: 1.2vw;
-    }
-    
-    
-    .ques-box-txtarea{
-        grid-row: 2/8;
-        grid-column: 1/7;
-        background-color: black;
-        outline: none;
-        border: none;
-        color: white;
-        font-size: 1vw;
-        padding-left: 1vw;
-        padding-top: 1vw;
-        overflow: hidden;
-    }
-    
-    .ques-box-save{
-        grid-row: 8/9;
-        grid-column: 4/6;
-        background-color: #ff0718;
-        border: none;
-        outline: none;
-        color: white;
-        font-size: 1vw;
-        border-radius: 10px;
-        height: auto;
-        width: 8vw;
-        margin-bottom:.2vw;
-    }
-    
-    .color2{
-        background-color: darkblue;
-        z-index: -1;
-        grid-column: 1/6;
-        grid-row: 1/2;
-    }
     
     
     
@@ -1597,13 +1681,27 @@ display: grid;
 
 }
 
+.vd1{
+    grid-column: 1/16;
+    grid-row: 1/16;
+    position: relative;
+    align-self: center;
+    justify-self: center;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+
 .zoom-img{
     grid-column: 15/16;
     grid-row: 15/16;
     height: auto;
-    width: 2vw;
+    width: 2.2vw;
     align-self: auto;
-    justify-self: center
+    justify-self: center;
+    position: relative;
+    z-index: 5;
 }
 
 .networking-txt{
@@ -1627,14 +1725,14 @@ display: grid;
 }
 
 .attendes-txt{
-    color: white;
+    color: black;
     grid-column: 1/4;
     grid-row: 1/2;
     /* border: 2px solid white; */
     align-self: center;
     justify-self: center;
     font-size: .9vw;
-    font-weight: 400;
+    font-weight: 500;
     margin-top: 1.5vw;
 }
 
@@ -1645,7 +1743,7 @@ display: grid;
     align-self: center;
     justify-self: center;
     font-size: .9vw;
-    font-weight: 400;
+    font-weight: 500;
     margin-top: 1.5vw;
 }
 
@@ -1744,34 +1842,39 @@ form.example2 input[type=text] {
 
 
 
+
+
 /* POLL BOX */
 
 .poll-box{
-    grid-column: 3/8;
+    grid-column: 4/9;
     grid-row: 8/16;
     position: relative;
     height: 22vw;
-    width: 22vw;
-  
+    width: 20vw;
+    /* border: 5px solid #ff0718; */
     position: relative;
- z-index: 1;
-    background-color: black;
+    z-index: 5;
+    background-color: #ff0718;
+    border:1px solid #ff0718;
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(10, 1fr);
-   
+    grid-template-rows: repeat(8, 1fr);
+
    
 }
 
 
 .poll-box-txt{
-    color: #ff0718;
+color: #ff0718;
+   
     grid-column: 1/2;
-    grid-row: 1/3;
-    font-size: .9vw;
+    grid-row: 1/2;
+    font-size: 1vw;
     font-weight: 650;
-    align-self: center;
+    align-self: baseline;
     justify-self: center;
+   
 }
 
 .poll-box-img{
@@ -1786,49 +1889,62 @@ form.example2 input[type=text] {
 .nopoll-txt{
     color: white;
     grid-column: 2/5;
-    grid-row: 8/9;
+    grid-row: 7/9;
     align-self: center;
     justify-self: center;
     font-size: 1.2vw;
+    font-weight: 500;
 }
 
 .poll-box-cross{
     height: auto;
     width: 1.2vw;
-    background-color: #ff0718;
+    /* background-color: #ff0718; */
     grid-row: 1/2;
     grid-column: 5/6;
     align-self: center;
     justify-self: center;
 }
 
+.color33{
+    z-index: -1;
+    background-color: white;
+    grid-column: 1/9;
+    grid-row: 1/2;
+    height: 100%;
+    width: 100%;
+}
+
+
+
 /* 
 NOTE BOX */
 
 .note-box{
     height: 22vw;
-    width: 22vw;
-  
+    width: 20vw;
     position: relative;
-  z-index: 1;
-    grid-column: 5/10;
+    z-index: 1;
+    grid-column: 7/12;
     grid-row: 8/16;
-    background-color: black;
+    background-color: #ff0718;
    
+    border:1px solid #ff0718;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(8, 1fr);
     display: grid;
+
 }
 
 .note-box-txt{
     color: #ff0718;
     grid-column: 1/3;
     grid-row: 1/2;
-    font-size: .9vw;
+    font-size: 1vw;
     font-weight: 650;
     justify-self: center;
     align-self: baseline;
-    /* margin-top: .7vw; */
+    
 }
 
 .note-box-cross{
@@ -1845,7 +1961,7 @@ NOTE BOX */
     color: white;
     grid-row: 2/8;
     grid-column: 1/6;
-    background-color: black;
+    background-color: #ff0718;
     border: none;
     font-size: 1.1vw;
     padding-top: 1vw;
@@ -1855,18 +1971,108 @@ NOTE BOX */
 
 .note-box-save{
     grid-row: 8/9;
-   
     grid-column: 4/6;
-  
     border: 1px solid #ff0718;
-    background-color: #ff0718;
-    color: white;
+    background-color: white;
+    color: #ff0718;
     border-radius: 10px;
     height: auto;
     width: 8vw;
-    font-size: 1vw;
+    font-size: 1.2vw;
+    margin-bottom: .2vw;
+    font-weight: 500;
 }
 
+
+.color11{
+    z-index: -1;
+    background-color: white;
+    grid-row: 1/2;
+    grid-column: 1/9;
+}
+
+/* ::placeholder {
+    font-size: 1vw;
+   top:1vw;
+   float: left;
+  } */
+
+
+/* QUESTION  BOX */
+
+.question-box{
+    height: 22.7vw;
+    width: 20vw;
+    position: relative;
+    z-index: 5;
+    grid-column: 15/20;
+    grid-row: 8/16;
+    background-color: #ff0718;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(8, 1fr);
+    display: grid;
+    border: 1px solid #ff0718;
+}
+
+
+.ques-box-txt{
+    color: #ff0718;
+    grid-row: 1/2;
+    grid-column: 1/4;
+    align-self: baseline;
+    /* justify-self: center; */
+    font-size: 1vw;
+    font-weight: 650;
+   
+    margin-left: 1vw;
+}
+
+.ques-box-cross{
+    /* background-color: red; */
+    grid-row: 1/2;
+    grid-column: 5/6;
+    align-self: center;
+    justify-self: center;
+    height: auto;
+    width: 1.2vw;
+}
+
+
+.ques-box-txtarea{
+    grid-row: 2/8;
+    grid-column: 1/7;
+    background-color: #ff0718;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1vw;
+    padding-left: 1vw;
+    padding-top: 1vw;
+    overflow: hidden;
+}
+
+.ques-box-save{
+    grid-row: 8/9;
+    grid-column: 4/6;
+    background-color: white;
+    border: none;
+    outline: none;
+    color: #ff0718;
+    font-size: 1.2vw;
+    border-radius: 10px;
+    height: auto;
+    width: 8vw;
+    margin-bottom: .2vw;
+    font-weight: 500;
+}
+
+.color22{
+    background-color: white;
+    z-index: -1;
+    grid-column: 1/6;
+    grid-row: 1/2;
+     /* height: 6vh; */
+}
 
 
 /* DOWNLOAD-BOX */
@@ -1988,84 +2194,6 @@ NOTE BOX */
    top:1vw;
    float: left;
   } */
-
-/* QUESTION  BOX */
-
-.question-box{
-    height: 22vw;
-    width: 22vw;
-   
-    position: relative;
-z-index: 1;
-    grid-column: 8/14;
-    grid-row: 8/16;
-    background-color: black;
-   
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(8, 1fr);
-    display: grid;
-}
-
-
-.ques-box-txt{
-    color: white;
-    grid-row: 1/2;
-    grid-column: 1/3;
-    align-self: baseline;
-    justify-self: center;
-    font-size: .8vw;
-    font-weight: 550;
-    padding-top: .5vw;
-}
-
-.ques-box-cross{
-  
-    grid-row: 1/2;
-    grid-column: 5/6;
-    align-self: center;
-    justify-self: center;
-    height: auto;
-    width: 1.2vw;
-}
-
-
-.ques-box-txtarea{
-    grid-row: 2/8;
-    grid-column: 1/7;
-    background-color: black;
-    outline: none;
-    border: none;
-    color: white;
-    font-size: 1vw;
-    padding-left: 1vw;
-    padding-top: 1vw;
-    overflow: hidden;
-}
-
-.ques-box-save{
-    grid-row: 8/9;
-    grid-column: 4/6;
-    background-color: #ff0718;
-    border: none;
-    outline: none;
-    color: white;
-    font-size: 1vw;
-    border-radius: 10px;
-    height: auto;
-    width: 8vw;
-}
-
-.color2{
-    background-color: darkblue;
-    z-index: -1;
-    grid-column: 1/6;
-    grid-row: 1/2;
-}
-
-
-
-
-
 
 /* BOTTOM -- SECTION */
 
@@ -2342,13 +2470,27 @@ z-index: 1;
     
     }
     
+    .vd1{
+        grid-column: 1/16;
+        grid-row: 1/16;
+        position: relative;
+        align-self: center;
+        justify-self: center;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+    }
+    
+    
     .zoom-img{
         grid-column: 15/16;
         grid-row: 15/16;
         height: auto;
         width: 2.2vw;
-        align-self: center;
+        align-self: auto;
         justify-self: center;
+        position: relative;
+        z-index: 5;
     }
     
     .networking-txt{
@@ -2372,7 +2514,7 @@ z-index: 1;
     }
     
     .attendes-txt{
-        color: white;
+        color: black;
     grid-column: 1/4;
     grid-row: 1/2;
     /* border: 2px solid white; */
@@ -2503,131 +2645,239 @@ z-index: 1;
         position: relative;
     }
     
-    
-    
-    /* POLL BOX */
-    
-    .poll-box{
-        grid-column: 3/8;
-        grid-row: 8/16;
-        position: relative;
-        height: 27vw;
-        width: 27vw;
-      
-        position: relative;
-     z-index: 1;
-        background-color: black;
-        display: grid;
-        grid-template-columns: repeat(5,1fr);
-        grid-template-rows: repeat(10, 1fr);
-       
-       
-    }
-    
-    
-    .poll-box-txt{
-        color: #ff0718;
-        grid-column: 1/2;
-        grid-row: 1/3;
-        font-size: .9vw;
-        font-weight: 650;
-        align-self: center;
-        justify-self: center;
-    }
-    
-    .poll-box-img{
-        grid-row: 4/8;
-        grid-column: 2/5;
-        height: auto;
-        width: 7vw;
-        align-self: center;
-        justify-self: center;
-    }
-    
-    .nopoll-txt{
-        color: white;
-        grid-column: 3/4;
-        grid-row: 8/9;
-        align-self: center;
-        justify-self: center;
-        font-size: 1.2vw;
-    }
-    
-    .poll-box-cross{
-        height: auto;
-        width: 1.2vw;
-        background-color: #ff0718;
-        grid-row: 1/2;
-        grid-column: 5/6;
-        align-self: center;
-        justify-self: center;
-    }
-    
-    /* 
-    NOTE BOX */
-    
-    .note-box{
-        height: 27vw;
-        width: 27vw;
-      
-        position: relative;
-      z-index: 1;
-        grid-column: 5/10;
-        grid-row: 8/16;
-        background-color: black;
-       
-        grid-template-columns: repeat(5,1fr);
-        grid-template-rows: repeat(8, 1fr);
-        display: grid;
-    }
-    
-    .note-box-txt{
-        color: #ff0718;
+   
+
+/* POLL BOX */
+
+.poll-box{
+    grid-column: 4/9;
+    grid-row: 8/16;
+    position: relative;
+    height: 22vw;
+    width: 20vw;
+    /* border: 5px solid #ff0718; */
+    position: relative;
+    z-index: 5;
+    background-color: #ff0718;
+    border:1px solid #ff0718;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(8, 1fr);
+
+   
+}
+
+
+.poll-box-txt{
+color: #ff0718;
+   
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 1vw;
+    font-weight: 650;
+    align-self: center;
+    justify-self: center;
+    margin-top: 1vw;
+}
+
+.poll-box-img{
+    grid-row: 4/8;
+    grid-column: 2/5;
+    height: auto;
+    width: 7vw;
+    align-self: center;
+    justify-self: center;
+}
+
+.nopoll-txt{
+    color: white;
+    grid-column: 2/5;
+    grid-row: 7/9;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+.poll-box-cross{
+    height: auto;
+    width: 1.2vw;
+    /* background-color: #ff0718; */
+    grid-row: 1/2;
+    grid-column: 5/6;
+    align-self: center;
+    justify-self: center;
+}
+
+.color33{
+    z-index: -1;
+    background-color: white;
+    grid-column: 1/9;
+    grid-row: 1/2;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* 
+NOTE BOX */
+
+.note-box{
+    height: 22vw;
+    width: 20vw;
+    position: relative;
+    z-index: 1;
+    grid-column: 7/12;
+    grid-row: 8/16;
+    background-color: #ff0718;
+   
+    border:1px solid #ff0718;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(8, 1fr);
+    display: grid;
+
+}
+
+.note-box-txt{
+    color: #ff0718;
     grid-column: 1/3;
     grid-row: 1/2;
-    font-size: .9vw;
+    font-size: 1vw;
     font-weight: 650;
     justify-self: center;
     align-self: baseline;
-    /* margin-top: .7vw; */
-    margin-left: -2vw;
-    }
-    
-    .note-box-cross{
-        grid-row: 1/2;
-        grid-column: 5/6;
-        background-color: white;
-        height: auto;
-        width: 1vw;
-        align-self: center;
-        justify-self: center;
-    }
-    
-    .type-box-txt{
-        color: white;
-        grid-row: 2/8;
-        grid-column: 1/6;
-        background-color: black;
-        border: none;
-        font-size: 1.1vw;
-        padding-top: 1vw;
-        padding-left: 1vw;
-        overflow: hidden;
-    }
-    
-    .note-box-save{
-        grid-row: 8/9;
-        grid-column: 4/6;
-        border: 1px solid #ff0718;
-        background-color: #ff0718;
-        color: white;
-        border-radius: 10px;
-        height: auto;
-        width: 8vw;
-        font-size: 1vw;
-        justify-self: center;
-    }
-    
+    margin-top: .7vw;
+}
+
+.note-box-cross{
+    grid-row: 1/2;
+    grid-column: 5/6;
+    background-color: white;
+    height: auto;
+    width: 1vw;
+    align-self: center;
+    justify-self: center;
+}
+
+.type-box-txt{
+    color: white;
+    grid-row: 2/8;
+    grid-column: 1/6;
+    background-color: #ff0718;
+    border: none;
+    font-size: 1.1vw;
+    padding-top: 1vw;
+    padding-left: 1vw;
+    overflow: hidden;
+}
+
+.note-box-save{
+    grid-row: 8/9;
+    grid-column: 4/6;
+    border: 1px solid #ff0718;
+    background-color: white;
+    color: #ff0718;
+    border-radius: 10px;
+    height: auto;
+    width: 8vw;
+    font-size: 1.2vw;
+    margin-bottom: .2vw;
+    font-weight: 500;
+}
+
+
+.color11{
+    z-index: -1;
+    background-color: white;
+    grid-row: 1/2;
+    grid-column: 1/9;
+}
+
+/* ::placeholder {
+    font-size: 1vw;
+   top:1vw;
+   float: left;
+  } */
+
+
+/* QUESTION  BOX */
+
+.question-box{
+    height: 22vw;
+    width: 20vw;
+    position: relative;
+    z-index: 5;
+    grid-column: 15/20;
+    grid-row: 8/15;
+    background-color: #ff0718;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(8, 1fr);
+    display: grid;
+    border: 1px solid #ff0718;
+    align-self: center;
+}
+
+
+.ques-box-txt{
+    color: #ff0718;
+    grid-row: 1/2;
+    grid-column: 1/4;
+    align-self: baseline;
+    /* justify-self: center; */
+    font-size: 1vw;
+    font-weight: 650;
+    padding-top: .5vw;
+    margin-left: 1vw;
+}
+
+.ques-box-cross{
+    /* background-color: red; */
+    grid-row: 1/2;
+    grid-column: 5/6;
+    align-self: center;
+    justify-self: center;
+    height: auto;
+    width: 1.2vw;
+}
+
+
+.ques-box-txtarea{
+    grid-row: 2/8;
+    grid-column: 1/7;
+    background-color: #ff0718;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1vw;
+    padding-left: 1vw;
+    padding-top: 1vw;
+    overflow: hidden;
+}
+
+.ques-box-save{
+    grid-row: 8/9;
+    grid-column: 4/6;
+    background-color: white;
+    border: none;
+    outline: none;
+    color: #ff0718;
+    font-size: 1.2vw;
+    border-radius: 10px;
+    height: auto;
+    width: 8vw;
+    margin-bottom: .2vw;
+    font-weight: 500;
+}
+
+.color22{
+    background-color: white;
+    z-index: -1;
+    grid-column: 1/6;
+    grid-row: 1/2;
+     /* height: 6vh; */
+}
+
 
 /* DOWNLOAD-BOX */
 .download-box{
@@ -2749,82 +2999,6 @@ z-index: 1;
        top:1vw;
        float: left;
       }
-    
-    /* QUESTION  BOX */
-    
-    .question-box{
-        height: 27vw;
-        width: 27vw;
-       
-        position: relative;
-    z-index: 1;
-        grid-column: 8/14;
-        grid-row: 8/16;
-        background-color: black;
-      
-        grid-template-columns: repeat(5,1fr);
-        grid-template-rows: repeat(8, 1fr);
-        display: grid;
-    }
-    
-    
-    .ques-box-txt{
-        color: white;
-    grid-row: 1/2;
-    grid-column: 1/3;
-    align-self: baseline;
-    justify-self: center;
-    font-size: .9vw;
-    font-weight: 550;
-    padding-top: 1.5vw;
-    }
-    
-    .ques-box-cross{
-        
-        grid-row: 1/2;
-        grid-column: 5/6;
-        align-self: center;
-        justify-self: center;
-        height: auto;
-        width: 1.5vw;
-    }
-    
-    
-    .ques-box-txtarea{
-        grid-row: 2/8;
-        grid-column: 1/7;
-        background-color: black;
-        outline: none;
-        border: none;
-        color: white;
-        font-size: 1vw;
-        padding-left: 1vw;
-        padding-top: 1vw;
-        overflow: hidden;
-    }
-    
-    .ques-box-save{
-        grid-row: 8/9;
-        grid-column: 4/6;
-        background-color: #ff0718;
-        border: none;
-        outline: none;
-        color: white;
-        font-size: 1vw;
-        border-radius: 10px;
-        height: auto;
-        width: 8vw;
-        justify-self: center;
-    }
-    
-    .color2{
-        background-color: darkblue;
-        z-index: -1;
-        grid-column: 1/6;
-        grid-row: 1/2;
-    }
-    
-    
     
     
     

@@ -19,7 +19,7 @@
        
       .popup .content {
         border-radius: 10px;
-        position: absolute;
+        position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%) scale(0);
@@ -129,7 +129,7 @@
        
       .popup .content {
        border-radius: 10px;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%) scale(0);
@@ -241,7 +241,7 @@
        
       .popup .content {
        border-radius: 10px;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%) scale(0);
@@ -353,7 +353,7 @@
        
       .popup .content {
         border-radius: 10px;
-        position: absolute;
+        position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%) scale(0);
@@ -476,7 +476,7 @@
     left: 50%;
     transform: translate(-50%,-50%) scale(0);
     background: #fff;
-    width: 65%;
+    width: 55%;
     max-width: 500px;
     height: 250px;
     z-index: 2;
@@ -588,7 +588,7 @@
         left: 50%;
         transform: translate(-50%,-50%) scale(0);
         background: #fff;
-        width: 52%;
+        width: 50%;
         max-width: 500px;
         height: 300px;
         z-index: 2;
@@ -703,7 +703,7 @@
         left: 50%;
         transform: translate(-50%,-50%) scale(0);
         background: #fff;
-        width: 55%;
+        width: 50%;
         max-width: 500px;
         height: 450px;
         z-index: 2;
