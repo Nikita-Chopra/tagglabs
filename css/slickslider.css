@@ -9,3 +9,32 @@
   }
 
 
+.slick-next{
+  right:0px!important;
+}
+
+.slick-prev{
+  left:0px!important;
+  z-index: 5;
+}
+
+
+
+
+
+
+
+  /* .slick-carousel {
+    margin: 0 auto;
+    width: 200px;
+  }
+   */
+  /* The width of each slide */
+  /* .slick-slide {
+    width: 350px;
+  } */
+  
+  /* Color of the arrows */
+  /* .slick-next::before, .slick-prev::before {
+    color: blue;
+  } */

@@ -1,10 +1,47 @@
 function fun1(){
     $(document).ready(function(){
         // $(".a1").toggle(); 
-       $('.lorem-dropdown').removeClass('d-none');
+    //    $('.lorem-dropdown').removeClass('d-none');
         $( ".lorem-dropdown" ).slideToggle( "slow" );
+     
     });
 }
+
+// var x = document.getElementById('lorem-dropdown');
+
+
+// function fun1(){
+    
+//     if (x.style.display !== "none") {
+//         x.style.display == "none";
+//         $('.lorem-dropdown').addClass('d-none');
+//       } else {
+//         $('.lorem-dropdown').removeClass('d-none');
+//         x.style.display == "block";
+//       }
+// }
+
+
+
+
+
+
+
+// var  x = document.getElementById("lorem-dropdown");
+// function fun1() {
+    
+//     if (x.style.display === "none") {
+//       x.style.display = "block";
+//       $('.lorem-dropdown').removeClass('d-none');
+     
+//     } else {
+//       x.style.display = "none";
+//       $('.lorem-dropdown').addClass('d-none');
+//     }
+//   }
+
+
+
 
 
 function fun2(){
@@ -13,6 +50,8 @@ function fun2(){
         // $( ".2" ).slideToggle( "slow" );  
         $('.speaker-dropdown').removeClass('d-none');
         $(".speaker-dropdown").slideToggle("slow") ;
+        $(".container1").slideToggle("slow") ;
+        $(".slider").slideToggle("slow") ;
     });
 }
 

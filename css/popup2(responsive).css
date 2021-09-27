@@ -891,3 +891,1122 @@
       }
 
   }
+
+
+
+  /* POP UP--2 PORTRAIT MODE */
+
+  /* MEDIA QUERY */
+
+/* PORTRAIT MODE */
+
+/* MEDIA QUERY 320-480 PORTRAIT MODE */
+
+@media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+  .popup .overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+    z-index:1;
+    display:none;
+  }
+
+  .popup .content2{
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+grid-template-rows: repeat(15, 1fr);
+background-color: #ffebd9;
+
+
+    height: 50%!important;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    /* background: #fff; */
+    width: 70%!important;
+    /* max-width: 500px; */
+    height: 250px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: "Open Sans",sans-serif;
+  }
+  
+  .speaker-column{
+    position: relative;
+  }
+
+  .popup .close-btn2 {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background: #222;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 21px;
+    text-align: center;
+    border-radius: 50%;
+  }
+
+  .popup.active .overlay {
+    display:block;
+  }
+
+  .popup.active .content2 {
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+  }
+
+  .registr-txt{
+    padding-top: 2vw;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.btn-submit-popup{
+    height: 1.8vw;
+    width: 6.1vw;
+    border: .8px solid grey;
+    background-color: red;
+    color: white;
+    font-size: .9rem;
+    border-radius: 0;
+}
+
+.input-txt{
+    height: 1.8vw;
+    width: 10vw;
+    border: 1px solid grey;
+    font-size: 1rem;
+}
+
+.hari-image{
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+  grid-column: 2/5;
+  grid-row: 4/7;
+  align-self: center;
+  justify-self: center;
+}
+
+.hari-name{
+  grid-column: 6/12;
+    grid-row: 4/5;
+    font-size: 2.5vw;
+    color: #02405f;
+    font-weight: 600;
+    justify-self: baseline;
+}
+
+.hari-designation{
+  grid-column: 6/12;
+    color: #02405f;
+    font-size: 2.5vw;
+    font-weight: 600;
+    align-self: auto;
+    justify-self: auto;
+    grid-row: 5/7;
+}
+
+.hari-tagglabs{
+  grid-column: 6/10;
+  grid-row: 7/8;
+  font-size: 2.5vw;
+  color: #02405f;
+  font-weight: 600;
+  justify-self: baseline;
+  align-self: center;
+}
+
+
+/* LAKSHAY */
+
+
+.lakshay-image{
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+  grid-column: 2/5;
+  grid-row: 4/7;
+  align-self: center;
+  justify-self: center;
+}
+
+.lakshay-name{
+  grid-column: 6/12;
+    grid-row: 4/5;
+    font-size: 2.5vw;
+    color: #02405f;
+    font-weight: 600;
+    justify-self: baseline;
+}
+
+.lakshay-designation{
+  grid-column: 6/12;
+    color: #02405f;
+    font-size: 2.5vw;
+    font-weight: 600;
+    align-self: auto;
+    justify-self: auto;
+    grid-row: 5/7;
+}
+
+.lakshay-tagglabs{
+  grid-column: 6/10;
+  grid-row: 7/8;
+  font-size: 2.5vw;
+  color: #02405f;
+  font-weight: 600;
+  justify-self: baseline;
+  align-self: center;
+}
+
+
+
+/* PANKAJ */
+
+
+
+.pankaj-image{
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+  grid-column: 2/5;
+  grid-row: 4/7;
+  align-self: center;
+  justify-self: center;
+}
+
+.pankaj-name{
+  grid-column: 6/12;
+    grid-row: 4/5;
+    font-size: 2.5vw;
+    color: #02405f;
+    font-weight: 600;
+    justify-self: baseline;
+}
+
+.pankaj-designation{
+  grid-column: 6/12;
+    color: #02405f;
+    font-size: 2.5vw;
+    font-weight: 600;
+    align-self: auto;
+    justify-self: auto;
+    grid-row: 5/7;
+}
+
+.pankaj-tagglabs{
+  grid-column: 6/10;
+  grid-row: 7/8;
+  font-size: 2.5vw;
+  color: #02405f;
+  font-weight: 600;
+  justify-self: baseline;
+  align-self: center;
+}
+
+}
+
+/* MEDIA QUERY 480-768 PORTRAIT MODE */
+
+@media (min-width: 480px) and (max-width: 768px) and (orientation: portrait) {
+
+  .popup .overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+    z-index:1;
+    display:none;
+  }
+
+  .popup .content2{
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+grid-template-rows: repeat(15, 1fr);
+background-color: #ffebd9;
+
+
+    height: 50%!important;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    /* background: #fff; */
+    width: 70%!important;
+    /* max-width: 500px; */
+    height: 250px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: "Open Sans",sans-serif;
+  }
+  
+  .speaker-column{
+    position: relative;
+  }
+
+  .popup .close-btn2 {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background: #222;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 21px;
+    text-align: center;
+    border-radius: 50%;
+  }
+
+  .popup.active .overlay {
+    display:block;
+  }
+
+  .popup.active .content2 {
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+  }
+
+  .registr-txt{
+    padding-top: 2vw;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.btn-submit-popup{
+    height: 1.8vw;
+    width: 6.1vw;
+    border: .8px solid grey;
+    background-color: red;
+    color: white;
+    font-size: .9rem;
+    border-radius: 0;
+}
+
+.input-txt{
+    height: 1.8vw;
+    width: 10vw;
+    border: 1px solid grey;
+    font-size: 1rem;
+}
+
+.hari-image{
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+  grid-column: 2/5;
+  grid-row: 4/7;
+  align-self: center;
+  justify-self: center;
+}
+
+.hari-name{
+  grid-column: 6/12;
+    grid-row: 4/5;
+    font-size: 2.5vw;
+    color: #02405f;
+    font-weight: 600;
+    justify-self: baseline;
+}
+
+.hari-designation{
+  grid-column: 6/12;
+    color: #02405f;
+    font-size: 2.5vw;
+    font-weight: 600;
+    align-self: auto;
+    justify-self: auto;
+    grid-row: 5/7;
+}
+
+.hari-tagglabs{
+  grid-column: 6/10;
+  grid-row: 7/8;
+  font-size: 2.5vw;
+  color: #02405f;
+  font-weight: 600;
+  justify-self: baseline;
+  align-self: center;
+}
+
+
+/* LAKSHAY */
+
+
+.lakshay-image{
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+  grid-column: 2/5;
+  grid-row: 4/7;
+  align-self: center;
+  justify-self: center;
+}
+
+.lakshay-name{
+  grid-column: 6/12;
+    grid-row: 4/5;
+    font-size: 2.5vw;
+    color: #02405f;
+    font-weight: 600;
+    justify-self: baseline;
+}
+
+.lakshay-designation{
+  grid-column: 6/12;
+    color: #02405f;
+    font-size: 2.5vw;
+    font-weight: 600;
+    align-self: auto;
+    justify-self: auto;
+    grid-row: 5/7;
+}
+
+.lakshay-tagglabs{
+  grid-column: 6/10;
+  grid-row: 7/8;
+  font-size: 2.5vw;
+  color: #02405f;
+  font-weight: 600;
+  justify-self: baseline;
+  align-self: center;
+}
+
+
+
+/* PANKAJ */
+
+
+
+.pankaj-image{
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+  grid-column: 2/5;
+  grid-row: 4/7;
+  align-self: center;
+  justify-self: center;
+}
+
+.pankaj-name{
+  grid-column: 6/12;
+    grid-row: 4/5;
+    font-size: 2.5vw;
+    color: #02405f;
+    font-weight: 600;
+    justify-self: baseline;
+}
+
+.pankaj-designation{
+  grid-column: 6/12;
+    color: #02405f;
+    font-size: 2.5vw;
+    font-weight: 600;
+    align-self: auto;
+    justify-self: auto;
+    grid-row: 5/7;
+}
+
+.pankaj-tagglabs{
+  grid-column: 6/10;
+  grid-row: 7/8;
+  font-size: 2.5vw;
+  color: #02405f;
+  font-weight: 600;
+  justify-self: baseline;
+  align-self: center;
+}
+
+
+}
+
+/* MEDIA QUERY 768-1024 PORTRAIT MODE */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+
+  .popup .overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+    z-index:1;
+    display:none;
+  }
+
+  .popup .content2{
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+grid-template-rows: repeat(15, 1fr);
+background-color: #ffebd9;
+
+
+    height: 50%!important;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    /* background: #fff; */
+    width: 70%!important;
+    /* max-width: 500px; */
+    height: 250px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: "Open Sans",sans-serif;
+  }
+  
+  .speaker-column{
+    position: relative;
+  }
+
+  .popup .close-btn2 {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background: #222;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 21px;
+    text-align: center;
+    border-radius: 50%;
+  }
+
+  .popup.active .overlay {
+    display:block;
+  }
+
+  .popup.active .content2 {
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+  }
+
+  .registr-txt{
+    padding-top: 2vw;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.btn-submit-popup{
+    height: 1.8vw;
+    width: 6.1vw;
+    border: .8px solid grey;
+    background-color: red;
+    color: white;
+    font-size: .9rem;
+    border-radius: 0;
+}
+
+.input-txt{
+    height: 1.8vw;
+    width: 10vw;
+    border: 1px solid grey;
+    font-size: 1rem;
+}
+
+.hari-image{
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+  grid-column: 2/5;
+  grid-row: 4/7;
+  align-self: center;
+  justify-self: center;
+}
+
+.hari-name{
+  grid-column: 6/12;
+    grid-row: 4/5;
+    font-size: 2.5vw;
+    color: #02405f;
+    font-weight: 600;
+    justify-self: baseline;
+}
+
+.hari-designation{
+  grid-column: 6/12;
+    color: #02405f;
+    font-size: 2.5vw;
+    font-weight: 600;
+    align-self: auto;
+    justify-self: auto;
+    grid-row: 5/7;
+}
+
+.hari-tagglabs{
+  grid-column: 6/10;
+  grid-row: 7/8;
+  font-size: 2.5vw;
+  color: #02405f;
+  font-weight: 600;
+  justify-self: baseline;
+  align-self: center;
+}
+
+
+/* LAKSHAY */
+
+
+.lakshay-image{
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+  grid-column: 2/5;
+  grid-row: 4/7;
+  align-self: center;
+  justify-self: center;
+}
+
+.lakshay-name{
+  grid-column: 6/12;
+    grid-row: 4/5;
+    font-size: 2.5vw;
+    color: #02405f;
+    font-weight: 600;
+    justify-self: baseline;
+}
+
+.lakshay-designation{
+  grid-column: 6/12;
+    color: #02405f;
+    font-size: 2.5vw;
+    font-weight: 600;
+    align-self: auto;
+    justify-self: auto;
+    grid-row: 5/7;
+}
+
+.lakshay-tagglabs{
+  grid-column: 6/10;
+  grid-row: 7/8;
+  font-size: 2.5vw;
+  color: #02405f;
+  font-weight: 600;
+  justify-self: baseline;
+  align-self: center;
+}
+
+
+
+/* PANKAJ */
+
+
+
+.pankaj-image{
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+  grid-column: 2/5;
+  grid-row: 4/7;
+  align-self: center;
+  justify-self: center;
+}
+
+.pankaj-name{
+  grid-column: 6/12;
+    grid-row: 4/5;
+    font-size: 2.5vw;
+    color: #02405f;
+    font-weight: 600;
+    justify-self: baseline;
+}
+
+.pankaj-designation{
+  grid-column: 6/12;
+    color: #02405f;
+    font-size: 2.5vw;
+    font-weight: 600;
+    align-self: auto;
+    justify-self: auto;
+    grid-row: 5/7;
+}
+
+.pankaj-tagglabs{
+  grid-column: 6/10;
+  grid-row: 7/8;
+  font-size: 2.5vw;
+  color: #02405f;
+  font-weight: 600;
+  justify-self: baseline;
+  align-self: center;
+}
+
+
+
+}
+
+
+/* MEDIA QUERY 1024-1366 PORTRAIT MODE */
+
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+
+  .popup .overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+    z-index:1;
+    display:none;
+  }
+
+  .popup .content2{
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+grid-template-rows: repeat(15, 1fr);
+background-color: #ffebd9;
+
+
+    height: 50%!important;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    /* background: #fff; */
+    width: 70%!important;
+    /* max-width: 500px; */
+    height: 250px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: "Open Sans",sans-serif;
+  }
+  
+  .speaker-column{
+    position: relative;
+  }
+
+  .popup .close-btn2 {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background: #222;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 21px;
+    text-align: center;
+    border-radius: 50%;
+  }
+
+  .popup.active .overlay {
+    display:block;
+  }
+
+  .popup.active .content2 {
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+  }
+
+  .registr-txt{
+    padding-top: 2vw;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.btn-submit-popup{
+    height: 1.8vw;
+    width: 6.1vw;
+    border: .8px solid grey;
+    background-color: red;
+    color: white;
+    font-size: .9rem;
+    border-radius: 0;
+}
+
+.input-txt{
+    height: 1.8vw;
+    width: 10vw;
+    border: 1px solid grey;
+    font-size: 1rem;
+}
+
+.hari-image{
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+  grid-column: 2/5;
+  grid-row: 4/7;
+  align-self: center;
+  justify-self: center;
+}
+
+.hari-name{
+  grid-column: 6/12;
+    grid-row: 4/5;
+    font-size: 2.5vw;
+    color: #02405f;
+    font-weight: 600;
+    justify-self: baseline;
+}
+
+.hari-designation{
+  grid-column: 6/12;
+    color: #02405f;
+    font-size: 2.5vw;
+    font-weight: 600;
+    align-self: auto;
+    justify-self: auto;
+    grid-row: 5/7;
+}
+
+.hari-tagglabs{
+  grid-column: 6/10;
+  grid-row: 7/8;
+  font-size: 2.5vw;
+  color: #02405f;
+  font-weight: 600;
+  justify-self: baseline;
+  align-self: center;
+}
+
+
+/* LAKSHAY */
+
+
+.lakshay-image{
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+  grid-column: 2/5;
+  grid-row: 4/7;
+  align-self: center;
+  justify-self: center;
+}
+
+.lakshay-name{
+  grid-column: 6/12;
+    grid-row: 4/5;
+    font-size: 2.5vw;
+    color: #02405f;
+    font-weight: 600;
+    justify-self: baseline;
+}
+
+.lakshay-designation{
+  grid-column: 6/12;
+    color: #02405f;
+    font-size: 2.5vw;
+    font-weight: 600;
+    align-self: auto;
+    justify-self: auto;
+    grid-row: 5/7;
+}
+
+.lakshay-tagglabs{
+  grid-column: 6/10;
+  grid-row: 7/8;
+  font-size: 2.5vw;
+  color: #02405f;
+  font-weight: 600;
+  justify-self: baseline;
+  align-self: center;
+}
+
+
+
+/* PANKAJ */
+
+
+
+.pankaj-image{
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+  grid-column: 2/5;
+  grid-row: 4/7;
+  align-self: center;
+  justify-self: center;
+}
+
+.pankaj-name{
+  grid-column: 6/12;
+    grid-row: 4/5;
+    font-size: 2.5vw;
+    color: #02405f;
+    font-weight: 600;
+    justify-self: baseline;
+}
+
+.pankaj-designation{
+  grid-column: 6/12;
+    color: #02405f;
+    font-size: 2.5vw;
+    font-weight: 600;
+    align-self: auto;
+    justify-self: auto;
+    grid-row: 5/7;
+}
+
+.pankaj-tagglabs{
+  grid-column: 6/10;
+  grid-row: 7/8;
+  font-size: 2.5vw;
+  color: #02405f;
+  font-weight: 600;
+  justify-self: baseline;
+  align-self: center;
+}
+
+
+
+}
+
+/* MEDIA QUERY 1080-1920 PORTRAIT MODE */
+
+@media (min-width: 1080px) and (max-width: 1920px) and (orientation: portrait) {
+
+  .popup .overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+    z-index:1;
+    display:none;
+  }
+
+  .popup .content2{
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+grid-template-rows: repeat(15, 1fr);
+background-color: #ffebd9;
+
+
+    height: 50%!important;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    /* background: #fff; */
+    width: 70%!important;
+    /* max-width: 500px; */
+    height: 250px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: "Open Sans",sans-serif;
+  }
+  
+  .speaker-column{
+    position: relative;
+  }
+
+  .popup .close-btn2 {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background: #222;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 21px;
+    text-align: center;
+    border-radius: 50%;
+  }
+
+  .popup.active .overlay {
+    display:block;
+  }
+
+  .popup.active .content2 {
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+  }
+
+  .registr-txt{
+    padding-top: 2vw;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.btn-submit-popup{
+    height: 1.8vw;
+    width: 6.1vw;
+    border: .8px solid grey;
+    background-color: red;
+    color: white;
+    font-size: .9rem;
+    border-radius: 0;
+}
+
+.input-txt{
+    height: 1.8vw;
+    width: 10vw;
+    border: 1px solid grey;
+    font-size: 1rem;
+}
+
+.hari-image{
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+  grid-column: 2/5;
+  grid-row: 4/7;
+  align-self: center;
+  justify-self: center;
+}
+
+.hari-name{
+  grid-column: 6/12;
+    grid-row: 4/5;
+    font-size: 2.5vw;
+    color: #02405f;
+    font-weight: 600;
+    justify-self: baseline;
+}
+
+.hari-designation{
+  grid-column: 6/12;
+    color: #02405f;
+    font-size: 2.5vw;
+    font-weight: 600;
+    align-self: auto;
+    justify-self: auto;
+    grid-row: 5/7;
+}
+
+.hari-tagglabs{
+  grid-column: 6/10;
+  grid-row: 7/8;
+  font-size: 2.5vw;
+  color: #02405f;
+  font-weight: 600;
+  justify-self: baseline;
+  align-self: center;
+}
+
+
+/* LAKSHAY */
+
+
+.lakshay-image{
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+  grid-column: 2/5;
+  grid-row: 4/7;
+  align-self: center;
+  justify-self: center;
+}
+
+.lakshay-name{
+  grid-column: 6/12;
+    grid-row: 4/5;
+    font-size: 2.5vw;
+    color: #02405f;
+    font-weight: 600;
+    justify-self: baseline;
+}
+
+.lakshay-designation{
+  grid-column: 6/12;
+    color: #02405f;
+    font-size: 2.5vw;
+    font-weight: 600;
+    align-self: auto;
+    justify-self: auto;
+    grid-row: 5/7;
+}
+
+.lakshay-tagglabs{
+  grid-column: 6/10;
+  grid-row: 7/8;
+  font-size: 2.5vw;
+  color: #02405f;
+  font-weight: 600;
+  justify-self: baseline;
+  align-self: center;
+}
+
+
+
+/* PANKAJ */
+
+
+
+.pankaj-image{
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+  grid-column: 2/5;
+  grid-row: 4/7;
+  align-self: center;
+  justify-self: center;
+}
+
+.pankaj-name{
+  grid-column: 6/12;
+    grid-row: 4/5;
+    font-size: 2.5vw;
+    color: #02405f;
+    font-weight: 600;
+    justify-self: baseline;
+}
+
+.pankaj-designation{
+  grid-column: 6/12;
+    color: #02405f;
+    font-size: 2.5vw;
+    font-weight: 600;
+    align-self: auto;
+    justify-self: auto;
+    grid-row: 5/7;
+}
+
+.pankaj-tagglabs{
+  grid-column: 6/10;
+  grid-row: 7/8;
+  font-size: 2.5vw;
+  color: #02405f;
+  font-weight: 600;
+  justify-self: baseline;
+  align-self: center;
+}
+
+
+}

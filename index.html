@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/popupbox.css">
     <link rel="stylesheet" href="./css/popup1(responsive).css">
     <link rel="stylesheet" href="./css/popup2(responsive).css">
-   
+
 </head>
 
 <body>
@@ -68,8 +68,8 @@
                 <p class="registr-txt-popup1">Enter your Registered Email Id</p>
                 <br>
                 <div class="input-box">
-                    <input type="email" class="input-txt-popup1" placeholder=""><button
-                        class="btn-submit-popup">SUBMIT</button>
+                    <input type="email" class="input-txt-popup1" placeholder=""><button class="btn-submit-popup"
+                        onclick="submitpopup()">SUBMIT</button>
                 </div>
 
             </div>
@@ -209,7 +209,7 @@
             </div>
 
 
-            <div class="lorems-toggle lorem-dropdown d-none">
+            <div class="lorems-toggle lorem-dropdown" id="lorem-dropdown">
                 <p class="lorem4">
                     is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                     standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
@@ -248,7 +248,7 @@
                 </p>
             </div>
 
-            <div class="speakers-toggle speaker-dropdown d-none">
+            <div class="speakers-toggle speaker-dropdown">
 
                 <div class="container1">
 
@@ -268,8 +268,9 @@
                                 </div>
                                 <div class="arrows-slider">
                                     <img class="arr-slider"
-                                        src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/bio.png">
-                                    <p class="hari-bio-slider">Full Bio</p>
+                                        src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/bio.png"
+                                        onclick="bioharidropdown()">
+                                    <p class="hari-bio-slider" onclick="bioharidropdown()"> Full Bio</p>
                                 </div>
 
 
@@ -291,8 +292,9 @@
                                 </div>
                                 <div class="arrows-slider">
                                     <img class="arr-slider"
-                                        src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/bio.png">
-                                    <p class="hari-bio-slider">Full Bio</p>
+                                        src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/bio.png"
+                                        onclick="biolakshaydropdown()"> >
+                                    <p class="hari-bio-slider" onclick="biolakshaydropdown()">Full Bio</p>
                                 </div>
 
                             </div>
@@ -313,8 +315,9 @@
                                 </div>
                                 <div class="arrows-slider">
                                     <img class="arr-slider"
-                                        src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/bio.png">
-                                    <p class="hari-bio-slider">Full Bio</p>
+                                        src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/bio.png"
+                                        onclick="biopankajidropdown()"> >
+                                    <p class="hari-bio-slider" onclick="biopankajdropdown()"> Full Bio</p>
                                 </div>
 
                             </div>
@@ -328,137 +331,194 @@
                     </div>
                 </div>
 
+                <!-- RESPONSIVE COLUMN POPUP -->
+
+                <div class=" popup" id="popup-2">
+                    <div class="overlay"></div>
+                    <div class="content2">
+                        <div class="close-btn2" onclick="togglePopuphari()">×</div>
+                        <img class="hari-image"
+                            src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/hari.png"></img>
+                        <p class="hari-name">Hariom Seth</p>
+                        <p class="hari-designation">Chief Executive Officer</p>
+                        <p class="hari-tagglabs">Tagglabs</p>
+
+
+                    </div>
+                </div>
+
+                <div class=" popup" id="popup-3">
+                    <div class="overlay"></div>
+                    <div class="content2">
+                        <div class="close-btn2" onclick="togglePopuplakshay()">×</div>
+                        <img class="lakshay-image"
+                            src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/lk.jpeg"></img>
+                        <p class="lakshay-name">Lakshay Kalra</p>
+                        <p class="lakshay-designation">Manager - Chief Relationships</p>
+                        <p class="lakshay-tagglabs">Tagglabs</p>
+
+                    </div>
+                </div>
+                <div class=" popup" id="popup-3">
+                    <div class="overlay"></div>
+                    <div class="content2">
+                        <div class="close-btn2" onclick="togglePopuplakshay()">×</div>
+                        <img class="lakshay-image"
+                            src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/lk.jpeg"></img>
+                        <p class="lakshay-name">Lakshay Kalra</p>
+                        <p class="lakshay-designation">Manager - Chief Relationships</p>
+                        <p class="lakshay-tagglabs">Tagglabs</p>
+
+                    </div>
+                </div>
+
+                <div class=" popup" id="popup-4">
+                    <div class="overlay"></div>
+                    <div class="content2">
+                        <div class="close-btn2" onclick="togglePopuppankaj()">×</div>
+                        <img class="pankaj-image"
+                            src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/pankaj.png"></img>
+                        <p class="pankaj-name">Pankaj Singh</p>
+                        <p class="pankaj-designation">Associate Director - Business Director</p>
+                        <p class="pankaj-tagglabs">Tagglabs</p>
+
+                    </div>
+                </div>
+
+
+
+
             </div>
-                <div class="agenda-text-toggle">
-                    <p class="agenda-text" onclick="fun3()">
-                        AGENDA
+            <div class="agenda-text-toggle">
+                <p class="agenda-text" onclick="fun3()">
+                    AGENDA
+                </p>
+            </div>
+
+            <div class="agendas-toggle agenda-dropdown">
+                <div class="agenda-11">
+                    <p class="p11">
+                        09:00 - 09:05 GMT
+                        <br>
+                        13:00 - 13:05 GST
+                    </p>
+
+                    <p class="p12">
+                        Facilitator Introduction: Agenda Outline and Event Objectives
+                        <br>
+                        Event Objectives<br>
+                        Laylla Derizz
+                    </p>
+                    <p class="p13">
+                        Project Director, International Relations
+                        <br>
+                        Dubai Chamber of Commerce & Industry
                     </p>
                 </div>
 
-                <div class="agendas-toggle agenda-dropdown d-none">
-                    <div class="agenda-11">
-                        <p class="p11">
-                            09:00 - 09:05 GMT
-                            <br>
-                            13:00 - 13:05 GST
-                        </p>
+                <div class="agenda-12">
+                    <p class="p14">
+                        09:00 - 09:05 GMT
+                        <br>
+                        13:00 - 13:05 GST
+                    </p>
+                    <p class="p15">
+                        Welcome Remarks
+                        <br>
+                        H.E. Hamad Buamim
+                    </p>
+                    <p class="p16">
+                        President & CEO
+                        <br>
+                        Dubai Chamber of Commerce & industries
 
-                        <p class="p12">
-                            Facilitator Introduction: Agenda Outline and Event Objectives
-                            <br>
-                            Event Objectives<br>
-                            Laylla Derizz
-                        </p>
-                        <p class="p13">
-                            Project Director, International Relations
-                            <br>
-                            Dubai Chamber of Commerce & Industry
-                        </p>
-                    </div>
-
-                    <div class="agenda-12">
-                        <p class="p14">
-                            09:00 - 09:05 GMT
-                            <br>
-                            13:00 - 13:05 GST
-                        </p>
-                        <p class="p15">
-                            Welcome Remarks
-                            <br>
-                            H.E. Hamad Buamim
-                        </p>
-                        <p class="p16">
-                            President & CEO
-                            <br>
-                            Dubai Chamber of Commerce & industries
-
-                        </p>
-                    </div>
-
-                    <div class="agenda-13">
-                        <p class="p11">
-                            09:00 - 09:0 GMT
-                            <br>
-                            13:00 - 13:05 GST
-                        </p>
-
-                        <p class="p12">
-                            Moderator
-                            <br>
-
-                            Mike Van de Vijver
-                        </p>
-                        <p class="p13">
-                            Managing Partner
-                            <br>
-                            Mind Meeting
-                        </p>
-                    </div>
-
-                    <div class="agenda-14">
-                        <p class="p14">
-                            09:00 - 09:05 GMT
-                            <br>
-                            13:00 -13:05 GST
-                        </p>
-                        <p class="p15">
-                            Deep Dive discussion:
-                            <br>
-                            Nola Watson
-
-                        </p>
-                        <p class="p16">
-                            CEO
-                            <br>
-                            Business NSW
-
-                        </p>
-                    </div>
-
-                    <div class="agenda-15">
-                        <p class="p11">
-                            09:00 - 09:05 GMT
-                            <br>
-                            13:00 - 13:05 GST
-                        </p>
-                        <p class="p12">
-                            Questions & Answers
-                        </p>
-                    </div>
-
-                </div>
-                <div class="contact-text-toggle">
-                    <p class="contact-text" onclick="fun4()">
-                        CONTACT US
                     </p>
                 </div>
-                <div class="contacts-toggle contact-dropdown d-none">
 
-                    <div class="add1-toggle">
-                        <p class="name-text">
-                            Pankaj Singh
-                        </p>
-                        <p class="email-text">
-                            pankajsingh@gmail.com
-                            <br>
-                            12345667888
-                        </p>
-                    </div>
-                    <div class="add2-toggle">
-                        <p class="name-text">
-                            Harshit Bansal
-                        </p>
-                        <p class="email-text">
-                            harshitbansal@gmail.com
-                            <br>
-                            123465677888
-                        </p>
-                    </div>
+                <div class="agenda-13">
+                    <p class="p11">
+                        09:00 - 09:0 GMT
+                        <br>
+                        13:00 - 13:05 GST
+                    </p>
 
+                    <p class="p12">
+                        Moderator
+                        <br>
+
+                        Mike Van de Vijver
+                    </p>
+                    <p class="p13">
+                        Managing Partner
+                        <br>
+                        Mind Meeting
+                    </p>
+                </div>
+
+                <div class="agenda-14">
+                    <p class="p14">
+                        09:00 - 09:05 GMT
+                        <br>
+                        13:00 -13:05 GST
+                    </p>
+                    <p class="p15">
+                        Deep Dive discussion:
+                        <br>
+                        Nola Watson
+
+                    </p>
+                    <p class="p16">
+                        CEO
+                        <br>
+                        Business NSW
+
+                    </p>
+                </div>
+
+                <div class="agenda-15">
+                    <p class="p11">
+                        09:00 - 09:05 GMT
+                        <br>
+                        13:00 - 13:05 GST
+                    </p>
+                    <p class="p12">
+                        Questions & Answers
+                    </p>
                 </div>
 
             </div>
-      
+            <div class="contact-text-toggle">
+                <p class="contact-text" onclick="fun4()">
+                    CONTACT US
+                </p>
+            </div>
+            <div class="contacts-toggle contact-dropdown">
+
+                <div class="add1-toggle">
+                    <p class="name-text">
+                        Pankaj Singh
+                    </p>
+                    <p class="email-text">
+                        pankajsingh@gmail.com
+                        <br>
+                        12345667888
+                    </p>
+                </div>
+                <div class="add2-toggle">
+                    <p class="name-text">
+                        Harshit Bansal
+                    </p>
+                    <p class="email-text">
+                        harshitbansal@gmail.com
+                        <br>
+                        123465677888
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
         <!-- ABOUT COLUMN -->
 
         <div class="about-column" id="about-column">
@@ -765,8 +825,6 @@
     <script src="./js/slickslider.js"></script>
     <script src="./js/popupbox.js"></script>
     <script src="./js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </body>
 

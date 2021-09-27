@@ -2,7 +2,15 @@
 /* MEDIA QUERY 320-480 PORTRAIT */
 
 @media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
- 
+    ::-webkit-scrollbar{
+        width: 0px;
+        display: none;
+        background: transparent;
+        }
+        ::-webkit-scrollbar-thumb{
+            background: transparent;
+        }
+
     .navbar-header{
         height: 10vh;
         width: 100%;
@@ -660,7 +668,15 @@
 MEDIA QUERY 481-768 RESPONSIVE  PORTRAIT*/
 
 @media (min-width: 481px) and (max-width: 767px) and (orientation: portrait) {
- 
+ ::-webkit-scrollbar{
+width: 0px;
+display: none;
+background: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background: transparent;
+}
+
     .navbar-header{
         height: 8vh;
         width: 100%;
@@ -1313,7 +1329,16 @@ MEDIA QUERY 481-768 RESPONSIVE  PORTRAIT*/
 
    
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
- 
+    ::-webkit-scrollbar{
+        width: 0px;
+        display: none;
+        background: transparent;
+        }
+        ::-webkit-scrollbar-thumb{
+            background: transparent;
+        }
+
+
     .navbar-header{
         height: 8vh;
         width: 100%;
@@ -1978,6 +2003,16 @@ MEDIA QUERY 481-768 RESPONSIVE  PORTRAIT*/
 
 @media (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
  
+    ::-webkit-scrollbar{
+        width: 0px;
+        display: none;
+        background: transparent;
+        }
+        ::-webkit-scrollbar-thumb{
+            background: transparent;
+        }
+
+
     .navbar-header{
         height: 10vh;
         width: 100%;
@@ -2650,6 +2685,15 @@ MEDIA QUERY 481-768 RESPONSIVE  PORTRAIT*/
 
 @media (min-width: 1080px) and (max-width: 1920px) and (orientation: portrait) {
  
+    ::-webkit-scrollbar{
+        width: 0px;
+        display: none;
+        background: transparent;
+        }
+        ::-webkit-scrollbar-thumb{
+            background: transparent;
+        }
+
     .navbar-header{
         height: 10vh;
         width: 100%;

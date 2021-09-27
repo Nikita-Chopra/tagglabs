@@ -70,6 +70,7 @@
     color: white;
     font-size: 1rem;
     border-radius: 0;
+    outline:none!important;
 }
 
 .input-txt-popup1{

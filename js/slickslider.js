@@ -5,7 +5,7 @@ $('.responsive').slick({
   slidesToShow: 1,
   arrows: true,
   slidesToScroll: 1,
-  autoplay: true,
+  autoplay: false,
   responsive: [
     {
       breakpoint: 1024,

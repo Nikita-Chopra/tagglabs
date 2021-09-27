@@ -27,3 +27,20 @@ function togglePopup(){
   function togglePopuplakshay(){
     document.getElementById("popup-3").classList.toggle("active");
   }
+
+
+
+
+  function bioharidropdown(){
+    console.log("hiiiiii");
+    document.getElementById("popup-2").classList.toggle("active");
+}
+
+function biolakshaydropdown(){
+  document.getElementById("popup-3").classList.toggle("active");
+}
+
+
+function biopankajdropdown(){
+  document.getElementById("popup-4").classList.toggle("active");
+}
