@@ -62,22 +62,23 @@
     font-weight: 500;
 }
 
-.btn-submit-popup{
-    height: 1.8vw;
-    width: 6.1vw;
-    border: .8px solid grey;
-    background-color: red;
-    color: white;
-    font-size: 1rem;
-    border-radius: 0;
-    outline:none!important;
+.btn-submit-popup1{
+  height: 1.8vw;
+  width: 6.1vw;
+  border: .8px solid grey;
+  background-color: red;
+  color: white;
+  font-size: 1rem;
+  border-radius: 0;
+  margin-left: -1vw;
+  outline:none!important;
 }
 
 .input-txt-popup1{
     height: 1.8vw;
     width: 10vw;
     border: 1px solid grey;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 

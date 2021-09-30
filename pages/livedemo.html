@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="../css/searchbox.css">
     <link rel="stylesheet" href="../css/livedemolandscape(responsive).css">
     <link rel="stylesheet" href="../css/livedemoportrait(responsive).css">
-    <link rel="stylesheet" href="../css/demolivepopup.css">
+    <link rel="stylesheet" href="../css/demolive(popup).css">
     <link rel="stylesheet" href="../css/demolivepopup(responsive).css">
     <link rel="stylesheet" href="../css/demoliveagendapopup.css">
-    <link rel="stylesheet" href="../css/demoliveagenda.css">
+    <link rel="stylesheet" href="../css/demolive(agenda).css">
     <link rel="stylesheet" href="../css/demoliveagenda(responsive).css">
-    <link rel="stylesheet" href="../css/demoliveanimation.css">
+    <link rel="stylesheet" href="../css/demolive(animation).css">
 
 </head>
 
@@ -68,7 +68,7 @@
                 <div class="color11"></div>
             </div>
 
-            <img class="zoom-img" src="https://d1wswrkiissxa5.cloudfront.net/aiu/platform/exit_fullscreen.png">
+            <!-- <img class="zoom-img" src="https://d1wswrkiissxa5.cloudfront.net/aiu/platform/exit_fullscreen.png"> -->
 
         </div>
 
@@ -94,10 +94,18 @@
             <p class="txt1">
                 Agenda 1
             </p>
+            <img class="down-img1" src="../images/book1.jpg">
+            <a class="adownload-1" href="../images/book1.jpg" download>
+                <img class="download-img1" src="../images/download-icon1.png">
+              </a>
             <hr>
             <p class="txt2">
                 Agenda 2
             </p>
+            <img class="down-img2" src="../images/cup1.jpg">
+            <a class="adownload-2" href="../images/cup1.jpg" download>
+                <img class="download-img2" src="../images/download-icon2.png" >
+              </a>
         </div>
 
         <div class="savednotes-box d-none">
@@ -142,12 +150,15 @@
 
         <img class="emoji-like" onclick="emojilike()"
             src="https://d1wswrkiissxa5.cloudfront.net/livestudio/emoticon/like.png">
-        <img class="emoji-heart" src="https://d1wswrkiissxa5.cloudfront.net/livestudio/emoticon/heart.png">
-        <img class="emoji-hand" src="https://d1wswrkiissxa5.cloudfront.net/livestudio/emoticon/clapping.png">
+        <img class="emoji-heart" onclick="emojiheart()" src="https://d1wswrkiissxa5.cloudfront.net/livestudio/emoticon/heart.png">
+        <img class="emoji-hand" onclick="emojihand()" src="https://d1wswrkiissxa5.cloudfront.net/livestudio/emoticon/clapping.png">
         <img class="emoji-like-animation d-none"
             src="https://d1wswrkiissxa5.cloudfront.net/livestudio/emoticon/like.png">
-
-        <!-- POP UP CLOSE -->
+            <img class="emoji-heart-animation d-none" src="https://d1wswrkiissxa5.cloudfront.net/livestudio/emoticon/heart.png">
+            <img class="emoji-hand-animation d-none" src="https://d1wswrkiissxa5.cloudfront.net/livestudio/emoticon/clapping.png">
+       
+       
+            <!-- POP UP CLOSE -->
 
         <div class=" popup" id="popup-1">
             <div class="overlay"></div>
@@ -319,9 +330,12 @@
 
 
     <script src="../js/livedemo.js"></script>
-    <script src="../js/demolivepopup.js"></script>
-    <script src="../js/demoliveagendapopup.js"></script>
-    <script src="../js/demoliveanimation.js"></script>
+    <script src="../js/demolive(popup).js"></script>
+    <!-- <script src="../js/demoliveagendapopup.js"></script> -->
+
+    <script src="../js/demolive(animation).js"></script>
+    <script src="../js/index(storage).js"></script>
+    <script src="../js/livedemo(videofullscreen).js"></script>
 </body>
 
 </html>

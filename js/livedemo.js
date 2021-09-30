@@ -1,12 +1,19 @@
 function pollopen() {
     $('.poll-box').removeClass('d-none');
+  
+
+
     $('.poll-box').css('z-index', '5');
     $('.note-box').css('z-index', '2');
     $('.ques-box').css('z-index', '2');
 }
 
 function noteopen() {
+
     $('.note-box').removeClass('d-none');
+   
+
+
     $('.poll-box').css('z-index', '2');
     $('.note-box').css('z-index', '5');
     $('.ques-box').css('z-index', '2');
@@ -15,6 +22,10 @@ function noteopen() {
 
 function quesopen() {
     $('.question-box').removeClass('d-none');
+  
+
+
+
     $('.poll-box').css('z-index', '1');
     $('.note-box').css('z-index', '1');
     $('.ques-box').css('z-index', '1000');
@@ -22,14 +33,17 @@ function quesopen() {
 
 function pollcross() {
     $('.poll-box').addClass('d-none');
+  
 }
 
 function notecross() {
     $('.note-box').addClass('d-none');
+    
 }
 
 function quescross() {
     $('.question-box').addClass('d-none');
+    
 }
 
 function attendesopen() {

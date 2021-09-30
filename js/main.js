@@ -2,15 +2,15 @@ function reg(){
     location.href = "./pages/registration1.html";
 }
 
-function submitpopup(){
+// function submitpopup(){
 
-    location.href = "./pages/session.html"
+//     location.href = "./pages/session.html"
 
 
-    setTimeout(() => {
-       location.href = "../pages/thankyou.html";
+//     setTimeout(() => {
+//        location.href = "./pages/thankyou.html";
             
-            }, 3000);
-}
+//             }, 3000);
+// }
 
 

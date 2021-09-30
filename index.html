@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/popupbox.css">
     <link rel="stylesheet" href="./css/popup1(responsive).css">
     <link rel="stylesheet" href="./css/popup2(responsive).css">
+    <link rel="stylesheet" href="./css/index(timer).css">
 
 </head>
 
@@ -68,8 +69,8 @@
                 <p class="registr-txt-popup1">Enter your Registered Email Id</p>
                 <br>
                 <div class="input-box">
-                    <input type="email" class="input-txt-popup1" placeholder=""><button class="btn-submit-popup"
-                        onclick="submitpopup()">SUBMIT</button>
+                    <input type="email" class="input-txt-popup1" id="userinput-popup1" placeholder="">
+                    <button class="btn-submit-popup1" id="submitpopup1" onclick="submitpopup()">SUBMIT</button>
                 </div>
 
             </div>
@@ -130,8 +131,8 @@
             </div>
 
             <div class="button-join">
-                <button class="btn-join" onclick="togglePopup()">JOIN THE EVENT
-                    <span>
+                <button class="btn-join" onclick="togglePopup()"><span class="btn-join-txt">JOIN THE EVENT</span>
+                    <span class="img-join-img">
                         <img class="img-join"
                             src="https://d1wswrkiissxa5.cloudfront.net/event/TaggDemo/Landing/next.png">
                     </span>
@@ -826,6 +827,10 @@
     <script src="./js/popupbox.js"></script>
     <script src="./js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./js/registration1.js"></script>
+    <script src="./js/index(storage).js"></script>
+    <script src="./js/index(timer).js"></script>
 </body>
 
 </html>
+

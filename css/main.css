@@ -129,12 +129,31 @@ body{
     width: 11.4vw;
     font-size: .9vw;
     outline: none!important;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr;
 }
+
+.btn-join-txt{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: end;
+}
+
+.img-join-img{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: center;
+}
+
+
 
 .img-join{
     height: auto;
     width: 1.3vw;
-    margin-left: 5px;
+  
 }
 
 
